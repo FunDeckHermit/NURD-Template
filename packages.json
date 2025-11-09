@@ -1,0 +1,33 @@
+{
+  "$schema": "https://go.kicad.org/pcm/schemas/v1",
+  "packages": [
+    {
+      "name": "NURD Symbol Library",
+      "description": "Standardized KiCad library with sourcing attributes (MPN, MF, S1 fields).",
+      "description_full": "The NURD Symbol Library standardizes supplier and manufacturer metadata in KiCad symbols. Fields include MPN, MF, S1 Part number, S1 Part link, S1 Description, and S1 Price @ 100 for reliable BOMs and procurement.",
+      "identifier": "com.github.fundeckhermit.nurd-template",
+      "type": "library",
+      "author": {
+        "name": "Roy van Lierop",
+        "contact": {
+          "web": "https://github.com/FunDeckHermit/NURD-Template"
+        }
+      },
+      "license": "MIT",
+      "resources": {
+        "repository": "https://github.com/FunDeckHermit/NURD-Template"
+      },
+      "versions": [
+        {
+          "version": "0.1.8",
+          "status": "testing",
+          "kicad_version": "7.0",
+          "download_url": "https://github.com/FunDeckHermit/NURD-Template/releases/download/v0.1.8/nurd-template-0.1.8.zip",
+          "download_sha256": "40200fcb252c3785a8c5394e3f8d3559b583d9221bf9df7d8da9ccdba7ec43df",
+          "download_size": 20838391,
+          "install_size": 123097687
+        }
+      ]
+    }
+  ]
+}

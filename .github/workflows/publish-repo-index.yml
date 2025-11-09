@@ -1,8 +1,8 @@
-name: Publish PCM repository.json
+name: Publish PCM repository index
 
 on:
   workflow_run:
-    workflows: ["Release (bump version, zip, publish)"]  # Must match the 'name:' in release.yml
+    workflows: ["Release (bump version, zip, publish)"]  # ← must match your release workflow's name
     types: [completed]
 
 jobs:
@@ -10,93 +10,68 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Needed to push to gh-pages
+      contents: write
 
     steps:
-      - name: Checkout repository
+      - name: Checkout default branch
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Prepare gh-pages worktree
+      - name: Ensure gh-pages worktree
         run: |
           git fetch origin gh-pages || true
-          if git show-ref --verify --quiet refs/heads/gh-pages; then
+          if git ls-remote --exit-code --heads origin gh-pages >/dev/null 2>&1; then
             git worktree add gh-pages gh-pages
           else
             mkdir gh-pages
             ( cd gh-pages && git init && git remote add origin "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY" && git checkout -b gh-pages )
           fi
 
-      - name: Get latest release asset info (ZIP)
+      - name: Verify template exists
+        run: |
+          test -f .pcm/repository.template.json || { echo "Missing .pcm/repository.template.json"; exit 1; }
+
+      - name: Install deps (jq, envsubst)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq gettext-base
+
+      - name: Get latest release (zip asset)
         id: rel
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh api repos/${{ github.repository }}/releases/latest > latest.json
-          ASSET_NAME=$(jq -r '.assets[] | select(.name | endswith(".zip")) | .name' latest.json | head -n1)
-          ASSET_URL=$(jq -r ".assets[] | select(.name==\"$ASSET_NAME\") | .browser_download_url" latest.json)
+          ASSET_URL=$(jq -r '.assets[] | select(.name|endswith(".zip")) | .browser_download_url' latest.json | head -n1)
           TAG=$(jq -r '.tag_name' latest.json)
-          echo "name=$ASSET_NAME" >> $GITHUB_OUTPUT
           echo "url=$ASSET_URL" >> $GITHUB_OUTPUT
           echo "tag=$TAG" >> $GITHUB_OUTPUT
 
-      - name: Download ZIP & compute checksum
+      - name: Download zip and compute sizes/checksum
         id: zip
         run: |
-          curl -L -o "${{ steps.rel.outputs.name }}" "${{ steps.rel.outputs.url }}"
-          SHA=$(sha256sum "${{ steps.rel.outputs.name }}" | awk '{print $1}')
-          DL_SIZE=$(stat -c%s "${{ steps.rel.outputs.name }}")
-          mkdir pkg && unzip -q "${{ steps.rel.outputs.name }}" -d pkg
+          curl -L -o package.zip "${{ steps.rel.outputs.url }}"
+          SHA=$(sha256sum package.zip | awk '{print $1}')
+          DL_SIZE=$(stat -c%s package.zip)
+          mkdir pkg && unzip -q package.zip -d pkg
           INST_SIZE=$(du -sb pkg | awk '{print $1}')
           echo "sha=$SHA" >> $GITHUB_OUTPUT
           echo "dl_size=$DL_SIZE" >> $GITHUB_OUTPUT
           echo "inst_size=$INST_SIZE" >> $GITHUB_OUTPUT
 
-      - name: Write repository.json (via jq)
+      - name: Fill template → gh-pages/repository.json
+        env:
+          VERSION: ${{ steps.rel.outputs.tag }}
+          DOWNLOAD_URL: ${{ steps.rel.outputs.url }}
+          DOWNLOAD_SHA256: ${{ steps.zip.outputs.sha }}
+          DOWNLOAD_SIZE: ${{ steps.zip.outputs.dl_size }}
+          INSTALL_SIZE: ${{ steps.zip.outputs.inst_size }}
         run: |
-          VERSION="${{ steps.rel.outputs.tag#v }}"
-          URL="${{ steps.rel.outputs.url }}"
-          SHA="${{ steps.zip.outputs.sha }}"
-          DL_SIZE="${{ steps.zip.outputs.dl_size }}"
-          INST_SIZE="${{ steps.zip.outputs.inst_size }}"
-          jq -n \
-            --arg schema "https://go.kicad.org/pcm/schemas/v1" \
-            --arg repname "NURD Library Repo" \
-            --arg repdesc "Repository for NURD KiCad symbols, footprints, and 3D models." \
-            --arg ident "com.github.fundeckhermit.nurd-template" \
-            --arg pkgname "NURD Symbol Library" \
-            --arg ptype "library" \
-            --arg version "$VERSION" \
-            --arg url "$URL" \
-            --arg sha "$SHA" \
-            --argjson dlsize "$DL_SIZE" \
-            --argjson instsize "$INST_SIZE" \
-            '{
-              "$schema": $schema,
-              "repositories": [
-                {
-                  "name": $repname,
-                  "description": $repdesc,
-                  "packages": [
-                    {
-                      "identifier": $ident,
-                      "name": $pkgname,
-                      "type": $ptype,
-                      "releases": [
-                        {
-                          "version": $version,
-                          "download_url": $url,
-                          "download_sha256": $sha,
-                          "download_size": $dlsize,
-                          "install_size": $instsize
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }' > gh-pages/repository.json
+          VERSION="${VERSION#v}"  # strip leading 'v' if present
+          export VERSION DOWNLOAD_URL DOWNLOAD_SHA256 DOWNLOAD_SIZE INSTALL_SIZE
+          envsubst < .pcm/repository.template.json > gh-pages/repository.json
+          jq . gh-pages/repository.json > /dev/null  # validate JSON
 
       - name: Commit & push repository.json to gh-pages
         run: |

@@ -1,0 +1,213 @@
+(footprint "J_206832-0202"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Connector Header Through Hole, Right Angle 2 position 0.118\" (3.00mm)")
+	(property "Reference" "J?"
+		(at 0 4.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "ac9af8e5-d848-41eb-bb7b-12e46cca2c99")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Conn_01x02"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "4f670bcb-436a-4222-a50b-24d5beaa1279")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "J_206832-0202"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "591b8167-56bc-4ed5-b4ba-26bf7476bddb")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7eb5dfa6-8172-4e54-b79d-6b6d37cf935b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Connector Header Through Hole, Right Angle 2 position 0.118\" (3.00mm)"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7c62e1fc-798f-41c1-9084-a30f362d5002")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MF" "Molex"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aa857c97-eea1-489e-8922-f1909057d0af")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MP" "215760-2002"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "66d2c323-1b49-44da-95e4-3dddd09e9760")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Description" "Connector Header Through Hole, Right Angle 2 position 0.118\" (3.00mm)"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e4ec0365-8cde-4010-ad1e-e159a7207911")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/467tD7M"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aef5005f-06b7-4e24-9cee-47638d7d6f4d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Part number" "538-215760-2002"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6d46fcb7-4882-43dd-976c-7cae3c5c00e7")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "1.12"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "758a9323-0aae-4426-8fb6-a72696a48fc0")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Update date" "13-11-2023"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b1cc68ba-0ee4-4513-aab4-fa92a5a3b037")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -2 -3.5)
+		(end 2 3.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "c3e5ecb9-f384-44af-9170-5bfb1818afc0")
+	)
+	(fp_rect
+		(start -2 -3.6)
+		(end 2 3.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "51a757ff-b304-487c-94c3-282700ea7f7d")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "5202e51c-4c9f-47db-9fb1-0fa04c6aa700")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at -1.28 -2.48)
+		(size 1.02 1.02)
+		(drill 1.02)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "d2d61c54-8f56-4164-8640-2c92b565d04f")
+	)
+	(pad "1" thru_hole circle
+		(at 0 1.5)
+		(size 2 2)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1c470c9d-78b8-472b-91d3-bf5d4ba226a8")
+	)
+	(pad "2" thru_hole circle
+		(at 0 -1.5)
+		(size 2 2)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f152b566-4093-4b13-a12a-7b64bf4f3ed9")
+	)
+	(model "${KIPRJMOD}/3dmodels/2068320202.stp"
+		(offset
+			(xyz 0 0 5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 90 0 0)
+		)
+	)
+)

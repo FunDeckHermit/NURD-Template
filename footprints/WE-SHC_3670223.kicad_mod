@@ -1,0 +1,393 @@
+(footprint "WE-SHC_3670223"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "SH802"
+		(at -9.4 -10 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "40cea361-76af-495a-bf4e-044ba9548372")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.18)
+			)
+		)
+	)
+	(property "Value" "RFShield_TwoPieces"
+		(at 4.35 11.425 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "3a758014-27ac-4621-9912-11c0c2cbedc9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "WE-SHC_3670223"
+		(at -2.65 10.675 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d0c54968-b755-472e-97c3-44460e1a620a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.we-online.com/components/products/datasheet/3670223.pdf"
+		(at -2.65 10.675 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9641fbc6-dc2d-497f-8801-e56c4bae9c86")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "16.7x21.7x5.0 Two-piece EMI RF shielding cabinet"
+		(at -2.65 10.675 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "466f6727-19d6-4a2b-8268-6a8de5398aa7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MF" "Wurth"
+		(at -6.225 10.525 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "147c216c-e282-47cf-a14b-70110a822c3c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MP" "3670223 and 3671223"
+		(at 3.25 11.525 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2fff17a1-d4d2-4834-baa6-2dd7008107dd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/3PggrHT"
+		(at 3.25 11.525 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6c28b015-bdac-46b9-9c9c-d48c185620fa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "4.19"
+		(at -6.225 10.525 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "17c9acb4-080e-4ab9-8fea-c437f6add4fa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part number" "710-3670223 and 710-3671223"
+		(at 3.25 11.525 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "36776165-f9f3-4519-8f13-31f158424b7f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Description" "EMI-pakkingen, -bladen, -dempers en -schilden WE-SHC Seemless Cab Frame 22mm "
+		(at 3.25 11.525 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ccc34cc8-df4e-43c6-b46a-4c09b3b8eabe")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -11 -1.125)
+		(end -11 1.125)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(layer "F.Paste")
+		(uuid "e87e3b55-23a7-4bb7-8df4-9191b9a66ea2")
+	)
+	(fp_line
+		(start -11 6.868629)
+		(end -11 2.4)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(layer "F.Paste")
+		(uuid "373279d8-3fdb-4e48-8b26-4093042125b2")
+	)
+	(fp_line
+		(start -10.999999 -6.899999)
+		(end -10.999999 -2.43137)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(layer "F.Paste")
+		(uuid "0f734a90-e5dd-4bb1-a7ca-d1fe0dcf6d6e")
+	)
+	(fp_line
+		(start -9.4 8.468629)
+		(end -2.6 8.468629)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(layer "F.Paste")
+		(uuid "60f2f83a-4222-4626-865f-ab58ef2f6d76")
+	)
+	(fp_line
+		(start -9.399999 -8.499999)
+		(end -2.599999 -8.499999)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(layer "F.Paste")
+		(uuid "bc49fbb0-bc47-45ff-a632-49a43baa245a")
+	)
+	(fp_line
+		(start -1.125 -8.5)
+		(end 1.125 -8.5)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(layer "F.Paste")
+		(uuid "d945f0a5-3f82-4006-8c41-8af7a86b74b9")
+	)
+	(fp_line
+		(start -1.125 8.4)
+		(end 1.125 8.4)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(layer "F.Paste")
+		(uuid "e5b42906-1350-4210-8a51-bcba5171238a")
+	)
+	(fp_line
+		(start 9.4 -8.5)
+		(end 2.6 -8.5)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(layer "F.Paste")
+		(uuid "f18751ab-7639-4e65-aff7-95a8063d4bdc")
+	)
+	(fp_line
+		(start 9.4 8.468629)
+		(end 2.6 8.468629)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(layer "F.Paste")
+		(uuid "79cff1db-ac84-43b6-81a1-f3065d2f0b6c")
+	)
+	(fp_line
+		(start 11 -6.9)
+		(end 11 -2.431371)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(layer "F.Paste")
+		(uuid "42ce419e-b650-4aba-b534-651f7e65e82b")
+	)
+	(fp_line
+		(start 11 -1.125)
+		(end 11 1.125)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(layer "F.Paste")
+		(uuid "1c081ace-f48b-4b77-8a5a-ce0ccb6042d7")
+	)
+	(fp_line
+		(start 11 6.868629)
+		(end 11 2.4)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(layer "F.Paste")
+		(uuid "db9e7aa2-631b-47a6-8a5a-edbbf8738349")
+	)
+	(fp_arc
+		(start -10.999999 -6.899999)
+		(mid -10.53137 -8.03137)
+		(end -9.399999 -8.499999)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(layer "F.Paste")
+		(uuid "fc42da74-462c-4a0d-aa30-9bb6929b9aee")
+	)
+	(fp_arc
+		(start -9.4 8.468629)
+		(mid -10.531371 8)
+		(end -11 6.868629)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(layer "F.Paste")
+		(uuid "de9afbc7-bfe2-462e-a3d1-346732c0ef4f")
+	)
+	(fp_arc
+		(start 9.4 -8.5)
+		(mid 10.531371 -8.031371)
+		(end 11 -6.9)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(layer "F.Paste")
+		(uuid "a4cde7fa-1098-42fe-aae5-503b4ac84bdf")
+	)
+	(fp_arc
+		(start 11 6.868629)
+		(mid 10.531371 8)
+		(end 9.4 8.468629)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(layer "F.Paste")
+		(uuid "33606c8b-3c24-42c4-ad96-057e91738113")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 4.35 12.925 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "afe6b420-cb8d-4c44-8089-305139aa2f8b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd custom
+		(at -8.2875 8.4875)
+		(size 1 1)
+		(layers "F.Cu" "F.Mask")
+		(solder_paste_margin -0.5)
+		(zone_connect 0)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_line
+				(start 17.775 0)
+				(end -1.225 0)
+				(width 1.5)
+			)
+			(gr_arc
+				(start -1.225 0)
+				(mid -2.28566 -0.43934)
+				(end -2.725 -1.5)
+				(width 1.5)
+			)
+			(gr_line
+				(start -2.725 -1.5)
+				(end -2.725 -15.5)
+				(width 1.5)
+			)
+			(gr_arc
+				(start -2.725 -15.5)
+				(mid -2.28566 -16.56066)
+				(end -1.225 -17)
+				(width 1.5)
+			)
+			(gr_line
+				(start -1.225 -17)
+				(end 17.775 -17)
+				(width 1.5)
+			)
+			(gr_arc
+				(start 19.275 -1.5)
+				(mid 18.83566 -0.43934)
+				(end 17.775 0)
+				(width 1.5)
+			)
+			(gr_line
+				(start 19.275 -15.5)
+				(end 19.275 -1.5)
+				(width 1.5)
+			)
+			(gr_arc
+				(start 17.775 -17)
+				(mid 18.83566 -16.56066)
+				(end 19.275 -15.5)
+				(width 1.5)
+			)
+		)
+		(uuid "8a7db7b1-ecfd-4ad6-b400-de7e9ad4f1d3")
+	)
+	(model "${KIPRJMOD}/3dmodels/STP_3670223 (rev1).stp"
+		(offset
+			(xyz 0 0 5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 90)
+		)
+	)
+)

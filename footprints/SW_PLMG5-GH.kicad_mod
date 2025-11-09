@@ -1,0 +1,478 @@
+(footprint "SW_PLMG5-GH"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "SW301"
+		(at -8.5 -6.9 180)
+		(layer "F.SilkS")
+		(uuid "e4f81a56-eb0b-42a1-9cff-e6a8058a6352")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.18)
+			)
+		)
+	)
+	(property "Value" "~"
+		(at 0.25 -12.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "fbad7b2d-303e-4f2d-95a2-4f4aff35aedb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "_projectlib:SW_PLMG5-GH"
+		(at 0 -10.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d95a48fc-f149-42db-beb6-9773454a6150")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "http://dip.com.tw/en/en-product-information/en-switch007/item/download/2702_e840ad8c3e54818ff175160e92dea819"
+		(at 0 -10.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9d0d0ff4-e401-418e-a4b2-dbe41843bfa8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "SMT Multidirectionele schakelaars Push & Lever(11.3*9.3)"
+		(at 0 -10.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b5c14e7b-6048-46e9-bbcb-3646ec36365f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MF" "Diptronics"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "642ec10a-3b34-4da5-93bf-9526b4c2eac6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MP" "PLMG5-GH-V-T/R "
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0987de6c-157f-48b0-b144-f3253700ab81")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "1.33"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0744257a-6cad-47d3-b927-93f5f7fb9dcd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part number" "113-PLMG5GHVTR "
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6fd3e0c8-b9b4-4940-accb-cd9b70cc39d9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/3z5hxkB"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b9e9850f-8595-4c67-bf70-9a10cbc61711")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Description" "Multi-Directional Switches Push & Lever(11.3*9.3)"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e4973aa7-e069-436c-8e45-6c1a25ab28bf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -6.701179 -4.552009)
+		(end -7.109192 -4.824095)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "7cd8d587-6d51-4883-acc9-45adb85662d7")
+	)
+	(fp_line
+		(start -6.5 -2.3)
+		(end -6.5 -3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "233273eb-3342-4674-8d96-e9762419df7e")
+	)
+	(fp_line
+		(start -6.5 0.8)
+		(end -6.5 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "73349fdf-298a-454a-8c9c-cb83cc770838")
+	)
+	(fp_line
+		(start -4.5 0.8)
+		(end -6.5 0.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "82c3df0e-9cb1-4723-b724-7a3859363fa6")
+	)
+	(fp_line
+		(start -1.25 -9.5)
+		(end -1.25 -8.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "77b5fa94-521b-4684-b0cf-adb4ca17bed7")
+	)
+	(fp_line
+		(start -1.25 -9.5)
+		(end 1.25 -9.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "c91e2329-f060-4dfb-aad1-043db424c9bb")
+	)
+	(fp_line
+		(start -0.5 -7.118252)
+		(end -0.5 -8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "b0341473-8539-4ae5-855f-d9ef5708085d")
+	)
+	(fp_line
+		(start 0.5 -7.118252)
+		(end 0.5 -8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "70ca52d5-6b0e-42a1-a59e-e8c1dbe4efdc")
+	)
+	(fp_line
+		(start 1.25 -9.5)
+		(end 1.25 -8.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "fb5ab072-2534-49e0-8544-b9afdcf36f1a")
+	)
+	(fp_line
+		(start 6.5 -2.3)
+		(end 6.5 -3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "82aa3900-4104-45bb-9f63-1f0beb23fc1b")
+	)
+	(fp_line
+		(start 6.5 0.8)
+		(end 4.5 0.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "5e053310-0d58-41af-a9ef-083405df080d")
+	)
+	(fp_line
+		(start 6.5 0.8)
+		(end 6.5 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "08fb58b0-ed76-4b00-b318-42030d6596b6")
+	)
+	(fp_line
+		(start 6.701179 -4.552009)
+		(end 7.109192 -4.824095)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "cbd16fa2-d9ec-4527-a782-794367e65023")
+	)
+	(fp_arc
+		(start -7.109192 -4.824095)
+		(mid -4.565862 -7.277734)
+		(end -1.25 -8.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "d954d0e8-d97b-4d21-b05f-8d6f9aad0a49")
+	)
+	(fp_arc
+		(start -6.701179 -4.552009)
+		(mid -4.018104 -7.026901)
+		(end -0.5 -8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "2973dbfd-0dd8-4ae8-893a-e2c03e9c63e2")
+	)
+	(fp_arc
+		(start -6.5 -3)
+		(mid -6.202323 -3.789479)
+		(end -5.809178 -4.536021)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "87ffbf27-7a5d-4643-b5ad-0642c66ab88e")
+	)
+	(fp_arc
+		(start -4.25 -5.749999)
+		(mid -2.237353 -6.791115)
+		(end 0 -7.150174)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "4cd15ad6-ca8b-44ec-9083-ba965a8eeea8")
+	)
+	(fp_arc
+		(start 0 -7.150174)
+		(mid 2.237353 -6.791115)
+		(end 4.25 -5.749999)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "d9a4a7fb-0531-4af4-bedf-9d5ef7bf3736")
+	)
+	(fp_arc
+		(start 0.5 -8)
+		(mid 4.018104 -7.026901)
+		(end 6.701179 -4.552009)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "1f2c898e-cd2f-46ec-a9d5-13431614418b")
+	)
+	(fp_arc
+		(start 1.25 -8.5)
+		(mid 4.565862 -7.277734)
+		(end 7.109192 -4.824095)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "5d8cbd85-47a2-4631-a83a-f740cc109acc")
+	)
+	(fp_arc
+		(start 5.809178 -4.536021)
+		(mid 6.202324 -3.789479)
+		(end 6.5 -3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "4dfd0dd6-f055-4da8-a965-4ded8b0b7f29")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.5 -13 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "2f074801-feba-4d87-8bab-50947d612583")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" thru_hole oval
+		(at -5 -5 225)
+		(size 1.6 1.1)
+		(drill oval 1.1 0.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "df382937-ce56-4d80-afbf-ba82df53e075")
+	)
+	(pad "" np_thru_hole circle
+		(at -4.5 -2.9)
+		(size 1.1 1.1)
+		(drill 1.1)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "b2f8d61c-cb7b-423e-91d2-0d95a2e27af2")
+	)
+	(pad "" np_thru_hole circle
+		(at 4.5 -2.9)
+		(size 1.1 1.1)
+		(drill 1.1)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "ce1c2962-afca-49da-982b-1b419f0fbd18")
+	)
+	(pad "" thru_hole oval
+		(at 5 -5 135)
+		(size 1.6 1.1)
+		(drill oval 1.1 0.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "73bf9c81-e839-4b4b-9db2-065c101d3246")
+	)
+	(pad "1" smd rect
+		(at -3.75 0.8)
+		(size 0.8 1.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "431baad6-8f26-44c8-9808-c8be2428aea8")
+	)
+	(pad "2" smd rect
+		(at -2.25 0.8)
+		(size 0.8 1.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "0a9269f7-c161-4fcf-b602-cc410b0055f6")
+	)
+	(pad "3" smd rect
+		(at 2.25 0.8)
+		(size 0.8 1.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "331652f7-d922-4dcf-9ca6-9d1ae35b3f28")
+	)
+	(pad "4" smd rect
+		(at 3.75 0.8)
+		(size 0.8 1.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "fd6599db-14f0-4140-ac66-57e68ac863c2")
+	)
+	(pad "5" smd rect
+		(at -0.75 0.8)
+		(size 0.8 1.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "25fd3352-9ea2-4463-8c90-502d3c321605")
+	)
+	(pad "6" smd rect
+		(at 0.75 0.8)
+		(size 0.8 1.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "35aed494-3e78-4f10-b0e0-ce562aa05500")
+	)
+	(pad "7" smd rect
+		(at -6 -1.15)
+		(size 1.3 2.1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "ae6fcf27-e621-4650-a87e-4a0aa3374ce4")
+	)
+	(pad "7" smd rect
+		(at -4.85 0.35)
+		(size 0.7 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "85f3742a-246e-412a-869a-6b1a4943854b")
+	)
+	(pad "7" smd rect
+		(at 4.85 0.35)
+		(size 0.7 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "6a1274fd-d8de-4571-bd08-ce9260c86a62")
+	)
+	(pad "7" smd rect
+		(at 6 -1.15)
+		(size 1.3 2.1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "a1df0ac1-1f70-4557-8ba7-ccb485f57824")
+	)
+	(model "${KIPRJMOD}/3dmodels/PLMG5-H.STEP"
+		(offset
+			(xyz 0 1.85 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

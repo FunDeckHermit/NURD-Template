@@ -1,0 +1,406 @@
+(footprint "DIP-4_W8.70mm_LF1"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "4-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), SMDSocket, SmallPads")
+	(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil SMDSocket SmallPads")
+	(property "Reference" "U801"
+		(at 0 -3.6 0)
+		(layer "F.SilkS")
+		(uuid "2c7ea18d-1541-4f4d-91df-f9e12107c063")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TLP241A(TP1,F "
+		(at 0 3.6 0)
+		(layer "F.Fab")
+		(uuid "effe6385-a78c-4375-8767-34140f978f11")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "Package_DIP:DIP-4_W7.62mm_SMDSocket_SmallPads"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "956b19ff-60e2-42aa-b66a-4b3798a63f6b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://toshiba.semicon-storage.com/info/docget.jsp?did=17036&prodName=TLP222A"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ba88df9d-fcb0-49cb-bca5-03b1f6f8b7b6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "MOSFET Photorelay 1-Form-A, Voff 60V, Ion 0,5A, DIP4"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "56a16485-0068-4084-aa7e-9d1018164cf1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MF" "Toshiba"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aa14ba44-a895-49ee-89d4-a18194d5bf4d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MP" "TLP241A(TP1,F"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b6625880-981b-450d-870f-072b774263da")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part number" "757-TLP241ATP1F "
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "20e6b693-cc2a-4a20-83c9-ec82bb335e7c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/3MxAjo4"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c3cdcd76-4ab4-49a5-b134-03f5dacc36f4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Price @100" "0.865"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b3730c99-eadf-475a-a4b6-6a88413720ed")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Description" "MOSFET Output Optocouplers Photo-IC 3mA 40V 5000Vrms"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a900e258-a73c-4c07-a584-9a21bd2229f7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.65 -2.6)
+		(end -2.65 2.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ec505283-6fb5-4c1b-ab63-c7e09385eaae")
+	)
+	(fp_line
+		(start -2.65 2.6)
+		(end 2.65 2.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3b353ee3-add1-4eba-8981-b25c41339a07")
+	)
+	(fp_line
+		(start -1.5 2.6)
+		(end -1.5 -2.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2fc8219f-fedc-497a-b9e4-d4b5e5ee3b94")
+	)
+	(fp_line
+		(start -1 -2.6)
+		(end -2.65 -2.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6a8325e3-c95d-4a0f-a11a-3b1900a3a83b")
+	)
+	(fp_line
+		(start 2.65 -2.6)
+		(end 1 -2.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ec42b775-b046-4cce-b0a1-de05a62d7966")
+	)
+	(fp_line
+		(start 2.65 2.6)
+		(end 2.65 -2.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a091ffb4-7f1a-4e11-b75f-f47608ef8130")
+	)
+	(fp_arc
+		(start 1 -2.6)
+		(mid 0 -1.6)
+		(end -1 -2.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "53e15852-9716-4127-9d33-0b5a40da94ea")
+	)
+	(fp_circle
+		(center -4.5 -2.6)
+		(end -4.217157 -2.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "7e797cef-6f7b-4287-8ca7-cec0b0bad98f")
+	)
+	(fp_line
+		(start -5.35 -2.85)
+		(end -5.35 2.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5efd876e-a569-4b58-8cb4-051887530c10")
+	)
+	(fp_line
+		(start -5.35 2.85)
+		(end 5.35 2.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "6be9e5b9-2a3c-42d4-a0f1-1491164c3b2a")
+	)
+	(fp_line
+		(start 5.35 -2.85)
+		(end -5.35 -2.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8e30959f-1dcc-48e7-8d81-c26a14dc65b6")
+	)
+	(fp_line
+		(start 5.35 2.85)
+		(end 5.35 -2.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "13ada386-8d1d-450e-a3e3-6bbbb2b4e042")
+	)
+	(fp_line
+		(start -5.08 -2.6)
+		(end -5.08 2.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5fa44270-a15e-4910-9ead-d1f125963b9b")
+	)
+	(fp_line
+		(start -5.08 2.6)
+		(end 5.08 2.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b0f62f43-5dd6-443a-b19f-14271f460964")
+	)
+	(fp_line
+		(start -3.175 -1.54)
+		(end -2.175 -2.54)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0725c3f0-0f44-465f-9ec4-fe6a616581e2")
+	)
+	(fp_line
+		(start -3.175 2.54)
+		(end -3.175 -1.54)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "14228339-9418-47ac-9ded-417f194f48e9")
+	)
+	(fp_line
+		(start -2.175 -2.54)
+		(end 3.175 -2.54)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "67aed8bb-b7de-4964-8515-a0b67db7a123")
+	)
+	(fp_line
+		(start 3.175 -2.54)
+		(end 3.175 2.54)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "12b619ea-3fbc-495b-8fdb-b9a06377fe92")
+	)
+	(fp_line
+		(start 3.175 2.54)
+		(end -3.175 2.54)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d800e31a-6ead-4414-bf97-f1587a3ba152")
+	)
+	(fp_line
+		(start 5.08 -2.6)
+		(end -5.08 -2.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "820ff567-662e-413b-85d1-088f2b7bcf99")
+	)
+	(fp_line
+		(start 5.08 2.6)
+		(end 5.08 -2.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4824b830-13f9-46f0-8898-d08ab5659888")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "d13e812e-1d64-470e-a4c7-6fa616b53443")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -4.35 -1.27)
+		(size 1.6 1.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "ea4a745e-7c9f-4bb6-b343-109277c06544")
+	)
+	(pad "2" smd rect
+		(at -4.35 1.27)
+		(size 1.6 1.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "0305a9bd-f3d5-4695-abbc-ab1b5f4f006b")
+	)
+	(pad "3" smd rect
+		(at 4.35 1.27)
+		(size 1.6 1.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "c62221c4-1a33-4f36-8819-adf0d941d5a8")
+	)
+	(pad "4" smd rect
+		(at 4.35 -1.27)
+		(size 1.6 1.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "ffc50bce-5f07-4a4e-98ab-3b466ab15a5c")
+	)
+	(model "${KIPRJMOD}/3dmodels/DIP4(LF1).STEP"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 90)
+		)
+	)
+)

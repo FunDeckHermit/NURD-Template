@@ -1,0 +1,103 @@
+name: Publish PCM repository.json
+
+on:
+  workflow_run:
+    workflows: ["Release (bump version, zip, publish)"]  # Must match the 'name:' inside release.yml
+    types: [completed]
+
+jobs:
+  publish:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Needed to push to gh-pages
+
+    steps:
+      - name: Checkout default branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Prepare gh-pages worktree
+        run: |
+          git fetch origin gh-pages || true
+          if git show-ref --verify --quiet refs/heads/gh-pages; then
+            git worktree add gh-pages gh-pages
+          else
+            mkdir gh-pages
+            ( cd gh-pages && git init && git remote add origin "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY" && git checkout -b gh-pages )
+          fi
+
+      - name: Get latest release asset info (ZIP)
+        id: rel
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api repos/${{ github.repository }}/releases/latest > latest.json
+          ASSET_NAME=$(jq -r '.assets[] | select(.name | endswith(".zip")) | .name' latest.json | head -n1)
+          ASSET_URL=$(jq -r ".assets[] | select(.name==\"$ASSET_NAME\") | .browser_download_url" latest.json)
+          TAG=$(jq -r '.tag_name' latest.json)
+          echo "name=$ASSET_NAME" >> $GITHUB_OUTPUT
+          echo "url=$ASSET_URL" >> $GITHUB_OUTPUT
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+
+      - name: Download ZIP & compute checksum
+        id: zip
+        run: |
+          curl -L -o "${{ steps.rel.outputs.name }}" "${{ steps.rel.outputs.url }}"
+          SHA=$(sha256sum "${{ steps.rel.outputs.name }}" | awk '{print $1}')
+          DL_SIZE=$(stat -c%s "${{ steps.rel.outputs.name }}")
+          mkdir pkg && unzip -q "${{ steps.rel.outputs.name }}" -d pkg
+          INST_SIZE=$(du -sb pkg | awk '{print $1}')
+          echo "sha=$SHA" >> $GITHUB_OUTPUT
+          echo "dl_size=$DL_SIZE" >> $GITHUB_OUTPUT
+          echo "inst_size=$INST_SIZE" >> $GITHUB_OUTPUT
+
+      - name: Write repository.json
+        run: |
+          VERSION="${{ steps.rel.outputs.tag#v }}"
+          cat > gh-pages/repository.json <<JSON
+{
+  "\$schema": "https://go.kicad.org/pcm/schemas/v1",
+  "repositories": [
+    {
+      "name": "NURD Library Repo",
+      "description": "Repository for NURD KiCad symbols, footprints, and 3D models.",
+      "packages": [
+        {
+          "identifier": "com.github.fundeckhermit.nurd-template",
+          "name": "NURD Symbol Library",
+          "type": "library",
+          "releases": [
+            {
+              "version": "${VERSION}",
+              "download_url": "${{ steps.rel.outputs.url }}",
+              "download_sha256": "${{ steps.zip.outputs.sha }}",
+              "download_size": ${{
+                steps.zip.outputs.dl_size
+              }},
+              "install_size": ${{
+                steps.zip.outputs.inst_size
+              }}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+JSON
+
+      - name: Commit & push repository.json to gh-pages
+        run: |
+          cd gh-pages
+          git add repository.json
+          if ! git diff --cached --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git commit -m "Update repository.json for ${{ steps.rel.outputs.tag }}"
+            git push origin gh-pages
+          else
+            echo "No changes to commit."
+          fi
+

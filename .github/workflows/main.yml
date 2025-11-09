@@ -1,0 +1,114 @@
+name: Release (bump version, zip, publish)
+
+on:
+  workflow_dispatch:
+    inputs:
+      bump:
+        description: "Version bump type"
+        type: choice
+        default: patch
+        options:
+          - patch
+          - minor
+          - major
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # needed to push commit/tag & create release
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify metadata.json exists
+        run: |
+          if [ ! -f "metadata.json" ]; then
+            echo "metadata.json not found at repo root"; exit 1
+          fi
+
+      - name: Read current version
+        id: cur
+        run: |
+          CUR=$(jq -r '.versions[0].version' metadata.json)
+          echo "current=$CUR" >> $GITHUB_OUTPUT
+
+      - name: Compute next version
+        id: next
+        env:
+          CUR: ${{ steps.cur.outputs.current }}
+          BUMP: ${{ github.event.inputs.bump }}
+        run: |
+          python3 - << 'PY'
+import os
+cur = os.environ["CUR"].strip()
+bump = os.environ["BUMP"].strip()
+maj, minr, pat = (int(x) for x in cur.split("."))
+if bump == "major":
+    maj, minr, pat = maj+1, 0, 0
+elif bump == "minor":
+    minr, pat = minr+1, 0
+else:
+    pat += 1
+print(f"version={maj}.{minr}.{pat}")
+PY
+          >> $GITHUB_OUTPUT
+
+      - name: Update metadata.json with new version
+        env:
+          NEWVER: ${{ steps.next.outputs.version }}
+        run: |
+          tmp=$(mktemp)
+          jq --arg v "$NEWVER" '.versions[0].version = $v' metadata.json > "$tmp"
+          mv "$tmp" metadata.json
+          echo "Updated version to $NEWVER"
+
+      - name: Git commit & tag
+        env:
+          NEWVER: ${{ steps.next.outputs.version }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add metadata.json
+          git commit -m "chore(release): v$NEWVER"
+          git tag "v$NEWVER"
+          git push --follow-tags
+
+      - name: Build ZIP package
+        id: zip
+        env:
+          NEWVER: ${{ steps.next.outputs.version }}
+        run: |
+          NAME="nurd-template-$NEWVER.zip"
+          # Collect only existing payload paths so zip root contains metadata.json
+          paths=(metadata.json README.md symbols footprints 3dmodels resources)
+          inc=()
+          for p in "${paths[@]}"; do [ -e "$p" ] && inc+=("$p"); done
+          if [ ${#inc[@]} -eq 0 ]; then
+            echo "Nothing to package (no symbols/footprints/3dmodels/resources/README.md)"; exit 1
+          fi
+          zip -r "$NAME" "${inc[@]}"
+          echo "name=$NAME" >> $GITHUB_OUTPUT
+
+      - name: Compute SHA256
+        id: sha
+        run: |
+          SHASUM=$(sha256sum "${{ steps.zip.outputs.name }}" | awk '{print $1}')
+          echo "sha256=$SHASUM" >> $GITHUB_OUTPUT
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.next.outputs.version }}
+          name: v${{ steps.next.outputs.version }}
+          body: |
+            **Automated release** for NURD Template.
+
+            - Version: v${{ steps.next.outputs.version }}
+            - SHA256 (zip): `${{ steps.sha.outputs.sha256 }}`
+
+            This package contains `metadata.json` at the archive root for PCM.
+          files: |
+            ${{ steps.zip.outputs.name }}

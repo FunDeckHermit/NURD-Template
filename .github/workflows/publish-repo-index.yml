@@ -2,7 +2,7 @@ name: Publish PCM repository index
 
 on:
   workflow_run:
-    workflows: ["Release (bump version, zip, publish)"]  # adjust if your release workflow has a different name
+    workflows: ["Release (bump version, zip, publish)"]  # adjust if your release workflow's name differs
     types: [completed]
 
 jobs:
@@ -13,10 +13,8 @@ jobs:
       contents: write
 
     env:
-      # Limit how many releases we package (avoid huge downloads)
       MAX_RELEASES: "10"
-      # Defaults for version templating
-      STATUS: "stable"
+      STATUS: "testing"
       KICAD_VERSION: "7.0"
 
     steps:
@@ -35,23 +33,30 @@ jobs:
             ( cd gh-pages && git init && git remote add origin "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY" && git checkout -b gh-pages )
           fi
 
-      - name: Verify templates exist
+      - name: Verify templates and icon exist
         run: |
           test -f .pcm/repository.template.json || { echo "Missing .pcm/repository.template.json"; exit 1; }
-          test -f .pcm/packages.template.json || { echo "Missing .pcm/packages.template.json"; exit 1; }
-          test -f .pcm/version.template.json || { echo "Missing .pcm/version.template.json"; exit 1; }
+          test -f .pcm/packages.template.json   || { echo "Missing .pcm/packages.template.json"; exit 1; }
+          test -f .pcm/version.template.json    || { echo "Missing .pcm/version.template.json"; exit 1; }
+          test -f .pcm/icon.png                 || { echo "Missing .pcm/icon.png"; exit 1; }
 
       - name: Install deps (jq, envsubst)
         run: |
           sudo apt-get update
           sudo apt-get install -y jq gettext-base
 
+      - name: Publish icon to gh-pages
+        id: icon
+        run: |
+          cp .pcm/icon.png gh-pages/icon.png
+          ICON_URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/icon.png"
+          echo "url=$ICON_URL" >> $GITHUB_OUTPUT
+
       - name: Fetch all releases (JSON)
         id: rels
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Paginate through all releases
           gh api repos/${{ github.repository }}/releases --paginate > releases.json
           jq 'length' releases.json
 
@@ -63,18 +68,15 @@ jobs:
         run: |
           rm -f versions.json
           echo '[]' > versions.json
-          # Collect the first MAX_RELEASES zip assets across releases (newest first)
           jq -r '.[] | .tag_name as $tag | .assets[] | select(.name|endswith(".zip")) | [$tag, .browser_download_url, (.size // 0)] | @tsv' releases.json \
             | head -n "${MAX_RELEASES}" > rows.tsv
 
-          # For each asset: download zip, compute sha and install size, fill version template, append to versions.json
           while IFS=$'\t' read -r TAG URL ASIZE; do
             VER="${TAG#v}"
             echo "Processing $VER -> $URL"
-
             curl -L -o pkg.zip "$URL"
             SHA=$(sha256sum pkg.zip | awk '{print $1}')
-            DL_SIZE=$(stat -c%s pkg.zip)   # prefer actual download size over ASIZE
+            DL_SIZE=$(stat -c%s pkg.zip)
             mkdir -p pkg && unzip -q pkg.zip -d pkg
             INST_SIZE=$(du -sb pkg | awk '{print $1}')
             rm -rf pkg pkg.zip
@@ -82,7 +84,6 @@ jobs:
             export VERSION="$VER" DOWNLOAD_URL="$URL" DOWNLOAD_SHA256="$SHA" DOWNLOAD_SIZE="$DL_SIZE" INSTALL_SIZE="$INST_SIZE"
             export STATUS KICAD_VERSION
 
-            # Fill one version entry and append to versions.json array
             envsubst < .pcm/version.template.json > one.json
             jq -s '.[0] + [.[1]]' versions.json one.json > tmp.json && mv tmp.json versions.json
           done < rows.tsv
@@ -90,16 +91,15 @@ jobs:
           echo "Built versions.json:"
           cat versions.json
 
-      - name: Render packages.json (inject versions array)
+      - name: Render packages.json (inject versions + icon URL)
         env:
           SCHEMAKEY: schema
+          ICON_URL: ${{ steps.icon.outputs.url }}
         run: |
-          # First envsubst for $schema key
+          export SCHEMAKEY ICON_URL
           envsubst < .pcm/packages.template.json > gh-pages/packages.json
-          # Inject versions array
           jq --slurpfile V versions.json '.packages[0].versions = $V[0]' gh-pages/packages.json > gh-pages/packages.json.tmp
           mv gh-pages/packages.json.tmp gh-pages/packages.json
-          # Validate
           jq . gh-pages/packages.json > /dev/null
 
       - name: Compute packages.json sha and timestamps
@@ -120,17 +120,18 @@ jobs:
           PACKAGES_UPDATE_TS: ${{ steps.pkgmeta.outputs.ts }}
           PACKAGES_UPDATE_UTC: ${{ steps.pkgmeta.outputs.ts_utc }}
         run: |
+          export SCHEMAKEY PACKAGES_URL PACKAGES_SHA256 PACKAGES_UPDATE_TS PACKAGES_UPDATE_UTC
           envsubst < .pcm/repository.template.json > gh-pages/repository.json
           jq . gh-pages/repository.json > /dev/null
 
-      - name: Commit & push repository.json + packages.json to gh-pages
+      - name: Commit & push repository.json, packages.json, and icon
         run: |
           cd gh-pages
-          git add repository.json packages.json
+          git add repository.json packages.json icon.png
           if ! git diff --cached --quiet; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git commit -m "Publish PCM index (multi-release)"
+            git commit -m "Publish PCM index (multi-release) with icon"
             git push origin gh-pages
           else
             echo "No changes to commit."

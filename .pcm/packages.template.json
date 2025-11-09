@@ -15,10 +15,10 @@
       },
       "license": "MIT",
       "resources": {
-        "repository": "https://github.com/FunDeckHermit/NURD-Template"
+        "repository": "https://github.com/FunDeckHermit/NURD-Template",
+        "icon": "$ICON_URL"
       },
       "versions": []
     }
   ]
 }
-

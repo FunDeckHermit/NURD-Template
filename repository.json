@@ -1,5 +1,5 @@
 {
-  "$": "https://go.kicad.org/pcm/schemas/v1",
+  "$schema": "https://go.kicad.org/pcm/schemas/v1",
   "repositories": [
     {
       "name": "NURD Library Repo",
@@ -11,9 +11,9 @@
           "type": "library",
           "releases": [
             {
-              "version": "0.1.6",
-              "download_url": "https://github.com/FunDeckHermit/NURD-Template/releases/download/v0.1.6/nurd-template-0.1.6.zip",
-              "download_sha256": "4afad0217cac655ceb172b496f18dbba8cf9e026e6d9a70f2e22fd41984f3fb0",
+              "version": "0.1.7",
+              "download_url": "https://github.com/FunDeckHermit/NURD-Template/releases/download/v0.1.7/nurd-template-0.1.7.zip",
+              "download_sha256": "95d499f3f59d64e5a726a4b523664e998f94224b5a357c4ff7bf9965764686e3",
               "download_size": 20838391,
               "install_size": 123097687
             }

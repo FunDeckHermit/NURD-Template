@@ -42,14 +42,14 @@ jobs:
         run: |
           node -e "
             const fs = require('fs');
-            const m = JSON.parse(fs.readFileSync('metadata.json','utf8'));
-            let [M,m,p] = (m.versions?.[0]?.version || '0.0.0').split('.').map(Number);
-            const b = process.env.BUMP || 'patch';
-            if (b==='major') { M++; m=0; p=0; }
-            else if (b==='minor') { m++; p=0; }
-            else { p++; }
-            console.log(`version=${M}.${m}.${p}`);"
-          >> $GITHUB_OUTPUT
+            const meta = JSON.parse(fs.readFileSync('metadata.json', 'utf8'));
+            let [maj, min, pat] = (meta.versions?.[0]?.version || '0.0.0').split('.').map(Number);
+            const bump = process.env.BUMP || 'patch';
+            if (bump === 'major') { maj++; min = 0; pat = 0; }
+            else if (bump === 'minor') { min++; pat = 0; }
+            else { pat++; }
+            console.log(`version=${maj}.${min}.${pat}`);
+          " >> $GITHUB_OUTPUT
 
       - name: Update metadata.json with new version
         env:

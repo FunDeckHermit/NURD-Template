@@ -41,20 +41,9 @@ jobs:
           CUR: ${{ steps.cur.outputs.current }}
           BUMP: ${{ github.event.inputs.bump }}
         run: |
-          python3 - << 'PY'
-import os
-cur = os.environ["CUR"].strip()
-bump = os.environ["BUMP"].strip()
-maj, minr, pat = (int(x) for x in cur.split("."))
-if bump == "major":
-    maj, minr, pat = maj+1, 0, 0
-elif bump == "minor":
-    minr, pat = minr+1, 0
-else:
-    pat += 1
-print(f"version={maj}.{minr}.{pat}")
-PY
-          >> $GITHUB_OUTPUT
+          IFS=. read -r M m p <<<"$CUR"
+          [[ $BUMP == major ]] && ((M++,m=0,p=0)) || [[ $BUMP == minor ]] && ((m++,p=0)) || ((p++))
+          echo "version=$M.$m.$p" >> $GITHUB_OUTPUT
 
       - name: Update metadata.json with new version
         env:

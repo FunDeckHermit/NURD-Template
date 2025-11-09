@@ -41,9 +41,16 @@ jobs:
           CUR: ${{ steps.cur.outputs.current }}
           BUMP: ${{ github.event.inputs.bump }}
         run: |
-          IFS=. read -r M m p <<<"$CUR"
-          [[ $BUMP == major ]] && ((M++,m=0,p=0)) || [[ $BUMP == minor ]] && ((m++,p=0)) || ((p++))
-          echo "version=$M.$m.$p" >> $GITHUB_OUTPUT
+          IFS=. read -r M m p <<<"${CUR:-0.0.0}"
+          M=${M:-0}
+          m=${m:-0}
+          p=${p:-0} 
+          case "$BUMP" in
+            major) ((M++, m=0, p=0)) ;;
+            minor) ((m++, p=0)) ;;
+            patch|*) ((p++)) ;;
+          esac
+          echo "version=$M.$m.$p" >> "$GITHUB_OUTPUT"
 
       - name: Update metadata.json with new version
         env:

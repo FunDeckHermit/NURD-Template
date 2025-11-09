@@ -2,7 +2,7 @@ name: Publish PCM repository index
 
 on:
   workflow_run:
-    workflows: ["Release (bump version, zip, publish)"]  # adjust if your release workflow's name differs
+    workflows: ["Release (bump version, zip, publish)"]
     types: [completed]
 
 jobs:
@@ -13,7 +13,7 @@ jobs:
       contents: write
 
     env:
-      MAX_RELEASES: "10"
+      MAX_RELEASES: "5"
       STATUS: "testing"
       KICAD_VERSION: "7.0"
 
@@ -38,7 +38,7 @@ jobs:
           test -f .pcm/repository.template.json || { echo "Missing .pcm/repository.template.json"; exit 1; }
           test -f .pcm/packages.template.json   || { echo "Missing .pcm/packages.template.json"; exit 1; }
           test -f .pcm/version.template.json    || { echo "Missing .pcm/version.template.json"; exit 1; }
-          test -f .pcm/icon.png                 || { echo "Missing .pcm/icon.png"; exit 1; }
+          test -f resources/icon.png            || { echo "Missing /resources/icon.png"; exit 1; }
 
       - name: Install deps (jq, envsubst)
         run: |
@@ -48,7 +48,7 @@ jobs:
       - name: Publish icon to gh-pages
         id: icon
         run: |
-          cp .pcm/icon.png gh-pages/icon.png
+          cp resources/icon.png gh-pages/icon.png
           ICON_URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/icon.png"
           echo "url=$ICON_URL" >> $GITHUB_OUTPUT
 
@@ -87,9 +87,6 @@ jobs:
             envsubst < .pcm/version.template.json > one.json
             jq -s '.[0] + [.[1]]' versions.json one.json > tmp.json && mv tmp.json versions.json
           done < rows.tsv
-
-          echo "Built versions.json:"
-          cat versions.json
 
       - name: Render packages.json (inject versions + icon URL)
         env:

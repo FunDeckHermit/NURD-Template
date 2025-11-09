@@ -317,7 +317,7 @@
 		(remove_unused_layers no)
 		(uuid "82f36c96-98d0-4f24-b3eb-b696973c5652")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/USB4500-03-0-A_REVA1.step"
+	(model "${KIPRJMOD}/3dmodels/USB4500-03-0-A_REVA1.step"
 		(offset
 			(xyz -0.5 -3.1 0)
 		)

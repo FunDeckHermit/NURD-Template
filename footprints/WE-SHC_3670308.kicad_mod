@@ -391,7 +391,7 @@
 		)
 		(uuid "d21a9c18-b2c0-4b1c-9316-21c6964e4a54")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/STP_3670308 (rev1).stp"
+	(model "${KIPRJMOD}/3dmodels/STP_3670308 (rev1).stp"
 		(offset
 			(xyz 0 0 4.4)
 		)

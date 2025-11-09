@@ -1075,7 +1075,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "1cd246ef-0148-41a0-9ac8-744a2c9939ef")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/VL53L7 3D Model with cones.step"
+	(model "${KIPRJMOD}/3dmodels/VL53L7 3D Model with cones.step"
 		(offset
 			(xyz -0.5 0 0)
 		)

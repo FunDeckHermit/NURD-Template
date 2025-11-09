@@ -62,7 +62,7 @@
     (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd") (tstamp 1baa6c51-68d1-4819-b889-21e7ac668fec))
   (pad "1" smd rect (at -4.5 0) (size 2 3.5) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 013e9e54-9ec3-498e-a1f6-17e516f670b3))
   (pad "2" smd rect (at 4.5 0) (size 2 3.5) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp ccee3650-740c-4c49-93ef-83ff3ad9f94f))
-  (model "${KIPRJMOD}/Libraries/Part_3D_models/7447713015_WE-PD_1030P_STP_rev1.stp"
+  (model "${KIPRJMOD}/3dmodels/7447713015_WE-PD_1030P_STP_rev1.stp"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 -90))

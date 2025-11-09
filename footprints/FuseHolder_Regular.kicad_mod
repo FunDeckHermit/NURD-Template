@@ -148,7 +148,7 @@
 		(remove_unused_layers no)
 		(uuid "f86e8894-faf4-409b-9e49-094b00dd0e22")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/3522-2.step"
+	(model "${KIPRJMOD}/3dmodels/3522-2.step"
 		(offset
 			(xyz 0 0 0)
 		)
@@ -159,7 +159,7 @@
 			(xyz -90 0 0)
 		)
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/0287001.PXCN.stp"
+	(model "${KIPRJMOD}/3dmodels/0287001.PXCN.stp"
 		(offset
 			(xyz 0 -9 18)
 		)

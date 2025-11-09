@@ -464,7 +464,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "a1df0ac1-1f70-4557-8ba7-ccb485f57824")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/PLMG5-H.STEP"
+	(model "${KIPRJMOD}/3dmodels/PLMG5-H.STEP"
 		(offset
 			(xyz 0 1.85 0)
 		)

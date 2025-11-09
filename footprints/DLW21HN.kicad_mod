@@ -254,7 +254,7 @@
 		(thermal_bridge_angle 45)
 		(uuid "b368351e-08ad-4c19-81e1-3f8d1ce20ab2")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/DLW21HN900SQ2L--3DModel-STEP-1.STEP"
+	(model "${KIPRJMOD}/3dmodels/DLW21HN900SQ2L--3DModel-STEP-1.STEP"
 		(offset
 			(xyz 0 0 0)
 		)

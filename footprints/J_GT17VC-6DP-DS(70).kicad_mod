@@ -71,7 +71,7 @@
   (pad "6" thru_hole circle (at 2 2.5) (size 1.6 1.6) (drill 1) (layers "*.Cu" "*.Mask") (tstamp 9a90e2cc-70dc-45a3-8b3f-11cf685f7398))
   (pad "MP" thru_hole circle (at -4.425 0) (size 1.6 1.6) (drill 1) (layers "*.Cu" "*.Mask") (tstamp 9a77769a-da49-470b-8f29-48ff1f67b4e6))
   (pad "MP" thru_hole circle (at 4.425 0) (size 1.6 1.6) (drill 1) (layers "*.Cu" "*.Mask") (tstamp 8123e3c8-8df7-4dae-b323-a75aa1bc65c8))
-  (model "${KIPRJMOD}/Libraries/Part_3D_models/GT17VC-6DP-DS.stp"
+  (model "${KIPRJMOD}/3dmodels/GT17VC-6DP-DS.stp"
     (offset (xyz -1 5 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 180))

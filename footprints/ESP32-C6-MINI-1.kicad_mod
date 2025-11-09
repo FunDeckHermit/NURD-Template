@@ -802,7 +802,7 @@
 			)
 		)
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/ESP32-C6-MINI-1.STEP"
+	(model "${KIPRJMOD}/3dmodels/ESP32-C6-MINI-1.STEP"
 		(offset
 			(xyz -6.55 -8.3 0.5)
 		)

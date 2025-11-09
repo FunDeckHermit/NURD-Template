@@ -126,7 +126,7 @@
 		(layers "F&B.Cu" "*.Mask")
 		(uuid "f4095d89-ce61-4bb2-a2ec-3863ba44c90e")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/VLP_300_F 1.step"
+	(model "${KIPRJMOD}/3dmodels/VLP_300_F 1.step"
 		(offset
 			(xyz 2.35 -2.35 0)
 		)

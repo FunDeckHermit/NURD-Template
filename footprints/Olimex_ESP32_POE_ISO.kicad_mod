@@ -459,7 +459,7 @@
     (scale (xyz 1 1 1))
     (rotate (xyz 180 0 180))
   )
-  (model "${KIPRJMOD}/Libraries/Part_3D_models/ESP32-PoE-ISO_Rev_L.step"
+  (model "${KIPRJMOD}/3dmodels/ESP32-PoE-ISO_Rev_L.step"
     (offset (xyz 8.9 -109.6 3))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

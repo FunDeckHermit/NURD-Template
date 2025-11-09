@@ -329,7 +329,7 @@
 		(roundrect_rratio 0.25)
 		(uuid "82312dbd-9312-46af-8c47-3bf3cf696bbd")
 	)
-	(model "../Libraries/Part_3D_models/VSSOP20_DGS_TEX.step"
+	(model "../3dmodels/VSSOP20_DGS_TEX.step"
 		(offset
 			(xyz 0 0 0)
 		)

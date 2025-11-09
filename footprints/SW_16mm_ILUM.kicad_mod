@@ -226,7 +226,7 @@
 		(remove_unused_layers no)
 		(uuid "9d690cfd-1929-490b-9bbb-6aa90bf23016")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/Metal_Pushbutton_Green.STEP"
+	(model "${KIPRJMOD}/3dmodels/Metal_Pushbutton_Green.STEP"
 		(offset
 			(xyz 0 0 -29.5)
 		)

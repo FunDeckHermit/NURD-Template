@@ -73,7 +73,7 @@
     (solder_mask_margin 0.102) (tstamp c6c988aa-c4c9-4045-b39b-a345cda7f31a))
   (pad "12" thru_hole circle (at -6.35 3.81) (size 1.39 1.39) (drill 1.04) (layers "*.Cu" "*.Mask")
     (solder_mask_margin 0.102) (tstamp 12e92ee2-8b6b-46d0-9e59-3dcc90c99649))
-  (model "${KIPRJMOD}/Libraries/Part_3D_models/BSW-106-X-X-D.step"
+  (model "${KIPRJMOD}/3dmodels/BSW-106-X-X-D.step"
     (offset (xyz 0 0 8.9))
     (scale (xyz 1 1 1))
     (rotate (xyz 90 0 0))

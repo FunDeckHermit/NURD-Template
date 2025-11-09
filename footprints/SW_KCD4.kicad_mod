@@ -224,7 +224,7 @@
 		(remove_unused_layers no)
 		(uuid "57210401-d4aa-4950-94ce-d4e727c962c0")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/Rocker Switch 09.step"
+	(model "${KIPRJMOD}/3dmodels/Rocker Switch 09.step"
 		(offset
 			(xyz 2 23 0)
 		)

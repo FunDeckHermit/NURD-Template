@@ -434,7 +434,7 @@
   (pad "42" smd rect (at 0 23.9 90) (size 3.5 1.7) (drill (offset -0.9 0)) (layers "F.Cu" "F.Mask") (tstamp 3f1f3c34-07a6-42c2-adb5-9f08d0bcb5b6))
   (pad "43" thru_hole oval (at 2.54 23.9) (size 1.7 1.7) (drill 1.02) (layers "*.Cu" "*.Mask") (tstamp a41def7c-37ab-491c-8ac3-1644e5ac4301))
   (pad "43" smd rect (at 2.54 23.9 90) (size 3.5 1.7) (drill (offset -0.9 0)) (layers "F.Cu" "F.Mask") (tstamp c21a112d-c14a-43ce-8917-36f97bfb0d6a))
-  (model "${KIPRJMOD}/Libraries/Part_3D_models/Pico.wrl"
+  (model "${KIPRJMOD}/3dmodels/Pico.wrl"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

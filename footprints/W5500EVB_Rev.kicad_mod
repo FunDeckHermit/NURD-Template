@@ -458,7 +458,7 @@
 		(remove_unused_layers no)
 		(uuid "d95ef31c-3904-465f-ac07-89eebf0e2e74")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/W5500EVB.step"
+	(model "${KIPRJMOD}/3dmodels/W5500EVB.step"
 		(offset
 			(xyz -25.2 10.5 16.74)
 		)
@@ -469,7 +469,7 @@
 			(xyz 180 0 0)
 		)
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/61303211221 (rev1) 20 lang.stp"
+	(model "${KIPRJMOD}/3dmodels/61303211221 (rev1) 20 lang.stp"
 		(offset
 			(xyz 103 8.89 -8)
 		)
@@ -480,7 +480,7 @@
 			(xyz 0 0 0)
 		)
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/61303211221 (rev1) 20 lang.stp"
+	(model "${KIPRJMOD}/3dmodels/61303211221 (rev1) 20 lang.stp"
 		(offset
 			(xyz 103 -8.89 -8)
 		)

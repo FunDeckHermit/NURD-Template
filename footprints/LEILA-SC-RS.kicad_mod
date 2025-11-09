@@ -193,7 +193,7 @@
 			)
 		)
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/CP17587_LEILA-SC-RS_MechanicalModel.stp"
+	(model "${KIPRJMOD}/3dmodels/CP17587_LEILA-SC-RS_MechanicalModel.stp"
 		(opacity 0.8300)
 		(offset
 			(xyz 0 0 0)

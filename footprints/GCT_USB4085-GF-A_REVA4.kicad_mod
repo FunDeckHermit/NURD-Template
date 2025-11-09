@@ -608,7 +608,7 @@
 			)
 		)
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/USB4085-GF-A_REVA4.step"
+	(model "${KIPRJMOD}/3dmodels/USB4085-GF-A_REVA4.step"
 		(offset
 			(xyz 15 -4 1.8)
 		)

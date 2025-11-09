@@ -199,7 +199,7 @@
 		(thermal_bridge_angle 45)
 		(uuid "1e664c26-a754-4fc5-9e77-34664a30eb0b")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/LUXEON_C_2020_20150108.STEP"
+	(model "${KIPRJMOD}/3dmodels/LUXEON_C_2020_20150108.STEP"
 		(offset
 			(xyz 0 0 0.5)
 		)

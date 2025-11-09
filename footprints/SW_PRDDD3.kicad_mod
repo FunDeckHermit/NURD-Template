@@ -224,7 +224,7 @@
 		(remove_unused_layers no)
 		(uuid "aaa0b15a-0c60-4be7-9ea5-a19b8251da77")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/PRDDD3-16F-BB000.stp"
+	(model "${KIPRJMOD}/3dmodels/PRDDD3-16F-BB000.stp"
 		(offset
 			(xyz 0 0 0)
 		)

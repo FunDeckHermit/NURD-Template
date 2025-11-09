@@ -623,7 +623,7 @@
 			)
 		)
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/DRM002.stp"
+	(model "${KIPRJMOD}/3dmodels/DRM002.stp"
 		(offset
 			(xyz 0 0 0.5)
 		)

@@ -362,7 +362,7 @@
 		)
 		(uuid "dcfc03f4-aee9-4964-9dc8-aeef2b463405")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/PowerPak_1212-8.step"
+	(model "${KIPRJMOD}/3dmodels/PowerPak_1212-8.step"
 		(offset
 			(xyz 0 0 0)
 		)

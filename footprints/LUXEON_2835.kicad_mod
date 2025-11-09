@@ -21,7 +21,7 @@
     (thermal_bridge_angle 45) (tstamp 530f7ece-5860-4e6a-a42d-66f902607d01))
   (pad "2" smd roundrect (at 1 0) (size 1 1.9) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.0656167979)
     (thermal_bridge_angle 45) (tstamp 1e1f1879-b1ca-4e49-92bc-cb38cdd93a7e))
-  (model "${KIPRJMOD}/Libraries/Part_3D_models/LUXEON_2835.STEP"
+  (model "${KIPRJMOD}/3dmodels/LUXEON_2835.STEP"
     (offset (xyz 0 0 0.7))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 -90))

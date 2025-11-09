@@ -320,7 +320,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "d29336b5-47a9-442c-ad37-6a343e74053e")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/CPC2317N_IXY.step"
+	(model "${KIPRJMOD}/3dmodels/CPC2317N_IXY.step"
 		(offset
 			(xyz 0 0 0)
 		)

@@ -452,7 +452,7 @@
 		(remove_unused_layers no)
 		(uuid "756732d2-992a-4456-b6d0-936641454bde")
 	)
-	(model "C:/Users/RLI/Documents/KiCAD-projects/KiCAD-projects/DVTCU - SideBoard/Libraries/Part_3D_models/J1B1211CCD.stp"
+	(model "C:/Users/RLI/Documents/KiCAD-projects/KiCAD-projects/DVTCU - SideBoard/3dmodels/J1B1211CCD.stp"
 		(offset
 			(xyz 4.4 -17.1 0)
 		)

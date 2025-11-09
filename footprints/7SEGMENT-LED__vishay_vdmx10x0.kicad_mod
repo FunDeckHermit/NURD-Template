@@ -255,7 +255,7 @@
 		(solder_paste_margin -0.2)
 		(uuid "ac2270c7-7548-48f3-a136-3b350116b3c7")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/1segment_display_10mm_SMD_VDMx10x0.stp"
+	(model "${KIPRJMOD}/3dmodels/1segment_display_10mm_SMD_VDMx10x0.stp"
 		(offset
 			(xyz 0 0 0.5)
 		)

@@ -43,7 +43,7 @@
   (pad "1" thru_hole rect (at 0 0) (size 1.5 2.3) (drill 1) (layers *.Cu *.Mask) (tstamp ea2f78d6-5020-4940-9a72-c3a0f0d86b93))
   (pad "2" thru_hole oval (at 2.54 0) (size 1.5 2.3) (drill 1) (layers *.Cu *.Mask) (tstamp 0c464efe-30f8-428d-a565-0e4251afa0c2))
   (pad "3" thru_hole oval (at 5.08 0) (size 1.5 2.3) (drill 1) (layers *.Cu *.Mask) (tstamp fb29cb59-4a5e-4e65-88b9-14b657b0e917))
-  (model "${KIPRJMOD}/Libraries/Part_3D_models/CUI_P7812-500R.step"
+  (model "${KIPRJMOD}/3dmodels/CUI_P7812-500R.step"
     (offset (xyz 2.5 8 -6.5))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 0))

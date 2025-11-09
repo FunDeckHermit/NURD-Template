@@ -218,7 +218,7 @@
 		(remove_unused_layers no)
 		(uuid "0dda2db7-61ed-4695-befc-988a12406cc6")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/PZEM-025.step"
+	(model "${KIPRJMOD}/3dmodels/PZEM-025.step"
 		(offset
 			(xyz 0 0 0)
 		)

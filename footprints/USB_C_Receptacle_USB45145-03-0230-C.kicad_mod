@@ -291,7 +291,7 @@
 		(remove_unused_layers no)
 		(uuid "40523369-1747-44ec-b94b-bf9be3816f63")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/USB4145-03-0170-C.stp"
+	(model "${KIPRJMOD}/3dmodels/USB4145-03-0170-C.stp"
 		(offset
 			(xyz 0 0 7.5)
 		)

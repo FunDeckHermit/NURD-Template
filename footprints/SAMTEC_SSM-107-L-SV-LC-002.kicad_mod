@@ -275,7 +275,7 @@
 		(solder_mask_margin 0.102)
 		(uuid "37b4cf17-d901-4747-bbe5-ec1c85158d85")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/SSM-107-L-SV-LC-002.stp"
+	(model "${KIPRJMOD}/3dmodels/SSM-107-L-SV-LC-002.stp"
 		(offset
 			(xyz 0 0 0.12)
 		)

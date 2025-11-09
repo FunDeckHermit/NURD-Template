@@ -426,7 +426,7 @@
 		(solder_mask_margin 0.102)
 		(uuid "19980372-67c7-455b-89db-0b41c9d0a960")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/AMG8833.step"
+	(model "${KIPRJMOD}/3dmodels/AMG8833.step"
 		(offset
 			(xyz 0 0 0)
 		)

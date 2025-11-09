@@ -261,7 +261,7 @@
 		(zone_connect 2)
 		(uuid "9b6ffdad-db5e-4849-9785-5ff7959020b0")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/NGR0008C.stp"
+	(model "${KIPRJMOD}/3dmodels/NGR0008C.stp"
 		(offset
 			(xyz 0 0 0)
 		)

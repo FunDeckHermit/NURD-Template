@@ -349,7 +349,7 @@
 		(solder_mask_margin 0.102)
 		(uuid "67f8d07c-d624-4ae8-a036-694ac98d2c82")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/TSW-108-27-G-D.stp"
+	(model "${KIPRJMOD}/3dmodels/TSW-108-27-G-D.stp"
 		(offset
 			(xyz 8.85 1.25 2.5)
 		)

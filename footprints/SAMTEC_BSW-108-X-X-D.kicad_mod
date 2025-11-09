@@ -554,7 +554,7 @@
 		(solder_mask_margin 0.102)
 		(uuid "5a820930-f58a-471e-b89b-f2c36cc6760d")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/BSW-108-04-T-D.stp"
+	(model "${KIPRJMOD}/3dmodels/BSW-108-04-T-D.stp"
 		(offset
 			(xyz 0 0 8.9)
 		)

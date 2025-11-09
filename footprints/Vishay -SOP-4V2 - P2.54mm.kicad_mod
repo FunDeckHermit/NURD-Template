@@ -334,7 +334,7 @@
 		(roundrect_rratio 0.25)
 		(uuid "17d497c2-69ce-4619-85dc-57b6c69d46cd")
 	)
-	(model "../Libraries/Part_3D_models/SOP-4V2.STEP"
+	(model "../3dmodels/SOP-4V2.STEP"
 		(offset
 			(xyz 0 0 1.1)
 		)

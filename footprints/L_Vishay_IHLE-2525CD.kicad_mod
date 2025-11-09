@@ -52,7 +52,7 @@
   (pad "2" smd rect (at 0 3.0525 90) (size 2.285 3.43) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp e707099a-b486-4fb8-9587-6c519e2bc40f))
   (pad "3" smd rect (at -3.0525 0) (size 2.285 2.39) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp cd25b286-c9ba-4734-b651-a9991f542104))
   (pad "4" smd rect (at 3.0525 0) (size 2.285 2.39) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp e7a588b7-8b38-40cd-abd5-657c7192a56a))
-  (model "${KIPRJMOD}/Libraries/Part_3D_models/IHLE-2525CD.STEP"
+  (model "${KIPRJMOD}/3dmodels/IHLE-2525CD.STEP"
     (offset (xyz 8.1 2.55 -3.5))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 90))

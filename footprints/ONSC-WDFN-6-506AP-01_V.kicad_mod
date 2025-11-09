@@ -46,7 +46,7 @@
   (pad "6" smd rect (at 0.934999 -0.650001) (size 0.429999 0.349999) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp ae9b3689-5507-45d5-914c-9ddeb57b26f6))
   (pad "7" smd rect (at 0 -0.285001) (size 1.1 1.25) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 002c2ba6-919e-480e-b059-8b319d3ac7cc))
   (pad "8" smd rect (at 0 0.775) (size 0.660001 0.349999) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 7ae08f28-0c00-4b87-b7d1-de37a60dea60))
-  (model "${KIPRJMOD}/Libraries/Part_3D_models/WDFN6 ExPad.stp"
+  (model "${KIPRJMOD}/3dmodels/WDFN6 ExPad.stp"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 90))

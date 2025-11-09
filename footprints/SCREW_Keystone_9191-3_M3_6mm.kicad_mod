@@ -151,7 +151,7 @@
 			)
 		)
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/keystone-PN9191-2.STEP"
+	(model "${KIPRJMOD}/3dmodels/keystone-PN9191-2.STEP"
 		(offset
 			(xyz 0 0 0)
 		)

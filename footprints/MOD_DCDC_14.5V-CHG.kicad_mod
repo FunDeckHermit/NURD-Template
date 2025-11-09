@@ -190,7 +190,7 @@
 		(remove_unused_layers no)
 		(uuid "bba108fb-8c3d-40eb-97ca-e676ae6ab9ee")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/CPT 12V-24V-5V 20A 100W Converter.STEP"
+	(model "${KIPRJMOD}/3dmodels/CPT 12V-24V-5V 20A 100W Converter.STEP"
 		(offset
 			(xyz 0 0 1.5)
 		)

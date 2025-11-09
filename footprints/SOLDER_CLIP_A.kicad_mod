@@ -188,7 +188,7 @@
 		)
 		(uuid "21f4b9dd-22a7-4fec-8def-c4afc60a958e")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/F17250_SOLDER-CLIP-A_MechModel.stp"
+	(model "${KIPRJMOD}/3dmodels/F17250_SOLDER-CLIP-A_MechModel.stp"
 		(offset
 			(xyz 12.7 12.7 1)
 		)

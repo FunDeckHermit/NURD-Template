@@ -383,7 +383,7 @@
 		(remove_unused_layers no)
 		(uuid "332c34bf-b1c0-40f0-8ada-e1e6c764f85e")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/SA39_11.step"
+	(model "${KIPRJMOD}/3dmodels/SA39_11.step"
 		(offset
 			(xyz 3.7 -5 7)
 		)

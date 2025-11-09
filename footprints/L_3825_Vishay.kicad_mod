@@ -204,7 +204,7 @@
 		(roundrect_rratio 0.05)
 		(uuid "90acc39b-5ae3-4fb1-876c-c757204fb702")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/IND_25EB100L_VIS.step"
+	(model "${KIPRJMOD}/3dmodels/IND_25EB100L_VIS.step"
 		(offset
 			(xyz 0 0 0)
 		)

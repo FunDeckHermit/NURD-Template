@@ -392,7 +392,7 @@
 		(layers "F.Cu" "F.Mask")
 		(uuid "efab43fe-f6f0-45e7-a396-09368dad2716")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/DRV8874PWPR.step"
+	(model "${KIPRJMOD}/3dmodels/DRV8874PWPR.step"
 		(offset
 			(xyz 0 0 0)
 		)

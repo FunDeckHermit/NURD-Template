@@ -53,7 +53,7 @@
     (thermal_bridge_angle 45) (tstamp 884812ab-fab3-4399-b10f-87f864524443))
   (pad "4" smd rect (at -1.75 6 180) (size 2 4) (layers "F.Cu" "F.Paste" "F.Mask")
     (thermal_bridge_angle 45) (tstamp 7f65d826-5581-4dd3-a32d-49e98362ca30))
-  (model "${KIPRJMOD}/Libraries/Part_3D_models/PLT10HH501100PNL.step"
+  (model "${KIPRJMOD}/3dmodels/PLT10HH501100PNL.step"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 90))

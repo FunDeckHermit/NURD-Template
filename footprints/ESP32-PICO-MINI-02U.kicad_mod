@@ -751,7 +751,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "98f2f137-3f81-40d1-8916-e1ca26b30be0")
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/ESP32-PICO-MINI-02U.STEP"
+	(model "${KIPRJMOD}/3dmodels/ESP32-PICO-MINI-02U.STEP"
 		(offset
 			(xyz 0 0 0)
 		)

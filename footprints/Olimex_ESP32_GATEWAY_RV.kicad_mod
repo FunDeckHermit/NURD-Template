@@ -4188,7 +4188,7 @@
 			)
 		)
 	)
-	(model "${KIPRJMOD}/Libraries/Part_3D_models/ESP32-GATEWAY_Rev_G.step"
+	(model "${KIPRJMOD}/3dmodels/ESP32-GATEWAY_Rev_G.step"
 		(offset
 			(xyz -25.5 -31.5 -15.2)
 		)

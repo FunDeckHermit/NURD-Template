@@ -1,76 +1,72 @@
 ## NURDspace KiCAD template
 
-This is a custom KiCAD symbol library.
- It includes electronic parts grouped by type for easy use in circuit design.
+This repository contains a structured KiCad symbol library designed for consistency and complete manufacturing data integration.  
+It standardizes supplier and manufacturer metadata directly within component symbols.
 
-## 📘Overview
+## Overview
 
 - **Total libraries:** 26
 - **Total parts:** 1,614
 - **Format:** `.kicad_sym` (KiCAD 6+ compatible)  
 
-Each library holds parts like resistors, capacitors, diodes, and connectors.
- They are organized to make schematic design faster and more consistent.
+Libraries are organized by component type for clear structure and efficient design workflow.
+
+## How to Use
+
+### 1. Install the Template
+
+Copy the entire `NURD Template` folder into your KiCad templates directory.
+
+**Windows:**  
+
+```
+C:\Users\<username>\Documents\KiCad\<version>\template\
+```
+
+**Linux:**  
+
+```
+/home/<username>/.local/share/kicad/<version>/template/
+```
+
+If the folder doesn’t exist, create it manually.
+
+### 2. Create a Project
+
+1. Open KiCad → *File → New Project → New Project from Template*.  
+2. Select **NURD Template**.  
+3. Choose a destination folder and project name.  
+4. KiCad will create a new project pre-configured with linked symbol and footprint tables.
+
+### 3. Start Designing
+
+The project includes:
+
+- Linked symbol and footprint libraries.  
+- Standard DRC/ERC settings.  
+- Predefined folder structure for fabrication and outputs.
 
 ---
 
-## How to Use the NURD Template
+## Custom Attributes (beyond KiCad defaults)
 
-This template works with KiCAD’s *Create a New Project from Template* feature.
- It sets up a ready-to-use schematic, PCB, and library configuration for new designs.
+Each component symbol includes structured metadata that supports procurement, documentation, and version control.  
+When extending the library it would be nice if these attributes were also filled in. S1 (Source 1) is Mouser.eu in most cases. 
 
-### Step 1 — Place the Template Folder
-
-Copy the entire `NURD Template` folder into the KiCAD template directory.
-The location depends on your operating system.
-
-**Windows:**
-
-```
-C:\Users\<username>\Documents\KiCad\9.0\template\
-```
-
-**Linux:**
-
-```
-/home/<username>/.local/share/kicad/9.0/template/
-```
-
-If the `template` folder does not exist, create it manually.
-
-### Step 2 — Start KiCAD and Create a Project
-
-1. Open KiCAD.
-2. Go to **File → New Project → New Project from Template**.
-3. Select **NURD Template** from the list.
-4. Choose a folder and name for your new project.
-5. KiCAD will copy all project files and libraries into the new folder.
-
-### Step 3 — Start Designing
-
-The new project will include:
-
-- A schematic with linked libraries.
-- A PCB layout with standard design rules.
-- Configured symbol and footprint tables.
-- Folders for BOM, Exports, and Gerbers.
-
-You can now start adding your own components and making changes.
+| Attribute          | Description                      |
+| ------------------ | -------------------------------- |
+| **MPN**            | Manufacturer Part Number         |
+| **MF**             | Manufacturer name                |
+| **S1 Description** | Supplier’s catalog description   |
+| **S1 Part number** | Supplier’s unique part number    |
+| **S1 Part link**   | URL to supplier’s product page   |
+| **S1 Price @ 100** | Price per unit at quantity 100   |
+| **Update date**    | Last update or verification date |
 
 ## Notes
 
-- The library names start with `.NRD_`.
-- The ..project library can be used for project specific parts
-- Find a mistake of want to add parts? Fork this repo and make a pull-request
+- All symbols follow the `NRD_` prefix convention.  
+- Use the `..project` library for one-off or project-specific components.  
+- You can add new attributes in the KiCad Symbol Editor; they’ll be automatically included in BOM exports.  
+- Contributions to extend the attribute set or add verified components are welcome.
 
-## License
-
-**MIT License**
-
-Copyright (c) 2025 Roy van Lierop
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this library and related files, to deal in the software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software.
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.

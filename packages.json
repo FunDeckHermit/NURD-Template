@@ -19,13 +19,13 @@
       },
       "versions": [
         {
-          "version": "0.1.9",
+          "version": "0.1.10",
           "status": "testing",
           "kicad_version": "7.0",
-          "download_url": "https://github.com/FunDeckHermit/NURD-Template/releases/download/v0.1.9/nurd-template-0.1.9.zip",
-          "download_sha256": "66e42f1a7487defe0d3ba6c602cb42411bf49bbe494e2550f80a775c67008e63",
-          "download_size": 20843597,
-          "install_size": 123097687
+          "download_url": "https://github.com/FunDeckHermit/NURD-Template/releases/download/v0.1.10/nurd-template-0.1.10.zip",
+          "download_sha256": "5f77e5b1de4e4bc88fd499a77a49964314cd2e7b2fa986c7094ed8ac51c0eb62",
+          "download_size": 20843298,
+          "install_size": 123097688
         }
       ]
     }

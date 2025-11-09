@@ -322,7 +322,7 @@
 		(roundrect_rratio 0.1)
 		(uuid "49ea68db-8277-4d97-a44f-5dd5893c738f")
 	)
-	(model "${KIPRJMOD}/3dmodels/SOIC-8_M_MCH.step"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//SOIC-8_M_MCH.step"
 		(offset
 			(xyz 0 0 0)
 		)

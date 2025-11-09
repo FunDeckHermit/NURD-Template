@@ -312,7 +312,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "dc630677-b49c-44ec-9244-dc905ca65285")
 	)
-	(model "${KIPRJMOD}/3dmodels/SOT-23-THIN-14_DYY_TEX.step"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//SOT-23-THIN-14_DYY_TEX.step"
 		(offset
 			(xyz 0 0 0)
 		)

@@ -218,7 +218,7 @@
 		(remove_unused_layers no)
 		(uuid "0dda2db7-61ed-4695-befc-988a12406cc6")
 	)
-	(model "${KIPRJMOD}/3dmodels/PZEM-025.step"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//PZEM-025.step"
 		(offset
 			(xyz 0 0 0)
 		)

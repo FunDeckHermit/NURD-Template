@@ -26,7 +26,7 @@
   (pad "1" thru_hole circle (at -4.7 0) (size 2.5 2.5) (drill 1.9) (layers "*.Cu" "*.Mask") (tstamp f7a274ff-dfbb-42c0-9d80-5edbd963593c))
   (pad "2" thru_hole circle (at 0 0) (size 2.5 2.5) (drill 1.9) (layers "*.Cu" "*.Mask") (tstamp 1c48f9ac-2556-4af0-aaab-7dd5f36bae00))
   (pad "3" thru_hole circle (at 4.7 0) (size 2.5 2.5) (drill 1.9) (layers "*.Cu" "*.Mask") (tstamp 249d1a31-c1e5-44df-a2cb-3fa1a2859df5))
-  (model "${KIPRJMOD}/3dmodels/MTS-1xx-A3-blue.step"
+  (model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//MTS-1xx-A3-blue.step"
     (offset (xyz 0 -13 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

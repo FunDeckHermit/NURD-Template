@@ -464,7 +464,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "a1df0ac1-1f70-4557-8ba7-ccb485f57824")
 	)
-	(model "${KIPRJMOD}/3dmodels/PLMG5-H.STEP"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//PLMG5-H.STEP"
 		(offset
 			(xyz 0 1.85 0)
 		)

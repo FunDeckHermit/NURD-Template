@@ -278,7 +278,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "2e788460-b80f-4704-8ea0-07a1c850a78b")
 	)
-	(model "${KIPRJMOD}/3dmodels/IHLE5050FH.STEP"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//IHLE5050FH.STEP"
 		(offset
 			(xyz -6.3 6.3 0)
 		)

@@ -61,7 +61,7 @@
   (pad "15" thru_hole circle (at 0 1.8) (size 0.6 0.6) (drill 0.3) (layers "*.Cu") (tstamp 0d5e2280-dd2d-4f69-bea9-c78054da90f1))
   (pad "15" thru_hole circle (at 0.5 -0.6) (size 0.6 0.6) (drill 0.3) (layers "*.Cu") (tstamp c75d85b2-5341-4fc5-8f96-4bbf1e318ce3))
   (pad "15" thru_hole circle (at 0.5 0.7) (size 0.6 0.6) (drill 0.3) (layers "*.Cu") (tstamp 37199258-70d4-447b-8010-2a9b5538c0eb))
-  (model "${KIPRJMOD}/3dmodels/DMT0014B.stp"
+  (model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//DMT0014B.stp"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

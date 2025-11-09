@@ -389,7 +389,7 @@
 		)
 		(uuid "c1bfdfe8-208f-4049-acdf-af8fc6f35719")
 	)
-	(model "${KIPRJMOD}/3dmodels/STP_3670220 (rev1).stp"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//STP_3670220 (rev1).stp"
 		(offset
 			(xyz 0 0 3.5)
 		)

@@ -49,7 +49,7 @@
   (pad "SH" thru_hole circle (at 17.75 -13.25) (size 2.8 2.8) (drill 1.6) (layers *.Cu *.Mask) (tstamp 8812e6da-8206-4f25-8bda-6b219aeacd38))
   (pad "SH" thru_hole circle (at 4.5 -0.7) (size 2.8 2.8) (drill 1.6) (layers *.Cu *.Mask) (tstamp 92016578-3db3-48b7-aad0-2765f2bfc1c3))
   (pad "SH" thru_hole circle (at 4.5 -13.25) (size 2.8 2.8) (drill 1.6) (layers *.Cu *.Mask) (tstamp 95e935fb-02bc-4778-8154-e558e05a5286))
-  (model "${KIPRJMOD}/3dmodels/GT32-19DP-0.75DSA.stp"
+  (model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//GT32-19DP-0.75DSA.stp"
     (offset (xyz 11.06 7 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

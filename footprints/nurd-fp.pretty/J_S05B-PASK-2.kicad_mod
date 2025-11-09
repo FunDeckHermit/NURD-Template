@@ -156,7 +156,7 @@
 		(remove_unused_layers no)
 		(uuid "a794c88f-7543-4ee9-a5de-4f8c5142ea8a")
 	)
-	(model "${KIPRJMOD}/3dmodels/JST_-_S05B-PASK-2(LF)(SN).step"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//JST_-_S05B-PASK-2(LF)(SN).step"
 		(offset
 			(xyz 0 2.4 0)
 		)

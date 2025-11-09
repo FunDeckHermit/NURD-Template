@@ -144,7 +144,7 @@
 		(remove_unused_layers no)
 		(uuid "de3e0ef4-a4ef-43b9-82d2-b7c93d9fc62e")
 	)
-	(model "${KIPRJMOD}/3dmodels/LED Mount v5.step"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//LED Mount v5.step"
 		(offset
 			(xyz 0 0.5 0)
 		)

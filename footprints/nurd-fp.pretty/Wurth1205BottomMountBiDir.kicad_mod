@@ -267,7 +267,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "fac66529-7a4d-4775-be21-c3b94f909400")
 	)
-	(model "${KIPRJMOD}/3dmodels/WL-SBRW-1205 (rev1).stp"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//WL-SBRW-1205 (rev1).stp"
 		(offset
 			(xyz 0 0 -0.5)
 		)

@@ -260,7 +260,7 @@
 		(thermal_bridge_angle 45)
 		(uuid "d231e2fb-a4fd-413b-93e6-22a0901a8e84")
 	)
-	(model "${KIPRJMOD}/3dmodels/155060xx73200 (rev1).stp"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//155060xx73200 (rev1).stp"
 		(offset
 			(xyz 0 -0.2 0.3)
 		)

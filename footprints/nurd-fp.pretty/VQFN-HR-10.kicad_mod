@@ -428,7 +428,7 @@
 		(thermal_bridge_angle 45)
 		(uuid "a9a041ae-ac23-491d-b431-1c0a9096f053")
 	)
-	(model "${KIPRJMOD}/3dmodels/TPS56837RPAR.STEP"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//TPS56837RPAR.STEP"
 		(offset
 			(xyz 0 0 0)
 		)

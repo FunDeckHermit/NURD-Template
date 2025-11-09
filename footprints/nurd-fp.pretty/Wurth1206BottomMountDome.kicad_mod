@@ -286,7 +286,7 @@
 		)
 		(uuid "a92e9028-afb5-40d8-8d2c-c862db0737f0")
 	)
-	(model "${KIPRJMOD}/3dmodels/SMRW-1206dome (rev1).stp"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//SMRW-1206dome (rev1).stp"
 		(offset
 			(xyz 0 0 0.28)
 		)

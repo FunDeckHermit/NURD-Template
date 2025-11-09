@@ -354,7 +354,7 @@
 		(remove_unused_layers no)
 		(uuid "c78aff07-9262-4732-bcc2-c24541c50116")
 	)
-	(model "${KIPRJMOD}/3dmodels/MOD_BUCK_5V3A.step"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//MOD_BUCK_5V3A.step"
 		(offset
 			(xyz 0 0 0)
 		)

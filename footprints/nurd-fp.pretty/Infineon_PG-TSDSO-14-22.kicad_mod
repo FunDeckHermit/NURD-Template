@@ -74,7 +74,7 @@
   (pad "13" smd rect (at 2.85 -1.3) (size 1.31 0.45) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp adfb0966-ceef-4821-8d53-ee8f01cb3724))
   (pad "14" smd rect (at 2.85 -1.95) (size 1.31 0.45) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp c653e414-6027-4816-b013-52f1e3b9a67b))
   (pad "15" smd rect (at 0 0) (size 2.65 4) (layers "F.Cu" "F.Mask") (tstamp cc5fc013-509e-4ecb-9d52-f6bbd63a0aa3))
-  (model "${KIPRJMOD}/3dmodels/PG-TSDSO-14_INF.step"
+  (model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//PG-TSDSO-14_INF.step"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

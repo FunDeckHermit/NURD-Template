@@ -62,7 +62,7 @@
     (solder_mask_margin 0.102) (tstamp 76343c1c-df6d-4fc8-83d5-86c9ea190ef8))
   (pad "12" thru_hole circle (at 12.7 -2.54) (size 1.37 1.37) (drill 1.02) (layers "*.Cu" "*.Mask")
     (solder_mask_margin 0.102) (tstamp 2eda9518-17f8-4cf3-a9db-5a822a4ed077))
-  (model "${KIPRJMOD}/3dmodels/TSW-106-27-G-D.step"
+  (model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//TSW-106-27-G-D.step"
     (offset (xyz 6.35 1.25 2.5))
     (scale (xyz 1 1 1))
     (rotate (xyz 90 0 0))

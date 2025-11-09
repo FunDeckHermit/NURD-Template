@@ -362,7 +362,7 @@
 		)
 		(uuid "dcfc03f4-aee9-4964-9dc8-aeef2b463405")
 	)
-	(model "${KIPRJMOD}/3dmodels/PowerPak_1212-8.step"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//PowerPak_1212-8.step"
 		(offset
 			(xyz 0 0 0)
 		)

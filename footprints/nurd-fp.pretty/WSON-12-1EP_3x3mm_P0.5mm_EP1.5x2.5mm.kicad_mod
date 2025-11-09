@@ -57,7 +57,7 @@
   (pad "13" smd rect (at 0 0) (size 1.5 2.5) (layers "F.Cu" "F.Mask") (tstamp d4139b9d-8294-4c31-972a-5015547a277c))
   (pad "13" thru_hole circle (at 0 1) (size 0.4 0.4) (drill 0.2) (layers "*.Cu" "*.Mask") (tstamp 6ddfc1b5-d65f-4da9-a293-65eab588f05a))
   (pad "13" thru_hole circle (at 0.5 0) (size 0.4 0.4) (drill 0.2) (layers "*.Cu" "*.Mask") (tstamp 8fd010a1-6992-45f8-847e-c872095e8f84))
-  (model "${KIPRJMOD}/3dmodels/DRR0012C.stp"
+  (model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//DRR0012C.stp"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

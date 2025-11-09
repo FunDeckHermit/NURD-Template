@@ -332,7 +332,7 @@
 		(solder_mask_margin 0.102)
 		(uuid "8af4e79b-8d45-4849-9201-ebedcc6fe119")
 	)
-	(model "${KIPRJMOD}/3dmodels/5227161-1.step"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//5227161-1.step"
 		(offset
 			(xyz 0 28.5 8)
 		)

@@ -209,7 +209,7 @@
 		(roundrect_rratio 0.05)
 		(uuid "89719a33-8db3-4b73-bec1-f61aa1a7a8e4")
 	)
-	(model "${KIPRJMOD}/3dmodels/IND_6AZER1R0M01_VIS.step"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//IND_6AZER1R0M01_VIS.step"
 		(offset
 			(xyz 0 0 0)
 		)

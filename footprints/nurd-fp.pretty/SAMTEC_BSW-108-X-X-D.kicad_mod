@@ -554,7 +554,7 @@
 		(solder_mask_margin 0.102)
 		(uuid "5a820930-f58a-471e-b89b-f2c36cc6760d")
 	)
-	(model "${KIPRJMOD}/3dmodels/BSW-108-04-T-D.stp"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//BSW-108-04-T-D.stp"
 		(offset
 			(xyz 0 0 8.9)
 		)

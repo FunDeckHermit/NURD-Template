@@ -802,7 +802,7 @@
 			)
 		)
 	)
-	(model "${KIPRJMOD}/3dmodels/ESP32-C6-MINI-1.STEP"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//ESP32-C6-MINI-1.STEP"
 		(offset
 			(xyz -6.55 -8.3 0.5)
 		)

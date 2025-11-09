@@ -4188,7 +4188,7 @@
 			)
 		)
 	)
-	(model "${KIPRJMOD}/3dmodels/ESP32-GATEWAY_Rev_G.step"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//ESP32-GATEWAY_Rev_G.step"
 		(offset
 			(xyz -25.5 -31.5 -15.2)
 		)

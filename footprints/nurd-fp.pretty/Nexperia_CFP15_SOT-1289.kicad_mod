@@ -393,7 +393,7 @@
 		(layers "F.Cu" "F.Mask")
 		(uuid "e2d3df6b-cf7e-49e6-977b-a131f7807277")
 	)
-	(model "${KIPRJMOD}/3dmodels/SOT1289B.step"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//SOT1289B.step"
 		(offset
 			(xyz 4.8 3 -3.3)
 		)

@@ -34,7 +34,7 @@
   (pad "" np_thru_hole circle (at 0 4.3) (size 3 3) (drill 3) (layers "F&B.Cu" "*.Mask") (tstamp 3981dbda-85a7-49ea-8415-eae380b2b644))
   (pad "1" thru_hole circle (at 0 0) (size 2 2) (drill 1.02) (layers "*.Cu" "*.Mask") (tstamp 4dfcc44d-d62d-454e-a09d-7b6d524e3337))
   (pad "2" thru_hole circle (at 0 -3) (size 2 2) (drill 1.02) (layers "*.Cu" "*.Mask") (tstamp dc9e64db-d2e2-4cfd-a05e-ee46cfc5d5e6))
-  (model "${KIPRJMOD}/3dmodels/2125280201.stp"
+  (model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//2125280201.stp"
     (offset (xyz 0 -3.91 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

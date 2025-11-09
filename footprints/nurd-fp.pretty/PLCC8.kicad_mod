@@ -251,7 +251,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "81fe6c3f-bd45-45ef-93ce-dae79b28509d")
 	)
-	(model "${KIPRJMOD}/3dmodels/CLQ6C.stp"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//CLQ6C.stp"
 		(opacity 0.9400)
 		(offset
 			(xyz 2.9 2.45 1)

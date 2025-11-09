@@ -392,7 +392,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "ffc50bce-5f07-4a4e-98ab-3b466ab15a5c")
 	)
-	(model "${KIPRJMOD}/3dmodels/DIP4(LF1).STEP"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//DIP4(LF1).STEP"
 		(offset
 			(xyz 0 0 0)
 		)

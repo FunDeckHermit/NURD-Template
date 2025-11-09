@@ -223,7 +223,7 @@
 		(roundrect_rratio 0.05)
 		(uuid "2d5a85a3-7f56-49cc-b1f2-785507642488")
 	)
-	(model "${KIPRJMOD}/3dmodels/VSON4_90deg.stp"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//VSON4_90deg.stp"
 		(offset
 			(xyz 0 0 0)
 		)

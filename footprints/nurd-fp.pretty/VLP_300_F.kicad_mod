@@ -126,7 +126,7 @@
 		(layers "F&B.Cu" "*.Mask")
 		(uuid "f4095d89-ce61-4bb2-a2ec-3863ba44c90e")
 	)
-	(model "${KIPRJMOD}/3dmodels/VLP_300_F 1.step"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//VLP_300_F 1.step"
 		(offset
 			(xyz 2.35 -2.35 0)
 		)

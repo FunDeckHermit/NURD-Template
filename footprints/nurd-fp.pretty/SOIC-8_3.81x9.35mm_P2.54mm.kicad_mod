@@ -320,7 +320,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "d29336b5-47a9-442c-ad37-6a343e74053e")
 	)
-	(model "${KIPRJMOD}/3dmodels/CPC2317N_IXY.step"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//CPC2317N_IXY.step"
 		(offset
 			(xyz 0 0 0)
 		)

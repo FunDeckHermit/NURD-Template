@@ -193,7 +193,7 @@
 			)
 		)
 	)
-	(model "${KIPRJMOD}/3dmodels/CP17587_LEILA-SC-RS_MechanicalModel.stp"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//CP17587_LEILA-SC-RS_MechanicalModel.stp"
 		(opacity 0.8300)
 		(offset
 			(xyz 0 0 0)

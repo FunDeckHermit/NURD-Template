@@ -608,7 +608,7 @@
 			)
 		)
 	)
-	(model "${KIPRJMOD}/3dmodels/USB4085-GF-A_REVA4.step"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//USB4085-GF-A_REVA4.step"
 		(offset
 			(xyz 15 -4 1.8)
 		)

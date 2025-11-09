@@ -188,7 +188,7 @@
 		)
 		(uuid "21f4b9dd-22a7-4fec-8def-c4afc60a958e")
 	)
-	(model "${KIPRJMOD}/3dmodels/F17250_SOLDER-CLIP-A_MechModel.stp"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//F17250_SOLDER-CLIP-A_MechModel.stp"
 		(offset
 			(xyz 12.7 12.7 1)
 		)

@@ -529,7 +529,7 @@
 		(solder_mask_margin 0.102)
 		(uuid "a14de3d6-cce6-4888-ba95-d5316fdde4c5")
 	)
-	(model "${KIPRJMOD}/3dmodels/KPJX-4S-S.step"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//KPJX-4S-S.step"
 		(offset
 			(xyz 0 -4 -3.5)
 		)

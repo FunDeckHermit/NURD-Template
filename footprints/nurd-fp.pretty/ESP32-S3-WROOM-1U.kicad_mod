@@ -667,7 +667,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "53ca5676-4bef-4494-964a-212d84a72211")
 	)
-	(model "${KIPRJMOD}/3dmodels/ESP32-S3-WROOM-1U.STEP"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//ESP32-S3-WROOM-1U.STEP"
 		(offset
 			(xyz 0 -0.145 0)
 		)

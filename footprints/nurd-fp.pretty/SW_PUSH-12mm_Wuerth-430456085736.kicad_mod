@@ -369,7 +369,7 @@
 		(remove_unused_layers no)
 		(uuid "8337b339-c0db-4cca-8ced-26a592f9cd54")
 	)
-	(model "${KIPRJMOD}/3dmodels/430456085736 (rev1).stp"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//430456085736 (rev1).stp"
 		(offset
 			(xyz 6.4 -2.5 0)
 		)

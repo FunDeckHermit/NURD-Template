@@ -623,7 +623,7 @@
 			)
 		)
 	)
-	(model "${KIPRJMOD}/3dmodels/DRM002.stp"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//DRM002.stp"
 		(offset
 			(xyz 0 0 0.5)
 		)

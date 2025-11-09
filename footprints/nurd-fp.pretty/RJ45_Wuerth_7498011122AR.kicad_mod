@@ -458,7 +458,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "691971f3-2324-4fae-a16b-0fe11aa2909f")
 	)
-	(model "${KIPRJMOD}/3dmodels/WE-RJ45LAN-7498011122AR (rev1).stp"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//WE-RJ45LAN-7498011122AR (rev1).stp"
 		(offset
 			(xyz 3.1 0 3.2)
 		)

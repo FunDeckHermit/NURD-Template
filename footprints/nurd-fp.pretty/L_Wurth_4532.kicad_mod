@@ -36,7 +36,7 @@
   (fp_line (start 2 0) (end 2 -1.6) (layer "F.Fab") (width 0.1) (tstamp fa51a785-226a-4851-a690-2f61cd03e1cc))
   (pad "1" smd rect (at -1.85 0) (size 1.5 1.6) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 4f40cedf-1999-4bed-ad1b-0d61fa4a824b))
   (pad "2" smd rect (at 1.85 0) (size 1.5 1.6) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 26f295ee-0da6-435a-bf97-3d7b3161d3ea))
-  (model "${KIPRJMOD}/3dmodels/WE-GF_1812_2 (rev1).stp"
+  (model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//WE-GF_1812_2 (rev1).stp"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

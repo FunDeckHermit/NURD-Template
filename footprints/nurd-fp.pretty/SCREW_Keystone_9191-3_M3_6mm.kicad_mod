@@ -151,7 +151,7 @@
 			)
 		)
 	)
-	(model "${KIPRJMOD}/3dmodels/keystone-PN9191-2.STEP"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//keystone-PN9191-2.STEP"
 		(offset
 			(xyz 0 0 0)
 		)

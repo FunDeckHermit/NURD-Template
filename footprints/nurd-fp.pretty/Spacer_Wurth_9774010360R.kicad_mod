@@ -88,7 +88,7 @@
 		(layers "F&B.Cu" "*.Mask" "F.Paste")
 		(uuid "ba71fce6-02f8-4f36-bfab-48d46d4db2d5")
 	)
-	(model "${KIPRJMOD}/3dmodels/9774010360R (rev1).stp"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//9774010360R (rev1).stp"
 		(offset
 			(xyz 0 0 1)
 		)

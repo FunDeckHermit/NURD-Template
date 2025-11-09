@@ -185,7 +185,7 @@
 		(remove_unused_layers no)
 		(uuid "5118838d-707b-49ce-ab4b-ccdfc2ee8fc3")
 	)
-	(model "${KIPRJMOD}/3dmodels/mill-max-5459-0-00-15-00-00-03-0.step"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//mill-max-5459-0-00-15-00-00-03-0.step"
 		(offset
 			(xyz 0 0 -2.44)
 		)

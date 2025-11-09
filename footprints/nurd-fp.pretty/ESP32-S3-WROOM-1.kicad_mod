@@ -680,7 +680,7 @@
 			)
 		)
 	)
-	(model "${KIPRJMOD}/3dmodels/ESP32-S3-WROOM-1.STEP"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//ESP32-S3-WROOM-1.STEP"
 		(offset
 			(xyz -9 -9.75 0)
 		)

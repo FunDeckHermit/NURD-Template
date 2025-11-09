@@ -38,7 +38,7 @@
   (pad "2" thru_hole oval (at -5.08 0 90) (size 5 3) (drill 2.67) (layers "*.Cu" "*.Mask") (tstamp 1d39ff7a-7247-4bb3-ae0e-9f2745daea1d))
   (pad "2" thru_hole oval (at 0 5.08 180) (size 5 3) (drill 2.67) (layers "*.Cu" "*.Mask") (tstamp c020da9d-ccf7-4265-86f5-ebd49ea872ac))
   (pad "2" thru_hole oval (at 5.08 0 90) (size 5 3) (drill 2.67) (layers "*.Cu" "*.Mask") (tstamp dea83c80-0474-4321-99d0-56c5cacbbd0c))
-  (model "${KIPRJMOD}/3dmodels/keystone-PN901.STEP"
+  (model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//keystone-PN901.STEP"
     (offset (xyz 0.23 -5 2.35))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 -90))

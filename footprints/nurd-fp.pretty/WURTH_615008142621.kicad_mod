@@ -56,7 +56,7 @@
   (pad "A8" thru_hole circle (at 8.89 -2.54) (size 1.575 1.575) (drill 0.9) (layers "*.Cu" "*.Mask") (tstamp b404e235-0135-45d5-9792-f83056502556))
   (pad "S1" thru_hole circle (at -3.305 3.3) (size 2.625 2.625) (drill 1.6) (layers "*.Cu" "*.Mask") (tstamp 56e180ed-077f-4d5d-8e5c-3d6296d27893))
   (pad "S1" thru_hole circle (at 12.195 3.3) (size 2.625 2.625) (drill 1.6) (layers "*.Cu" "*.Mask") (tstamp 78fbad58-a342-49d6-aecf-37e563fbf27a))
-  (model "${KIPRJMOD}/3dmodels/615008142621 (rev1).stp"
+  (model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//615008142621 (rev1).stp"
     (offset (xyz 4.5 -6.5 6.5))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

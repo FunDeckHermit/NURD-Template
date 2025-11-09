@@ -213,7 +213,7 @@
 		(layers "F&B.Cu" "*.Mask")
 		(uuid "9b8040d1-eafa-4c84-b7ba-fb52d1ff4bcd")
 	)
-	(model "${KIPRJMOD}/3dmodels/USB Type A - panel mount.STEP"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_fundeckhermit_nurd-template//USB Type A - panel mount.STEP"
 		(offset
 			(xyz 0 0 -10.5)
 		)

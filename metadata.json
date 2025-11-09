@@ -1,0 +1,38 @@
+{
+  "$schema": "https://go.kicad.org/pcm/schemas/v1",
+  "name": "NURD Symbol/Footprint Library",
+  "description": "KiCad content package with symbols, (optional) footprints and 3D models; standardized attributes for sourcing (MPN, MF, S1 fields).",
+  "description_full": "NURD-Template packaged as a KiCad content library.\n\nIncludes:\n- symbols/  (KiCad .kicad_sym libraries)\n- footprints/  (optional; KiCad .pretty libraries)\n- 3dmodels/  (optional; STEP/WRL models)\n\nSymbols contain standardized non-default attributes used for procurement and documentation, such as MPN, MF, S1 Description, S1 Part number, S1 Part link, and S1 Price @ 100.",
+  "identifier": "com.github.fundeckhermit.nurd-template",
+  "type": "library",
+  "author": {
+    "name": "FunDeckHermit / Roy van Lierop",
+    "contact": {
+      "web": "https://github.com/FunDeckHermit/NURD-Template"
+    }
+  },
+  "maintainer": {
+    "name": "Roy van Lierop",
+    "contact": {
+      "web": "https://github.com/FunDeckHermit/NURD-Template"
+    }
+  },
+  "license": "MIT",
+  "resources": {
+    "homepage": "https://github.com/FunDeckHermit/NURD-Template",
+    "repository": "https://github.com/FunDeckHermit/NURD-Template",
+    "issue_tracker": "https://github.com/FunDeckHermit/NURD-Template/issues"
+  },
+  "keep_on_update": [
+    "^/3dmodels/.*\\.step$",
+    "^/3dmodels/.*\\.stp$",
+    "^/3dmodels/.*\\.wrl$"
+  ],
+  "versions": [
+    {
+      "version": "0.1.0",
+      "status": "testing",
+      "kicad_version": "7.0"
+    }
+  ]
+}

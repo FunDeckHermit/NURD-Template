@@ -2,7 +2,7 @@ name: Publish PCM repository index
 
 on:
   workflow_run:
-    workflows: ["Release (bump version, zip, publish)"]  # ← must match your release workflow's name
+    workflows: ["Release (bump version, zip, publish)"]  # must match your release workflow 'name:'
     types: [completed]
 
 jobs:
@@ -28,9 +28,10 @@ jobs:
             ( cd gh-pages && git init && git remote add origin "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY" && git checkout -b gh-pages )
           fi
 
-      - name: Verify template exists
+      - name: Verify templates exist
         run: |
           test -f .pcm/repository.template.json || { echo "Missing .pcm/repository.template.json"; exit 1; }
+          test -f .pcm/packages.template.json || { echo "Missing .pcm/packages.template.json"; exit 1; }
 
       - name: Install deps (jq, envsubst)
         run: |
@@ -60,7 +61,8 @@ jobs:
           echo "dl_size=$DL_SIZE" >> $GITHUB_OUTPUT
           echo "inst_size=$INST_SIZE" >> $GITHUB_OUTPUT
 
-      - name: Fill template → gh-pages/repository.json
+      - name: Fill packages.template.json → gh-pages/packages.json
+        id: pkgs
         env:
           SCHEMAKEY: schema
           VERSION: ${{ steps.rel.outputs.tag }}
@@ -69,19 +71,41 @@ jobs:
           DOWNLOAD_SIZE: ${{ steps.zip.outputs.dl_size }}
           INSTALL_SIZE: ${{ steps.zip.outputs.inst_size }}
         run: |
-          VERSION="${VERSION#v}"  # strip leading 'v' if present
+          VERSION="${VERSION#v}"
           export SCHEMAKEY VERSION DOWNLOAD_URL DOWNLOAD_SHA256 DOWNLOAD_SIZE INSTALL_SIZE
-          envsubst < .pcm/repository.template.json > gh-pages/repository.json
-          jq . gh-pages/repository.json > /dev/null  # sanity check JSON
+          envsubst < .pcm/packages.template.json > gh-pages/packages.json
+          jq . gh-pages/packages.json > /dev/null
 
-      - name: Commit & push repository.json to gh-pages
+      - name: Compute packages.json sha256 and timestamps
+        id: pkgmeta
+        run: |
+          PKG_SHA=$(sha256sum gh-pages/packages.json | awk '{print $1}')
+          TS=$(date -u +%s)
+          TS_UTC=$(date -u +"%Y-%m-%d %H:%M:%S")
+          echo "pkg_sha=$PKG_SHA" >> $GITHUB_OUTPUT
+          echo "ts=$TS" >> $GITHUB_OUTPUT
+          echo "ts_utc=$TS_UTC" >> $GITHUB_OUTPUT
+
+      - name: Fill repository.template.json → gh-pages/repository.json
+        env:
+          SCHEMAKEY: schema
+          PACKAGES_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/packages.json
+          PACKAGES_SHA256: ${{ steps.pkgmeta.outputs.pkg_sha }}
+          PACKAGES_UPDATE_TS: ${{ steps.pkgmeta.outputs.ts }}
+          PACKAGES_UPDATE_UTC: ${{ steps.pkgmeta.outputs.ts_utc }}
+        run: |
+          export SCHEMAKEY PACKAGES_URL PACKAGES_SHA256 PACKAGES_UPDATE_TS PACKAGES_UPDATE_UTC
+          envsubst < .pcm/repository.template.json > gh-pages/repository.json
+          jq . gh-pages/repository.json > /dev/null
+
+      - name: Commit & push repository.json + packages.json to gh-pages
         run: |
           cd gh-pages
-          git add repository.json
+          git add repository.json packages.json
           if ! git diff --cached --quiet; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git commit -m "Update repository.json for ${{ steps.rel.outputs.tag }}"
+            git commit -m "Publish PCM index for ${{ steps.rel.outputs.tag }}"
             git push origin gh-pages
           else
             echo "No changes to commit."

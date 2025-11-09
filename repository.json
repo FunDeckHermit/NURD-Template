@@ -1,0 +1,25 @@
+{
+  "": "https://go.kicad.org/pcm/schemas/v1",
+  "repositories": [
+    {
+      "name": "NURD Library Repo",
+      "description": "Repository for NURD KiCad symbols, footprints, and 3D models.",
+      "packages": [
+        {
+          "identifier": "com.github.fundeckhermit.nurd-template",
+          "name": "NURD Symbol Library",
+          "type": "library",
+          "releases": [
+            {
+              "version": "0.1.5",
+              "download_url": "https://github.com/FunDeckHermit/NURD-Template/releases/download/v0.1.5/nurd-template-0.1.5.zip",
+              "download_sha256": "d75aa71c7e8e5aa9087b73aa249dfa15fd2843eb4e083bef05f5d665e5d98cc6",
+              "download_size": 20838392,
+              "install_size": 123097687
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

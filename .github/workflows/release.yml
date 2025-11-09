@@ -38,19 +38,18 @@ jobs:
       - name: Compute next version
         id: next
         env:
-          CUR: ${{ steps.cur.outputs.current }}
           BUMP: ${{ github.event.inputs.bump }}
         run: |
-          IFS=. read -r M m p <<<"${CUR:-0.0.0}"
-          M=${M:-0}
-          m=${m:-0}
-          p=${p:-0} 
-          case "$BUMP" in
-            major) ((M++, m=0, p=0)) ;;
-            minor) ((m++, p=0)) ;;
-            patch|*) ((p++)) ;;
-          esac
-          echo "version=$M.$m.$p" >> "$GITHUB_OUTPUT"
+          node -e "
+            const fs = require('fs');
+            const m = JSON.parse(fs.readFileSync('metadata.json','utf8'));
+            let [M,m,p] = (m.versions?.[0]?.version || '0.0.0').split('.').map(Number);
+            const b = process.env.BUMP || 'patch';
+            if (b==='major') { M++; m=0; p=0; }
+            else if (b==='minor') { m++; p=0; }
+            else { p++; }
+            console.log(`version=${M}.${m}.${p}`);"
+          >> $GITHUB_OUTPUT
 
       - name: Update metadata.json with new version
         env:

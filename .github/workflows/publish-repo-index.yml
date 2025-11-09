@@ -53,40 +53,50 @@ jobs:
           echo "dl_size=$DL_SIZE" >> $GITHUB_OUTPUT
           echo "inst_size=$INST_SIZE" >> $GITHUB_OUTPUT
 
-      - name: Write repository.json
+      - name: Write repository.json (via jq)
         run: |
-          cat > gh-pages/repository.json <<'JSON'
-{
-  "$schema": "https://go.kicad.org/pcm/schemas/v1",
-  "repositories": [
-    {
-      "name": "NURD Library Repo",
-      "description": "Repository for NURD KiCad symbols, footprints, and 3D models.",
-      "packages": [
-        {
-          "identifier": "com.github.fundeckhermit.nurd-template",
-          "name": "NURD Symbol Library",
-          "type": "library",
-          "releases": [
-            {
-              "version": "REPLACE_VERSION",
-              "download_url": "REPLACE_URL",
-              "download_sha256": "REPLACE_SHA",
-              "download_size": REPLACE_DL_SIZE,
-              "install_size": REPLACE_INST_SIZE
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
-JSON
-          sed -i "s/REPLACE_VERSION/${{ steps.rel.outputs.tag#v }}/" gh-pages/repository.json
-          sed -i "s#REPLACE_URL#${{ steps.rel.outputs.url }}#" gh-pages/repository.json
-          sed -i "s/REPLACE_SHA/${{ steps.zip.outputs.sha }}/" gh-pages/repository.json
-          sed -i "s/REPLACE_DL_SIZE/${{ steps.zip.outputs.dl_size }}/" gh-pages/repository.json
-          sed -i "s/REPLACE_INST_SIZE/${{ steps.zip.outputs.inst_size }}/" gh-pages/repository.json
+          VERSION="${{ steps.rel.outputs.tag#v }}"
+          URL="${{ steps.rel.outputs.url }}"
+          SHA="${{ steps.zip.outputs.sha }}"
+          DL_SIZE="${{ steps.zip.outputs.dl_size }}"
+          INST_SIZE="${{ steps.zip.outputs.inst_size }}"
+          jq -n \
+            --arg schema "https://go.kicad.org/pcm/schemas/v1" \
+            --arg repname "NURD Library Repo" \
+            --arg repdesc "Repository for NURD KiCad symbols, footprints, and 3D models." \
+            --arg ident "com.github.fundeckhermit.nurd-template" \
+            --arg pkgname "NURD Symbol Library" \
+            --arg ptype "library" \
+            --arg version "$VERSION" \
+            --arg url "$URL" \
+            --arg sha "$SHA" \
+            --argjson dlsize "$DL_SIZE" \
+            --argjson instsize "$INST_SIZE" \
+            '{
+              "$schema": $schema,
+              "repositories": [
+                {
+                  "name": $repname,
+                  "description": $repdesc,
+                  "packages": [
+                    {
+                      "identifier": $ident,
+                      "name": $pkgname,
+                      "type": $ptype,
+                      "releases": [
+                        {
+                          "version": $version,
+                          "download_url": $url,
+                          "download_sha256": $sha,
+                          "download_size": $dlsize,
+                          "install_size": $instsize
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }' > gh-pages/repository.json
 
       - name: Commit & push repository.json to gh-pages
         run: |

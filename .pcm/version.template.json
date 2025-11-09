@@ -1,0 +1,9 @@
+{
+  "version": "$VERSION",
+  "status": "$STATUS",
+  "kicad_version": "$KICAD_VERSION",
+  "download_url": "$DOWNLOAD_URL",
+  "download_sha256": "$DOWNLOAD_SHA256",
+  "download_size": $DOWNLOAD_SIZE,
+  "install_size": $INSTALL_SIZE
+}

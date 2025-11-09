@@ -17,17 +17,8 @@
       "resources": {
         "repository": "https://github.com/FunDeckHermit/NURD-Template"
       },
-      "versions": [
-        {
-          "version": "$VERSION",
-          "status": "testing",
-          "kicad_version": "7.0",
-          "download_url": "$DOWNLOAD_URL",
-          "download_sha256": "$DOWNLOAD_SHA256",
-          "download_size": $DOWNLOAD_SIZE,
-          "install_size": $INSTALL_SIZE
-        }
-      ]
+      "versions": []
     }
   ]
 }
+

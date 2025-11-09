@@ -2,7 +2,7 @@ name: Publish PCM repository.json
 
 on:
   workflow_run:
-    workflows: ["Release (bump version, zip, publish)"]  # Must match the 'name:' inside release.yml
+    workflows: ["Release (bump version, zip, publish)"]  # Must match the 'name:' in release.yml
     types: [completed]
 
 jobs:
@@ -13,7 +13,7 @@ jobs:
       contents: write  # Needed to push to gh-pages
 
     steps:
-      - name: Checkout default branch
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -55,10 +55,9 @@ jobs:
 
       - name: Write repository.json
         run: |
-          VERSION="${{ steps.rel.outputs.tag#v }}"
-          cat > gh-pages/repository.json <<JSON
+          cat > gh-pages/repository.json <<'JSON'
 {
-  "\$schema": "https://go.kicad.org/pcm/schemas/v1",
+  "$schema": "https://go.kicad.org/pcm/schemas/v1",
   "repositories": [
     {
       "name": "NURD Library Repo",
@@ -70,15 +69,11 @@ jobs:
           "type": "library",
           "releases": [
             {
-              "version": "${VERSION}",
-              "download_url": "${{ steps.rel.outputs.url }}",
-              "download_sha256": "${{ steps.zip.outputs.sha }}",
-              "download_size": ${{
-                steps.zip.outputs.dl_size
-              }},
-              "install_size": ${{
-                steps.zip.outputs.inst_size
-              }}
+              "version": "REPLACE_VERSION",
+              "download_url": "REPLACE_URL",
+              "download_sha256": "REPLACE_SHA",
+              "download_size": REPLACE_DL_SIZE,
+              "install_size": REPLACE_INST_SIZE
             }
           ]
         }
@@ -87,6 +82,11 @@ jobs:
   ]
 }
 JSON
+          sed -i "s/REPLACE_VERSION/${{ steps.rel.outputs.tag#v }}/" gh-pages/repository.json
+          sed -i "s#REPLACE_URL#${{ steps.rel.outputs.url }}#" gh-pages/repository.json
+          sed -i "s/REPLACE_SHA/${{ steps.zip.outputs.sha }}/" gh-pages/repository.json
+          sed -i "s/REPLACE_DL_SIZE/${{ steps.zip.outputs.dl_size }}/" gh-pages/repository.json
+          sed -i "s/REPLACE_INST_SIZE/${{ steps.zip.outputs.inst_size }}/" gh-pages/repository.json
 
       - name: Commit & push repository.json to gh-pages
         run: |

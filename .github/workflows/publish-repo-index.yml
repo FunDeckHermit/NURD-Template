@@ -62,6 +62,7 @@ jobs:
 
       - name: Fill template → gh-pages/repository.json
         env:
+          SCHEMAKEY: schema
           VERSION: ${{ steps.rel.outputs.tag }}
           DOWNLOAD_URL: ${{ steps.rel.outputs.url }}
           DOWNLOAD_SHA256: ${{ steps.zip.outputs.sha }}
@@ -69,9 +70,9 @@ jobs:
           INSTALL_SIZE: ${{ steps.zip.outputs.inst_size }}
         run: |
           VERSION="${VERSION#v}"  # strip leading 'v' if present
-          export VERSION DOWNLOAD_URL DOWNLOAD_SHA256 DOWNLOAD_SIZE INSTALL_SIZE
+          export SCHEMAKEY VERSION DOWNLOAD_URL DOWNLOAD_SHA256 DOWNLOAD_SIZE INSTALL_SIZE
           envsubst < .pcm/repository.template.json > gh-pages/repository.json
-          jq . gh-pages/repository.json > /dev/null  # validate JSON
+          jq . gh-pages/repository.json > /dev/null  # sanity check JSON
 
       - name: Commit & push repository.json to gh-pages
         run: |

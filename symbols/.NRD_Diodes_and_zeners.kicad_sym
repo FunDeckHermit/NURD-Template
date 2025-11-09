@@ -374,7 +374,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:Nexperia_CFP15_SOT-1289"
+		(property "Footprint" "PCM_nurd-fp:Nexperia_CFP15_SOT-1289"
 			(at 0.762 14.732 0)
 			(effects
 				(font
@@ -2950,7 +2950,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "_projectlib:Wurth1206BottomMountDome"
+		(property "Footprint" "PCM_nurd-fp:Wurth1206BottomMountDome"
 			(at -10.16 6.35 0)
 			(effects
 				(font
@@ -3185,7 +3185,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "_projectlib:Wurth1206BottomMountDome"
+		(property "Footprint" "PCM_nurd-fp:Wurth1206BottomMountDome"
 			(at -10.16 6.35 0)
 			(effects
 				(font
@@ -3420,7 +3420,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "_projectlib:Wurth1205BottomMountBiDir"
+		(property "Footprint" "PCM_nurd-fp:Wurth1205BottomMountBiDir"
 			(at -10.16 6.35 0)
 			(effects
 				(font

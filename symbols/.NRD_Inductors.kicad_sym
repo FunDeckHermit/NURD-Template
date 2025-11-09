@@ -24,7 +24,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:DLW21HN"
+		(property "Footprint" "PCM_nurd-fp:DLW21HN"
 			(at 1.27 16.51 0)
 			(effects
 				(font
@@ -436,7 +436,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:DLW21HN"
+		(property "Footprint" "PCM_nurd-fp:DLW21HN"
 			(at 1.27 16.51 0)
 			(effects
 				(font
@@ -848,7 +848,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:JEFL243B-9101H-01"
+		(property "Footprint" "PCM_nurd-fp:JEFL243B-9101H-01"
 			(at 1.27 16.51 0)
 			(effects
 				(font
@@ -1261,7 +1261,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:L_0806A_Vishay"
+		(property "Footprint" "PCM_nurd-fp:L_0806A_Vishay"
 			(at 33.02 7.62 0)
 			(effects
 				(font
@@ -1489,7 +1489,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:L_0806A_Vishay"
+		(property "Footprint" "PCM_nurd-fp:L_0806A_Vishay"
 			(at 33.02 7.62 0)
 			(effects
 				(font
@@ -1717,7 +1717,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:L_0806A_Vishay"
+		(property "Footprint" "PCM_nurd-fp:L_0806A_Vishay"
 			(at 33.02 7.62 0)
 			(effects
 				(font
@@ -2173,7 +2173,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:L_Vishay_IHLE-2525CD"
+		(property "Footprint" "PCM_nurd-fp:L_Vishay_IHLE-2525CD"
 			(at 21.59 5.08 0)
 			(effects
 				(font
@@ -2453,7 +2453,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:L_Vishay_IHLE-2525CD"
+		(property "Footprint" "PCM_nurd-fp:L_Vishay_IHLE-2525CD"
 			(at 21.59 5.08 0)
 			(effects
 				(font
@@ -2733,7 +2733,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:L_Vishay_IHLE-2525CD"
+		(property "Footprint" "PCM_nurd-fp:L_Vishay_IHLE-2525CD"
 			(at 21.59 5.08 0)
 			(effects
 				(font
@@ -3013,7 +3013,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:L_Vishay_IHLE-2525CD"
+		(property "Footprint" "PCM_nurd-fp:L_Vishay_IHLE-2525CD"
 			(at 21.59 5.08 0)
 			(effects
 				(font
@@ -3293,7 +3293,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:L_Vishay_IHLE-2525CD"
+		(property "Footprint" "PCM_nurd-fp:L_Vishay_IHLE-2525CD"
 			(at 21.59 5.08 0)
 			(effects
 				(font
@@ -3573,7 +3573,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:L_Vishay_IHLE-4040DD_L"
+		(property "Footprint" "PCM_nurd-fp:L_Vishay_IHLE-4040DD_L"
 			(at 21.59 5.08 0)
 			(effects
 				(font
@@ -3853,7 +3853,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:L_Vishay_IHLE-4040DD_L"
+		(property "Footprint" "PCM_nurd-fp:L_Vishay_IHLE-4040DD_L"
 			(at 21.59 5.08 0)
 			(effects
 				(font
@@ -4133,7 +4133,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:L_Vishay_IHLE-4040DD_L"
+		(property "Footprint" "PCM_nurd-fp:L_Vishay_IHLE-4040DD_L"
 			(at 21.59 5.08 0)
 			(effects
 				(font
@@ -4413,7 +4413,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:L_Vishay_IHLE-4040DD_L"
+		(property "Footprint" "PCM_nurd-fp:L_Vishay_IHLE-4040DD_L"
 			(at 21.59 5.08 0)
 			(effects
 				(font
@@ -4693,7 +4693,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:L_Vishay_IHLE-4040DD_L"
+		(property "Footprint" "PCM_nurd-fp:L_Vishay_IHLE-4040DD_L"
 			(at 21.59 5.08 0)
 			(effects
 				(font
@@ -4973,7 +4973,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:L_Vishay_IHLE5050FH"
+		(property "Footprint" "PCM_nurd-fp:L_Vishay_IHLE5050FH"
 			(at 21.59 5.08 0)
 			(effects
 				(font
@@ -5253,7 +5253,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:L_3825_Vishay"
+		(property "Footprint" "PCM_nurd-fp:L_3825_Vishay"
 			(at 33.02 7.62 0)
 			(effects
 				(font
@@ -5481,7 +5481,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:L_Wuerth_SPC-48x8"
+		(property "Footprint" "PCM_nurd-fp:L_Wuerth_SPC-48x8"
 			(at 0 17.78 0)
 			(effects
 				(font
@@ -5692,7 +5692,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:L_Wuerth_HCI-1030-datasheet"
+		(property "Footprint" "PCM_nurd-fp:L_Wuerth_HCI-1030-datasheet"
 			(at 0 17.78 0)
 			(effects
 				(font

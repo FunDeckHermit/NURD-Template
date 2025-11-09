@@ -1452,7 +1452,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "_projectlib:LGA25S229P5X5_1219X1219X400"
+		(property "Footprint" "PCM_nurd-fp:LGA25S229P5X5_1219X1219X400"
 			(at -1.27 24.13 0)
 			(effects
 				(font
@@ -2041,7 +2041,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "_projectlib:LGA25S229P5X5_1219X1219X400"
+		(property "Footprint" "PCM_nurd-fp:LGA25S229P5X5_1219X1219X400"
 			(at -1.27 24.13 0)
 			(effects
 				(font
@@ -2630,7 +2630,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "_projectlib:LGA25S229P5X5_1219X1219X400"
+		(property "Footprint" "PCM_nurd-fp:LGA25S229P5X5_1219X1219X400"
 			(at -1.27 24.13 0)
 			(effects
 				(font
@@ -3219,7 +3219,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "_projectlib:LGA25S229P5X5_1219X1219X400"
+		(property "Footprint" "PCM_nurd-fp:LGA25S229P5X5_1219X1219X400"
 			(at -1.27 24.13 0)
 			(effects
 				(font

@@ -26,7 +26,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:GCT_USB4085-GF-A_REVA4"
+		(property "Footprint" "PCM_nurd-fp:GCT_USB4085-GF-A_REVA4"
 			(at 10.16 17.78 0)
 			(effects
 				(font
@@ -510,7 +510,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "_projectlib:USB_C_Receptacle_USB45145-03-0230-C"
+		(property "Footprint" "PCM_nurd-fp:USB_C_Receptacle_USB45145-03-0230-C"
 			(at 10.16 17.78 0)
 			(effects
 				(font
@@ -1003,7 +1003,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "_projectlib:USB_C_Receptacle_USB4500-03-0-A"
+		(property "Footprint" "PCM_nurd-fp:USB_C_Receptacle_USB4500-03-0-A"
 			(at 10.16 17.78 0)
 			(effects
 				(font
@@ -1493,7 +1493,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:J_GT17VC-6DP-DS(70)"
+		(property "Footprint" "PCM_nurd-fp:J_GT17VC-6DP-DS(70)"
 			(at 8.89 12.7 0)
 			(effects
 				(font
@@ -1833,7 +1833,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:GT32-19DP-0.75DSA"
+		(property "Footprint" "PCM_nurd-fp:GT32-19DP-0.75DSA"
 			(at -2.4766 33.02 0)
 			(effects
 				(font
@@ -2784,7 +2784,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:J_S05B-PASK-2"
+		(property "Footprint" "PCM_nurd-fp:J_S05B-PASK-2"
 			(at -1.778 -10.668 0)
 			(effects
 				(font
@@ -3046,7 +3046,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:J_Keystone901"
+		(property "Footprint" "PCM_nurd-fp:J_Keystone901"
 			(at 3.81 12.7 0)
 			(effects
 				(font
@@ -3277,7 +3277,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:KYCON_KPJX-4S-S"
+		(property "Footprint" "PCM_nurd-fp:KYCON_KPJX-4S-S"
 			(at 1.27 20.066 0)
 			(effects
 				(font
@@ -3565,7 +3565,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:J_AG3FCE"
+		(property "Footprint" "PCM_nurd-fp:J_AG3FCE"
 			(at 0.762 14.478 0)
 			(effects
 				(font
@@ -3900,7 +3900,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:J_AG4FCE"
+		(property "Footprint" "PCM_nurd-fp:J_AG4FCE"
 			(at 1.016 15.24 0)
 			(effects
 				(font
@@ -4301,7 +4301,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "_projectlib:MOLEX_39-30-1041"
+		(property "Footprint" "PCM_nurd-fp:MOLEX_39-30-1041"
 			(at 7.62 16.51 0)
 			(effects
 				(font
@@ -4503,7 +4503,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:J_206832-0202"
+		(property "Footprint" "PCM_nurd-fp:J_206832-0202"
 			(at 2.032 7.874 0)
 			(effects
 				(font
@@ -4705,7 +4705,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:J_212528-0201"
+		(property "Footprint" "PCM_nurd-fp:J_212528-0201"
 			(at 2.032 7.874 0)
 			(effects
 				(font
@@ -4907,7 +4907,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:J_212528-0601"
+		(property "Footprint" "PCM_nurd-fp:J_212528-0601"
 			(at -0.254 11.938 0)
 			(effects
 				(font
@@ -5225,7 +5225,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:J_212528-0801"
+		(property "Footprint" "PCM_nurd-fp:J_212528-0801"
 			(at 2.794 15.24 0)
 			(effects
 				(font
@@ -5592,7 +5592,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:J_215760-2002"
+		(property "Footprint" "PCM_nurd-fp:J_215760-2002"
 			(at -0.254 8.89 0)
 			(effects
 				(font
@@ -5794,7 +5794,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:J_215760-2003"
+		(property "Footprint" "PCM_nurd-fp:J_215760-2003"
 			(at 0.508 7.112 0)
 			(effects
 				(font
@@ -6025,7 +6025,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:J_216571-1003"
+		(property "Footprint" "PCM_nurd-fp:J_216571-1003"
 			(at 0.508 7.112 0)
 			(effects
 				(font
@@ -6259,7 +6259,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "_projectlib:MOLEX_39-30-1041"
+		(property "Footprint" "PCM_nurd-fp:MOLEX_39-30-1041"
 			(at 7.62 16.51 0)
 			(effects
 				(font
@@ -6473,7 +6473,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "_projectlib:MOLEX_39-30-1041"
+		(property "Footprint" "PCM_nurd-fp:MOLEX_39-30-1041"
 			(at 5.842 25.654 0)
 			(effects
 				(font
@@ -6678,7 +6678,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "_projectlib:MOLEX_43045-0201"
+		(property "Footprint" "PCM_nurd-fp:MOLEX_43045-0201"
 			(at 0 10.16 0)
 			(effects
 				(font
@@ -6847,7 +6847,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "_projectlib:MOLEX_45586-0005"
+		(property "Footprint" "PCM_nurd-fp:MOLEX_45586-0005"
 			(at 5.08 26.67 0)
 			(effects
 				(font
@@ -7124,7 +7124,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:Molex_47053-1000"
+		(property "Footprint" "PCM_nurd-fp:Molex_47053-1000"
 			(at -1.016 19.558 0)
 			(effects
 				(font
@@ -7519,7 +7519,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "_projectlib:SAMTEC_SSM-107-L-SV-LC-002"
+		(property "Footprint" "PCM_nurd-fp:SAMTEC_SSM-107-L-SV-LC-002"
 			(at 2.54 29.21 0)
 			(effects
 				(font
@@ -7768,7 +7768,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "_projectlib:SAMTEC_BSW-106-X-X-D"
+		(property "Footprint" "PCM_nurd-fp:SAMTEC_BSW-106-X-X-D"
 			(at -7.62 45.72 0)
 			(effects
 				(font
@@ -8117,7 +8117,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "_projectlib:SAMTEC_BSW-108-X-X-D"
+		(property "Footprint" "PCM_nurd-fp:SAMTEC_BSW-108-X-X-D"
 			(at -7.62 45.72 0)
 			(effects
 				(font
@@ -8538,7 +8538,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "_projectlib:SAMTEC_TSW-106-27-G-D"
+		(property "Footprint" "PCM_nurd-fp:SAMTEC_TSW-106-27-G-D"
 			(at -1.27 40.64 0)
 			(effects
 				(font
@@ -8886,7 +8886,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "_projectlib:SAMTEC_TSW-108-27-G-D"
+		(property "Footprint" "PCM_nurd-fp:SAMTEC_TSW-108-27-G-D"
 			(at -2.794 64.262 0)
 			(effects
 				(font
@@ -9317,7 +9317,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:SAMTEC_TSW-120-15-T-S"
+		(property "Footprint" "PCM_nurd-fp:SAMTEC_TSW-120-15-T-S"
 			(at -2.794 64.262 0)
 			(effects
 				(font
@@ -9820,7 +9820,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "_projectlib:SAMTEC_TSW-120-17-T-S"
+		(property "Footprint" "PCM_nurd-fp:SAMTEC_TSW-120-17-T-S"
 			(at -2.794 64.262 0)
 			(effects
 				(font
@@ -10323,7 +10323,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "_projectlib:TAG-CONNECT_TC2050-IDC"
+		(property "Footprint" "PCM_nurd-fp:TAG-CONNECT_TC2050-IDC"
 			(at 0.254 20.828 0)
 			(effects
 				(font
@@ -10641,7 +10641,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:TERM2_1217107-1_TEC"
+		(property "Footprint" "PCM_nurd-fp:TERM2_1217107-1_TEC"
 			(at 0 -10.414 0)
 			(effects
 				(font
@@ -10865,7 +10865,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "_projectlib:TE_5227161-1"
+		(property "Footprint" "PCM_nurd-fp:TE_5227161-1"
 			(at -1.27 10.16 0)
 			(effects
 				(font
@@ -11324,7 +11324,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:WURTH_615008142621"
+		(property "Footprint" "PCM_nurd-fp:WURTH_615008142621"
 			(at -2.54 21.59 0)
 			(effects
 				(font
@@ -11618,7 +11618,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:WURTH_615032137821"
+		(property "Footprint" "PCM_nurd-fp:WURTH_615032137821"
 			(at -0.508 25.908 0)
 			(effects
 				(font
@@ -12452,7 +12452,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:DSUB-9_Male_Horizontal_618009231221"
+		(property "Footprint" "PCM_nurd-fp:DSUB-9_Male_Horizontal_618009231221"
 			(at 0.254 28.194 0)
 			(effects
 				(font
@@ -12986,7 +12986,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:691404910002B"
+		(property "Footprint" "PCM_nurd-fp:691404910002B"
 			(at 0.254 7.62 0)
 			(effects
 				(font
@@ -13209,7 +13209,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:Terminal_691411510002"
+		(property "Footprint" "PCM_nurd-fp:Terminal_691411510002"
 			(at 1.016 13.208 0)
 			(effects
 				(font
@@ -13404,7 +13404,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:691411710002B"
+		(property "Footprint" "PCM_nurd-fp:691411710002B"
 			(at 0.254 7.62 0)
 			(effects
 				(font
@@ -13628,7 +13628,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:MTJ-88ARX1-FSM-LH"
+		(property "Footprint" "PCM_nurd-fp:MTJ-88ARX1-FSM-LH"
 			(at 0.254 -20.32 0)
 			(effects
 				(font
@@ -14348,7 +14348,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:RJ45_Wuerth_74980111211_Horizontal"
+		(property "Footprint" "PCM_nurd-fp:RJ45_Wuerth_74980111211_Horizontal"
 			(at 0 12.7 0)
 			(effects
 				(font
@@ -15895,7 +15895,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:RJ45_Wuerth_7498011122AR"
+		(property "Footprint" "PCM_nurd-fp:RJ45_Wuerth_7498011122AR"
 			(at 0 12.7 0)
 			(effects
 				(font

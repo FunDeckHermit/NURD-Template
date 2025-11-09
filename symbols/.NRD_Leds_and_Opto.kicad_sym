@@ -22,7 +22,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:Sx39-1xxxxx"
+		(property "Footprint" "PCM_nurd-fp:Sx39-1xxxxx"
 			(at -2.032 22.352 0)
 			(effects
 				(font
@@ -497,7 +497,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:7SEGMENT-LED__vishay_vdmx10x0"
+		(property "Footprint" "PCM_nurd-fp:7SEGMENT-LED__vishay_vdmx10x0"
 			(at -2.032 22.352 0)
 			(effects
 				(font
@@ -972,7 +972,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:7SEGMENT-LED__vishay_vdmx10x0"
+		(property "Footprint" "PCM_nurd-fp:7SEGMENT-LED__vishay_vdmx10x0"
 			(at -2.032 22.352 0)
 			(effects
 				(font
@@ -1452,7 +1452,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "_projectlib:LED_SK6812_explicit"
+		(property "Footprint" "PCM_nurd-fp:LED_SK6812_explicit"
 			(at -19.05 23.368 0)
 			(effects
 				(font
@@ -1767,7 +1767,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:PLCC8"
+		(property "Footprint" "PCM_nurd-fp:PLCC8"
 			(at 8.128 5.08 0)
 			(effects
 				(font
@@ -2421,7 +2421,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:LED_LXMLPX020000"
+		(property "Footprint" "PCM_nurd-fp:LED_LXMLPX020000"
 			(at 1.27 20.32 0)
 			(effects
 				(font
@@ -2883,7 +2883,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:LUXEON_2835"
+		(property "Footprint" "PCM_nurd-fp:LUXEON_2835"
 			(at 0 13.97 0)
 			(effects
 				(font
@@ -3115,7 +3115,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:LED_LUXEONC"
+		(property "Footprint" "PCM_nurd-fp:LED_LUXEONC"
 			(at 1.27 20.32 0)
 			(effects
 				(font
@@ -3579,7 +3579,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:LED_LUXEONC"
+		(property "Footprint" "PCM_nurd-fp:LED_LUXEONC"
 			(at 1.27 20.32 0)
 			(effects
 				(font
@@ -4043,7 +4043,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:LED_LUXEONC"
+		(property "Footprint" "PCM_nurd-fp:LED_LUXEONC"
 			(at 1.27 20.32 0)
 			(effects
 				(font
@@ -4507,7 +4507,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:LED_LUXEONC"
+		(property "Footprint" "PCM_nurd-fp:LED_LUXEONC"
 			(at 1.27 20.32 0)
 			(effects
 				(font
@@ -4971,7 +4971,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:LED_LUXEONC"
+		(property "Footprint" "PCM_nurd-fp:LED_LUXEONC"
 			(at 1.27 20.32 0)
 			(effects
 				(font
@@ -5435,7 +5435,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:LED_LUXEONC"
+		(property "Footprint" "PCM_nurd-fp:LED_LUXEONC"
 			(at 1.27 20.32 0)
 			(effects
 				(font
@@ -5899,7 +5899,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:LED_LUXEONC"
+		(property "Footprint" "PCM_nurd-fp:LED_LUXEONC"
 			(at 1.27 20.32 0)
 			(effects
 				(font
@@ -6363,7 +6363,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:LED_LUXEONC"
+		(property "Footprint" "PCM_nurd-fp:LED_LUXEONC"
 			(at 1.27 20.32 0)
 			(effects
 				(font
@@ -6827,7 +6827,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:LED_LUXEONC"
+		(property "Footprint" "PCM_nurd-fp:LED_LUXEONC"
 			(at 1.27 20.32 0)
 			(effects
 				(font
@@ -7291,7 +7291,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:LED_LUXEONC"
+		(property "Footprint" "PCM_nurd-fp:LED_LUXEONC"
 			(at 1.27 20.32 0)
 			(effects
 				(font
@@ -7755,7 +7755,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:LED_LUXEONC"
+		(property "Footprint" "PCM_nurd-fp:LED_LUXEONC"
 			(at 1.27 20.32 0)
 			(effects
 				(font
@@ -9849,7 +9849,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "_projectlib:Wurth0603SideView"
+		(property "Footprint" "PCM_nurd-fp:Wurth0603SideView"
 			(at -10.16 6.35 0)
 			(effects
 				(font
@@ -10084,7 +10084,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "_projectlib:Wurth1206BottomMountDome"
+		(property "Footprint" "PCM_nurd-fp:Wurth1206BottomMountDome"
 			(at -10.16 6.35 0)
 			(effects
 				(font
@@ -10315,7 +10315,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:VLP_300_F"
+		(property "Footprint" "PCM_nurd-fp:VLP_300_F"
 			(at -0.254 10.668 0)
 			(effects
 				(font
@@ -10532,7 +10532,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:SOIC-8_3.81x9.35mm_P2.54mm"
+		(property "Footprint" "PCM_nurd-fp:SOIC-8_3.81x9.35mm_P2.54mm"
 			(at 1.27 10.16 0)
 			(effects
 				(font
@@ -11544,7 +11544,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:DIP-4_W8.70mm_LF1"
+		(property "Footprint" "PCM_nurd-fp:DIP-4_W8.70mm_LF1"
 			(at -5.08 -5.08 0)
 			(effects
 				(font
@@ -12132,7 +12132,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:Toshiba-11-2D1A"
+		(property "Footprint" "PCM_nurd-fp:Toshiba-11-2D1A"
 			(at 9.652 14.732 0)
 			(effects
 				(font
@@ -12719,7 +12719,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:Toshiba-11-2D1A"
+		(property "Footprint" "PCM_nurd-fp:Toshiba-11-2D1A"
 			(at 9.652 14.732 0)
 			(effects
 				(font
@@ -13306,7 +13306,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:Vishay -SOP-4V2 - P2.54mm"
+		(property "Footprint" "PCM_nurd-fp:Vishay -SOP-4V2 - P2.54mm"
 			(at 9.652 14.732 0)
 			(effects
 				(font

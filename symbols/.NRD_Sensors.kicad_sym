@@ -725,7 +725,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "_projectlib:WSON-8-1EP_2.5x2.5mm_P0.5mm_EP0.9x1.85mm_PullBack"
+		(property "Footprint" "PCM_nurd-fp:WSON-8-1EP_2.5x2.5mm_P0.5mm_EP0.9x1.85mm_PullBack"
 			(at -22.86 29.972 0)
 			(effects
 				(font

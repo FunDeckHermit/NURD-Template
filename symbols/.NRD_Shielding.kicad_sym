@@ -27,7 +27,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:WE-SHC_3670220"
+		(property "Footprint" "PCM_nurd-fp:WE-SHC_3670220"
 			(at 2.54 12.7 0)
 			(effects
 				(font
@@ -465,7 +465,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:WE-SHC_3670223"
+		(property "Footprint" "PCM_nurd-fp:WE-SHC_3670223"
 			(at 2.54 12.7 0)
 			(effects
 				(font
@@ -903,7 +903,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:WE-SHC_3670263"
+		(property "Footprint" "PCM_nurd-fp:WE-SHC_3670263"
 			(at 2.54 12.7 0)
 			(effects
 				(font
@@ -1341,7 +1341,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:WE-SHC_3670308"
+		(property "Footprint" "PCM_nurd-fp:WE-SHC_3670308"
 			(at 2.54 12.7 0)
 			(effects
 				(font

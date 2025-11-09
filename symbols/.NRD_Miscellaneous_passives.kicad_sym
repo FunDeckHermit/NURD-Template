@@ -499,7 +499,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:7466302"
+		(property "Footprint" "PCM_nurd-fp:7466302"
 			(at -0.254 9.652 0)
 			(effects
 				(font
@@ -656,7 +656,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:TestPoint_Keystone_5010-5014_Multipurpose"
+		(property "Footprint" "PCM_nurd-fp:TestPoint_Keystone_5010-5014_Multipurpose"
 			(at 25.4 11.43 0)
 			(effects
 				(font
@@ -837,7 +837,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "_projectlib:MountingHole_1.28mm"
+		(property "Footprint" "PCM_nurd-fp:MountingHole_1.28mm"
 			(at 15.24 16.51 0)
 			(effects
 				(font
@@ -1007,7 +1007,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:Spacer_Wurth_9774005243R"
+		(property "Footprint" "PCM_nurd-fp:Spacer_Wurth_9774005243R"
 			(at -0.762 23.368 0)
 			(effects
 				(font
@@ -1172,7 +1172,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:Spacer_Wurth_9774010243R"
+		(property "Footprint" "PCM_nurd-fp:Spacer_Wurth_9774010243R"
 			(at -0.762 23.368 0)
 			(effects
 				(font
@@ -1337,7 +1337,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:Spacer_Wurth_9774060243R"
+		(property "Footprint" "PCM_nurd-fp:Spacer_Wurth_9774060243R"
 			(at -0.762 23.368 0)
 			(effects
 				(font
@@ -1502,7 +1502,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:Spacer_Wurth_9774010360R"
+		(property "Footprint" "PCM_nurd-fp:Spacer_Wurth_9774010360R"
 			(at -0.762 23.368 0)
 			(effects
 				(font
@@ -1667,7 +1667,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:Spacer_Wurth_9774100360R"
+		(property "Footprint" "PCM_nurd-fp:Spacer_Wurth_9774100360R"
 			(at -0.762 23.368 0)
 			(effects
 				(font
@@ -1832,7 +1832,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:Spacer_Wurth_9774160360R"
+		(property "Footprint" "PCM_nurd-fp:Spacer_Wurth_9774160360R"
 			(at -0.762 23.368 0)
 			(effects
 				(font
@@ -1996,7 +1996,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:SCREW_Keystone_9191-3_M3_6mm"
+		(property "Footprint" "PCM_nurd-fp:SCREW_Keystone_9191-3_M3_6mm"
 			(at -0.508 7.112 0)
 			(effects
 				(font
@@ -2258,7 +2258,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:14AWG_MountingHole"
+		(property "Footprint" "PCM_nurd-fp:14AWG_MountingHole"
 			(at 1.27 -9.652 0)
 			(effects
 				(font

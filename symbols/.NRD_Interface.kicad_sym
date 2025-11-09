@@ -3792,7 +3792,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:TLIN1039-SOT-23-8"
+		(property "Footprint" "PCM_nurd-fp:TLIN1039-SOT-23-8"
 			(at 0 26.67 0)
 			(effects
 				(font

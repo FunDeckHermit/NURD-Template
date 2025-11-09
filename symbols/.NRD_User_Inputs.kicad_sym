@@ -22,7 +22,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:btn_momentary_430172043816"
+		(property "Footprint" "PCM_nurd-fp:btn_momentary_430172043816"
 			(at 0 11.43 0)
 			(effects
 				(font
@@ -279,7 +279,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:btn_momentary_430172073816"
+		(property "Footprint" "PCM_nurd-fp:btn_momentary_430172073816"
 			(at 0 11.43 0)
 			(effects
 				(font
@@ -536,7 +536,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:btn_momentary_430172085816"
+		(property "Footprint" "PCM_nurd-fp:btn_momentary_430172085816"
 			(at 0 11.43 0)
 			(effects
 				(font
@@ -793,7 +793,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:SW_PUSH-12mm_Wuerth-430456085736"
+		(property "Footprint" "PCM_nurd-fp:SW_PUSH-12mm_Wuerth-430456085736"
 			(at 0 11.43 0)
 			(effects
 				(font
@@ -999,7 +999,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:SW_PUSH-12mm_Wuerth-430476043716"
+		(property "Footprint" "PCM_nurd-fp:SW_PUSH-12mm_Wuerth-430476043716"
 			(at 0 11.43 0)
 			(effects
 				(font
@@ -1205,7 +1205,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:SW_PUSH-12mm_Wuerth-430476073716"
+		(property "Footprint" "PCM_nurd-fp:SW_PUSH-12mm_Wuerth-430476073716"
 			(at 0 11.43 0)
 			(effects
 				(font
@@ -1414,7 +1414,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:SW_Push_1P1T_NO_CK_KMR2"
+		(property "Footprint" "PCM_nurd-fp:SW_Push_1P1T_NO_CK_KMR2"
 			(at 31.75 16.51 0)
 			(effects
 				(font
@@ -2310,7 +2310,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:SW_PLMG5-GH"
+		(property "Footprint" "PCM_nurd-fp:SW_PLMG5-GH"
 			(at 3.048 26.162 0)
 			(effects
 				(font
@@ -2925,7 +2925,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:MSS2200G04"
+		(property "Footprint" "PCM_nurd-fp:MSS2200G04"
 			(at 1.778 15.748 0)
 			(effects
 				(font
@@ -3270,7 +3270,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:Dailywell_1MSxT2B4M6QES"
+		(property "Footprint" "PCM_nurd-fp:Dailywell_1MSxT2B4M6QES"
 			(at -1.27 8.89 0)
 			(effects
 				(font
@@ -3505,7 +3505,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:Dailywell_1MSxT2B4M6QES"
+		(property "Footprint" "PCM_nurd-fp:Dailywell_1MSxT2B4M6QES"
 			(at -1.27 8.89 0)
 			(effects
 				(font

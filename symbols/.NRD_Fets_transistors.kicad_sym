@@ -2543,7 +2543,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:PowerPAK_SO-8_Dual"
+		(property "Footprint" "PCM_nurd-fp:PowerPAK_SO-8_Dual"
 			(at -12.192 16.256 0)
 			(effects
 				(font
@@ -2956,7 +2956,7 @@
 				(justify right bottom)
 			)
 		)
-		(property "Footprint" "_projectlib:Vishay_PowerPAK_1212-8_Single"
+		(property "Footprint" "PCM_nurd-fp:Vishay_PowerPAK_1212-8_Single"
 			(at 10.16 7.62 0)
 			(effects
 				(font

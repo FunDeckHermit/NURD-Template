@@ -27,7 +27,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:1206-4x-array"
+		(property "Footprint" "PCM_nurd-fp:1206-4x-array"
 			(at 10.16 20.32 0)
 			(effects
 				(font
@@ -324,7 +324,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:1206-4x-array"
+		(property "Footprint" "PCM_nurd-fp:1206-4x-array"
 			(at 10.16 20.32 0)
 			(effects
 				(font
@@ -613,7 +613,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:1206-4x-array"
+		(property "Footprint" "PCM_nurd-fp:1206-4x-array"
 			(at 10.16 20.32 0)
 			(effects
 				(font
@@ -902,7 +902,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:1206-4x-array"
+		(property "Footprint" "PCM_nurd-fp:1206-4x-array"
 			(at 10.16 20.32 0)
 			(effects
 				(font
@@ -1191,7 +1191,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:1206-4x-array"
+		(property "Footprint" "PCM_nurd-fp:1206-4x-array"
 			(at 10.16 20.32 0)
 			(effects
 				(font
@@ -1480,7 +1480,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:1206-4x-array"
+		(property "Footprint" "PCM_nurd-fp:1206-4x-array"
 			(at 10.16 20.32 0)
 			(effects
 				(font
@@ -3392,7 +3392,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:SOP-20_7.5x12.8mm_P1.27mm"
+		(property "Footprint" "PCM_nurd-fp:SOP-20_7.5x12.8mm_P1.27mm"
 			(at -20.32 19.304 0)
 			(effects
 				(font
@@ -4020,7 +4020,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:1206-4x-array"
+		(property "Footprint" "PCM_nurd-fp:1206-4x-array"
 			(at 10.16 20.32 0)
 			(effects
 				(font
@@ -4294,7 +4294,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:1206-4x-array"
+		(property "Footprint" "PCM_nurd-fp:1206-4x-array"
 			(at 10.16 20.32 0)
 			(effects
 				(font
@@ -4568,7 +4568,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:1206-4x-array"
+		(property "Footprint" "PCM_nurd-fp:1206-4x-array"
 			(at 10.16 20.32 0)
 			(effects
 				(font
@@ -4842,7 +4842,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:1206-4x-array"
+		(property "Footprint" "PCM_nurd-fp:1206-4x-array"
 			(at 10.16 20.32 0)
 			(effects
 				(font
@@ -5116,7 +5116,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:1206-4x-array"
+		(property "Footprint" "PCM_nurd-fp:1206-4x-array"
 			(at 10.16 20.32 0)
 			(effects
 				(font
@@ -5390,7 +5390,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:1206-4x-array"
+		(property "Footprint" "PCM_nurd-fp:1206-4x-array"
 			(at 10.16 20.32 0)
 			(effects
 				(font
@@ -5664,7 +5664,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:1206-4x-array"
+		(property "Footprint" "PCM_nurd-fp:1206-4x-array"
 			(at 10.16 20.32 0)
 			(effects
 				(font
@@ -5938,7 +5938,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:1206-4x-array"
+		(property "Footprint" "PCM_nurd-fp:1206-4x-array"
 			(at 10.16 20.32 0)
 			(effects
 				(font
@@ -6212,7 +6212,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:1206-4x-array"
+		(property "Footprint" "PCM_nurd-fp:1206-4x-array"
 			(at 10.16 20.32 0)
 			(effects
 				(font
@@ -6486,7 +6486,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:1206-4x-array"
+		(property "Footprint" "PCM_nurd-fp:1206-4x-array"
 			(at 10.16 20.32 0)
 			(effects
 				(font
@@ -6760,7 +6760,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:1206-4x-array"
+		(property "Footprint" "PCM_nurd-fp:1206-4x-array"
 			(at 10.16 20.32 0)
 			(effects
 				(font
@@ -7034,7 +7034,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:1206-4x-array"
+		(property "Footprint" "PCM_nurd-fp:1206-4x-array"
 			(at 10.16 20.32 0)
 			(effects
 				(font
@@ -7317,7 +7317,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:1206-4x-array"
+		(property "Footprint" "PCM_nurd-fp:1206-4x-array"
 			(at 10.16 20.32 0)
 			(effects
 				(font
@@ -7591,7 +7591,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:1206-4x-array"
+		(property "Footprint" "PCM_nurd-fp:1206-4x-array"
 			(at 10.16 20.32 0)
 			(effects
 				(font
@@ -7865,7 +7865,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:1206-4x-array"
+		(property "Footprint" "PCM_nurd-fp:1206-4x-array"
 			(at 10.16 20.32 0)
 			(effects
 				(font
@@ -8139,7 +8139,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:1206-4x-array"
+		(property "Footprint" "PCM_nurd-fp:1206-4x-array"
 			(at 10.16 20.32 0)
 			(effects
 				(font
@@ -8413,7 +8413,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:1206-4x-array"
+		(property "Footprint" "PCM_nurd-fp:1206-4x-array"
 			(at 10.16 20.32 0)
 			(effects
 				(font
@@ -8687,7 +8687,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:1206-4x-array"
+		(property "Footprint" "PCM_nurd-fp:1206-4x-array"
 			(at 10.16 20.32 0)
 			(effects
 				(font
@@ -8961,7 +8961,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:1206-4x-array"
+		(property "Footprint" "PCM_nurd-fp:1206-4x-array"
 			(at 10.16 20.32 0)
 			(effects
 				(font

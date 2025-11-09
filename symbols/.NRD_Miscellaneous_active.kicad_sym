@@ -27,7 +27,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "_projectlib:XDCR_AMG88xx"
+		(property "Footprint" "PCM_nurd-fp:XDCR_AMG88xx"
 			(at 12.954 8.636 0)
 			(effects
 				(font
@@ -625,7 +625,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "_projectlib:SOIC-8_Microchip_P1.27mm"
+		(property "Footprint" "PCM_nurd-fp:SOIC-8_Microchip_P1.27mm"
 			(at -0.762 23.622 0)
 			(effects
 				(font
@@ -1460,7 +1460,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:SOP65P640X120-17N"
+		(property "Footprint" "PCM_nurd-fp:SOP65P640X120-17N"
 			(at -2.54 37.338 0)
 			(effects
 				(font
@@ -2963,7 +2963,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:SOIC-8_5.23x5.23mm_P1.27mm"
+		(property "Footprint" "PCM_nurd-fp:SOIC-8_5.23x5.23mm_P1.27mm"
 			(at -1.016 25.908 0)
 			(effects
 				(font
@@ -3534,7 +3534,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "_projectlib:SPH0655LM4H-1_KNO"
+		(property "Footprint" "PCM_nurd-fp:SPH0655LM4H-1_KNO"
 			(at -0.762 23.622 0)
 			(effects
 				(font
@@ -3739,7 +3739,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:RV-3032-C7"
+		(property "Footprint" "PCM_nurd-fp:RV-3032-C7"
 			(at 25.4 -8.89 0)
 			(effects
 				(font
@@ -4023,7 +4023,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "_projectlib:LGA_CXV0GC_1_STM"
+		(property "Footprint" "PCM_nurd-fp:LGA_CXV0GC_1_STM"
 			(at 15.748 17.018 0)
 			(effects
 				(font
@@ -4453,7 +4453,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "_projectlib:LGA_CXV0GC_1_STM"
+		(property "Footprint" "PCM_nurd-fp:LGA_CXV0GC_1_STM"
 			(at 16.256 16.764 0)
 			(effects
 				(font

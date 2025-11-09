@@ -1030,7 +1030,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:FuseHolder_Regular"
+		(property "Footprint" "PCM_nurd-fp:FuseHolder_Regular"
 			(at -0.508 4.064 0)
 			(effects
 				(font
@@ -1213,7 +1213,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:55900000001"
+		(property "Footprint" "PCM_nurd-fp:55900000001"
 			(at 0.508 8.89 0)
 			(effects
 				(font
@@ -1434,7 +1434,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:37214000411"
+		(property "Footprint" "PCM_nurd-fp:37214000411"
 			(at 0.254 14.224 0)
 			(effects
 				(font
@@ -1791,7 +1791,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:Fuse_BOURNS_SCxxA"
+		(property "Footprint" "PCM_nurd-fp:Fuse_BOURNS_SCxxA"
 			(at 1.27 8.89 0)
 			(effects
 				(font
@@ -2199,7 +2199,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:R_Shunt_Susumu_1206"
+		(property "Footprint" "PCM_nurd-fp:R_Shunt_Susumu_1206"
 			(at 19.05 16.51 0)
 			(effects
 				(font
@@ -3549,7 +3549,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:Potentiometer_Vishay_TS63Y"
+		(property "Footprint" "PCM_nurd-fp:Potentiometer_Vishay_TS63Y"
 			(at -1.27 13.97 0)
 			(effects
 				(font
@@ -3784,7 +3784,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "_projectlib:Potentiometer_Vishay_TS63Z"
+		(property "Footprint" "PCM_nurd-fp:Potentiometer_Vishay_TS63Z"
 			(at -1.27 13.97 0)
 			(effects
 				(font

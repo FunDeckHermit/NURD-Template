@@ -24,7 +24,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:ESP32-C3-MINI-1U"
+		(property "Footprint" "PCM_nurd-fp:ESP32-C3-MINI-1U"
 			(at -0.762 50.038 0)
 			(effects
 				(font
@@ -1133,7 +1133,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:ESP32-C6-MINI-1"
+		(property "Footprint" "PCM_nurd-fp:ESP32-C6-MINI-1"
 			(at 0 -45.085 0)
 			(effects
 				(font
@@ -2223,7 +2223,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:ESP32-PICO-MINI-02U"
+		(property "Footprint" "PCM_nurd-fp:ESP32-PICO-MINI-02U"
 			(at 0 -44.45 0)
 			(effects
 				(font
@@ -3320,7 +3320,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:ESP32-S3-MINI-1U"
+		(property "Footprint" "PCM_nurd-fp:ESP32-S3-MINI-1U"
 			(at 0 -55.88 0)
 			(effects
 				(font
@@ -4622,7 +4622,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:ESP32-S3-WROOM-1"
+		(property "Footprint" "PCM_nurd-fp:ESP32-S3-WROOM-1"
 			(at 2.54 -48.26 0)
 			(effects
 				(font
@@ -5490,7 +5490,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:ESP32-S3-WROOM-1U"
+		(property "Footprint" "PCM_nurd-fp:ESP32-S3-WROOM-1U"
 			(at 2.54 -48.26 0)
 			(effects
 				(font

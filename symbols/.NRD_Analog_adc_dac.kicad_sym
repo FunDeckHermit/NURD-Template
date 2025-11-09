@@ -849,7 +849,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:TSSOP-14_4.4x5mm_P0.65mm"
+		(property "Footprint" "PCM_nurd-fp:TSSOP-14_4.4x5mm_P0.65mm"
 			(at 0 24.13 0)
 			(effects
 				(font
@@ -1788,7 +1788,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:Diodes_SO-8EP"
+		(property "Footprint" "PCM_nurd-fp:Diodes_SO-8EP"
 			(at -2.54 22.86 0)
 			(effects
 				(font

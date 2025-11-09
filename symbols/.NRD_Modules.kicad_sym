@@ -22,7 +22,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:MOD_BUCK_5V3A"
+		(property "Footprint" "PCM_nurd-fp:MOD_BUCK_5V3A"
 			(at 0.508 12.192 0)
 			(effects
 				(font
@@ -228,7 +228,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:MOD_DCDC_14.5V-CHG"
+		(property "Footprint" "PCM_nurd-fp:MOD_DCDC_14.5V-CHG"
 			(at 1.27 15.748 0)
 			(effects
 				(font
@@ -385,7 +385,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:MOD_DCDC_14.5V-CHG"
+		(property "Footprint" "PCM_nurd-fp:MOD_DCDC_14.5V-CHG"
 			(at 1.27 15.748 0)
 			(effects
 				(font
@@ -545,7 +545,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "_projectlib:Olimex_ESP32_GATEWAY"
+		(property "Footprint" "PCM_nurd-fp:Olimex_ESP32_GATEWAY"
 			(at 15.24 57.15 0)
 			(effects
 				(font
@@ -1040,7 +1040,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:Olimex_ESP32_POE_ISO"
+		(property "Footprint" "PCM_nurd-fp:Olimex_ESP32_POE_ISO"
 			(at 20.066 35.306 0)
 			(effects
 				(font
@@ -1534,7 +1534,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:RPi_Pico_SMD_TH"
+		(property "Footprint" "PCM_nurd-fp:RPi_Pico_SMD_TH"
 			(at 1.27 40.64 0)
 			(effects
 				(font

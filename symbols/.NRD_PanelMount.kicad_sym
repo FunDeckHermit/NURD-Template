@@ -22,7 +22,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:USBA-PanelMount"
+		(property "Footprint" "PCM_nurd-fp:USBA-PanelMount"
 			(at 4.318 9.398 0)
 			(effects
 				(font
@@ -107,7 +107,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:DISP_PZEM-025"
+		(property "Footprint" "PCM_nurd-fp:DISP_PZEM-025"
 			(at -2.54 20.32 0)
 			(effects
 				(font
@@ -442,7 +442,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "_projectlib:LED_Indictor-8mm"
+		(property "Footprint" "PCM_nurd-fp:LED_Indictor-8mm"
 			(at 0.762 8.382 0)
 			(effects
 				(font
@@ -610,7 +610,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:SW_16mm_ILUM"
+		(property "Footprint" "PCM_nurd-fp:SW_16mm_ILUM"
 			(at 0 -12.7 0)
 			(effects
 				(font
@@ -914,7 +914,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_projectlib:SW_PRDDD3"
+		(property "Footprint" "PCM_nurd-fp:SW_PRDDD3"
 			(at 0 -12.7 0)
 			(effects
 				(font

@@ -24,7 +24,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:LEILA-SC-RS"
+		(property "Footprint" "PCM_nurd-fp:LEILA-SC-RS"
 			(at 1.778 7.112 0)
 			(effects
 				(font
@@ -136,7 +136,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:LEILA-SC-RS"
+		(property "Footprint" "PCM_nurd-fp:LEILA-SC-RS"
 			(at 0.762 6.858 0)
 			(effects
 				(font
@@ -264,7 +264,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_projectlib:SOLDER_CLIP_A"
+		(property "Footprint" "PCM_nurd-fp:SOLDER_CLIP_A"
 			(at 4.064 -5.334 0)
 			(effects
 				(font

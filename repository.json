@@ -3,9 +3,9 @@
   "name": "NURD Library Repo",
   "packages": {
     "url": "https://FunDeckHermit.github.io/NURD-Template/packages.json",
-    "sha256": "52394df8018cbc221bfe7db3a53ef81a89f73af653951b0c0971e511278d4c59",
-    "update_timestamp": 1762717080,
-    "update_time_utc": "2025-11-09 19:38:00"
+    "sha256": "99b399c30d66c62c2695650a30ba7cf4e5937e80f7954764c59b3ca590772682",
+    "update_timestamp": 1762719595,
+    "update_time_utc": "2025-11-09 20:19:55"
   },
   "maintainer": {
     "name": "Roy van Lierop",

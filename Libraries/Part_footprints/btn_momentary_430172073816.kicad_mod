@@ -1,0 +1,213 @@
+(footprint "btn_momentary_430172073816"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "SW102"
+		(at 0 8 180)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "6929a796-5ce5-4daa-9d8b-3919ed387387")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "430172073816"
+		(at 0 -10.17 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "81386c8d-d05c-49a1-bf3a-dcddc4fca65e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "_projectlib:btn_momentary_430172073816"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "338f3355-eee1-46fa-9287-40ed9392f7a3")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.we-online.com/components/products/datasheet/430172073816.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "02fbda1a-87a5-47ab-b578-fe795b1156fb")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "12x12mm, SMD Drukschakelaars WS-TASV Tact Switch NO --- Fits 714301050 CAP"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "57490dce-b162-417c-90c9-613681e31468")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MF" "Wurth Elektronik"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4e40a7b2-eb37-4784-93d7-56cb4d85b7f9")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MP" "430172073816"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0da08cd4-a8dc-4ad0-9c55-e20407987e53")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Description" "Drukschakelaars WS-TASV Tact Switch NO"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7ca6bfc5-a1c3-430c-9d43-12c5419193fd")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Part Number" "710-430172073816"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f47f4a2f-6c60-488b-845e-c094b4139516")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/48x3ktK"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7e143087-2f50-4627-bde3-c0523d627e80")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "0.364"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e2cd01ef-5bc8-407a-af2d-1be902dd33d3")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Update date" "09-01-2024"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "40ec60ee-a250-407c-863d-6c64a5fd71a5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -6 -6)
+		(end 6 6)
+		(stroke
+			(width 0.4)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "2d6257a8-c0a5-484c-a78d-c43f589d137a")
+	)
+	(fp_rect
+		(start -6.7 -6.7)
+		(end 6.7 6.7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "78494245-66e8-4980-9064-847135ed8a1f")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -8.67 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "6a058c95-7019-482b-8959-4c54637eeebd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -7.21 -2.5)
+		(size 2 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "05345e5d-6038-4252-8fa2-f9d3e256df8c")
+	)
+	(pad "2" smd rect
+		(at 7.23 -2.52)
+		(size 2 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "03d08b61-cab3-4c7b-86a4-61c2998d51da")
+	)
+	(pad "3" smd rect
+		(at -7.21 2.5)
+		(size 2 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "6f42fdb8-b67d-482c-b7e2-257546433bb4")
+	)
+	(pad "4" smd rect
+		(at 7.23 2.48)
+		(size 2 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "ea5553f0-b570-4324-ad9d-8f7dd48cabd4")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/STP_430172073816 (rev1).stp"
+		(offset
+			(xyz 0 0 1.7)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

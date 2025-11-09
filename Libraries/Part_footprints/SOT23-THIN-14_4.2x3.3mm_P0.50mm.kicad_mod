@@ -1,0 +1,326 @@
+(footprint "SOT23-THIN-14_4.2x3.3mm_P0.50mm"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "14-Lead Plastic Thin Shrink Small Outline (ST)-4.4 mm Body [TSSOP] with exposed pad (http://cds.linear.com/docs/en/datasheet/34301fa.pdf)")
+	(tags "SSOP 0.65 exposed pad")
+	(property "Reference" "U150"
+		(at 0 -2.9 0)
+		(layer "F.SilkS")
+		(uuid "3e0859e5-3508-4daf-8eb1-655ea6967ef6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "LDD_TEXI_TPS922053DYYR"
+		(at 0 3.55 0)
+		(layer "F.Fab")
+		(uuid "a2f1ac53-132c-486b-adac-aac0fc14cdb1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "_projectlib:SOT23-THIN-14_4.2x3.3mm_P0.50mm"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4ee4ab0c-9ae1-4e02-9cc7-2ed7e0d3abf3")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.ti.com/lit/gpn/tps922053"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "091d2b8a-1cf1-4be0-9d92-c83f4b24e62f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Iout=2A, Vin=3.8-65V, Fmax=2.2Mhz (spread spectrum), PWM to analog dim, SOT-23-THN (14)"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a3a2da61-bb48-46e5-80b2-2ae5b0b4f3d4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MF" "Texas Instruments"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6e25d9ea-68e2-4d06-bca2-95151c53d011")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MP" "TPS922053DYYR"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f80c0d92-109c-487b-bb2d-e63b191d6a50")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Description" "LED Lighting Drivers 65-V, 2-A buck LED driver with inductive fast dimming and spread spectrum 14-SOT-23-THIN -40 to 125 "
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c0be449a-443f-4c83-b590-ff09feca5882")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/3J87Jbs"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3c849392-acfd-4120-9fca-4c9cbfb7380d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part number" " 595-TPS922053DYYR"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "df2d354e-7b8c-49c0-b461-834c74a99e03")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "1.06"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "198d959d-c860-4922-906c-53f1c02100af")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.05 2.0625)
+		(end -1.05 1.8375)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "85f287c6-948b-411d-8530-4dbaff8bdb48")
+	)
+	(fp_line
+		(start -1.05 2.0625)
+		(end 1.05 2.0625)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5c552786-dd5d-4a82-baf2-fc249c4c6b9b")
+	)
+	(fp_line
+		(start -1 -2.1125)
+		(end -1 -1.85)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2629a2b1-49d1-40f3-be73-5083331f0440")
+	)
+	(fp_line
+		(start -1 -2.1125)
+		(end 1.05 -2.1125)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "230d5f6e-62f6-4d7f-b040-39e378ce769a")
+	)
+	(fp_line
+		(start -1 -1.85)
+		(end -2.05 -1.85)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d9ceeeb9-a7c6-4dae-a2d8-885e2daa1614")
+	)
+	(fp_line
+		(start 1.05 -2.1125)
+		(end 1.05 -1.85)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7d0c09a8-4091-487a-9f83-b01c29772c41")
+	)
+	(fp_line
+		(start 1.05 2.0625)
+		(end 1.05 1.8375)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c7026b27-9b0f-4a12-b2a1-ef5b70372ee3")
+	)
+	(fp_rect
+		(start -2.2877 2.25)
+		(end 2.2877 -2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "a86d33b8-2b07-4ec0-8ae7-9fe08c6f3060")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "480af3d2-f463-4c09-9339-ff10de748f6f")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.5 -1.5)
+		(size 1.2 0.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "a20f0cb9-5a4b-44d9-a0ab-63163dac3345")
+	)
+	(pad "2" smd rect
+		(at -1.5 -1)
+		(size 1.2 0.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "e9ee369f-f40b-4dd9-a4c9-f6eae470dde5")
+	)
+	(pad "3" smd rect
+		(at -1.5 -0.5)
+		(size 1.2 0.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "3bd95898-bd86-4046-81a4-f0542209b1bb")
+	)
+	(pad "4" smd rect
+		(at -1.5 0)
+		(size 1.2 0.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "df0d8d1a-de0e-4de1-a773-4b226a8c456b")
+	)
+	(pad "5" smd rect
+		(at -1.5 0.5)
+		(size 1.2 0.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "292b5cc3-d7db-4f9d-b766-ff0ce9803d34")
+	)
+	(pad "6" smd rect
+		(at -1.5 1)
+		(size 1.2 0.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "015b7ab0-5799-494f-a294-39f6992b1ced")
+	)
+	(pad "7" smd rect
+		(at -1.5 1.5)
+		(size 1.2 0.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "e6e007c8-7806-4b5c-a13f-71f930cf988b")
+	)
+	(pad "8" smd rect
+		(at 1.5 1.5)
+		(size 1.2 0.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "b6cad557-ffe6-428d-9ad8-0a002564efd0")
+	)
+	(pad "9" smd rect
+		(at 1.5 1)
+		(size 1.2 0.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "c1b880f1-8532-4486-974d-41640ce9caa0")
+	)
+	(pad "10" smd rect
+		(at 1.5 0.5)
+		(size 1.2 0.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "b6710a75-8e92-48f7-973f-1c0efceed617")
+	)
+	(pad "11" smd rect
+		(at 1.5 0)
+		(size 1.2 0.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "3aaeb065-75fd-4698-ac32-dc32b8db01d3")
+	)
+	(pad "12" smd rect
+		(at 1.5 -0.5)
+		(size 1.2 0.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "e9c2397d-aac4-4543-95d1-a39d91b79865")
+	)
+	(pad "13" smd rect
+		(at 1.5 -1)
+		(size 1.2 0.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "8aac79ca-812b-4aa1-9973-633df93b995a")
+	)
+	(pad "14" smd rect
+		(at 1.5 -1.5)
+		(size 1.2 0.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "dc630677-b49c-44ec-9244-dc905ca65285")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/SOT-23-THIN-14_DYY_TEX.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

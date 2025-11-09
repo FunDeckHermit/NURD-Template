@@ -1,0 +1,383 @@
+(footprint "SW_PUSH-12mm_Wuerth-430476043716"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "SW PUSH 12mm http://katalog.we-online.de/em/datasheet/430476085716.pdf")
+	(tags "tact sw push 12mm")
+	(property "Reference" "SW105"
+		(at 6.35 -4.66 180)
+		(layer "F.SilkS")
+		(uuid "64830044-3b20-4be5-8f84-eeeaf5841496")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "430476043716"
+		(at 6.35 9.93 180)
+		(layer "F.Fab")
+		(uuid "32e47927-12d9-486d-ae96-0a2617924ef3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "_projectlib:SW_PUSH-12mm_Wuerth-430476043716"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0bbebde6-e409-4f4e-8c8d-be0afdba41d6")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.we-online.com/components/products/datasheet/430476043716.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f698aca9-45c8-4898-ba70-1ef9283415d2")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "12x12mm, THT Tactile Switch SPST-NO Top Actuated almost flush button black"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fd6aa491-f96f-47b5-ae7b-a1aeb6ffceef")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "0.364"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "87476823-6bde-48dd-b59f-09a799a37ab0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part Number" "710-430476043716"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "98623f2c-06b3-45e9-afb9-79db0337d325")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/3POqILP"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3ca93d1a-2d3e-47d9-9f0b-a1e24bf76e83")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Description" "Drukschakelaars WS-TATV Tact Switch Washable"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e89c3a44-da95-4408-82da-30ab7993c084")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MF" "Wurth Elektronik"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "56483acb-471a-4f9e-aaed-cead2e3ed105")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MP" "430476043716"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "98993eae-da95-40e2-8015-16ca60ec86ba")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Update date" "05-04-2024"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cc766263-0aba-45a2-b883-3b8f1da25297")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start 0.1 -3.65)
+		(end 12.4 -3.65)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2ca02fbd-5ed8-4a49-9865-b6d1da7a0b40")
+	)
+	(fp_line
+		(start 0.1 -1.53)
+		(end 0.1 -3.65)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "907b4878-10f4-43cc-9830-46bb9ded414d")
+	)
+	(fp_line
+		(start 0.1 3.47)
+		(end 0.1 1.53)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "11b6ef0b-fcb5-4e75-aebb-8e1b3d197f63")
+	)
+	(fp_line
+		(start 0.1 8.65)
+		(end 0.1 6.53)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "33685f3a-f695-442c-ad59-0cd833b686fb")
+	)
+	(fp_line
+		(start 12.4 -3.65)
+		(end 12.4 -1.53)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1c47a78d-0197-4994-b56e-30ae540edfea")
+	)
+	(fp_line
+		(start 12.4 1.53)
+		(end 12.4 3.47)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "08c3c162-bff1-431f-80de-13486ef4d349")
+	)
+	(fp_line
+		(start 12.4 6.53)
+		(end 12.4 8.65)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "77b005d0-1be3-4fd7-9895-c9059daa1f82")
+	)
+	(fp_line
+		(start 12.4 8.65)
+		(end 0.1 8.65)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a4308257-2768-45f5-9e44-982b47ecc571")
+	)
+	(fp_circle
+		(center 6.35 2.54)
+		(end 10.92905 2.54)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "7a7b91ab-5607-48fa-8f65-4b8990a39a00")
+	)
+	(fp_line
+		(start -1.75 -3.75)
+		(end -1.75 8.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b7bb05b2-77bc-4fad-b202-7207932107af")
+	)
+	(fp_line
+		(start -1.75 8.75)
+		(end 14.25 8.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1b8ba7eb-01fc-48f8-b19a-28d7bcb23024")
+	)
+	(fp_line
+		(start 14.25 -3.75)
+		(end -1.75 -3.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7ed727a1-f206-4fc9-904c-a827fa1cca30")
+	)
+	(fp_line
+		(start 14.25 8.75)
+		(end 14.25 -3.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5cd4a83a-5c01-4406-b049-bf189cc82535")
+	)
+	(fp_line
+		(start 0.25 -3.5)
+		(end 0.25 8.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "31764f89-1a05-42c2-b7f0-e8ffa1f4ca61")
+	)
+	(fp_line
+		(start 0.25 8.5)
+		(end 12.25 8.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9e4bcc23-701e-4adf-8bc2-659f0e697778")
+	)
+	(fp_line
+		(start 12.25 -3.5)
+		(end 0.25 -3.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "089b4d65-5b5c-4974-bfe4-b4458e13adfb")
+	)
+	(fp_line
+		(start 12.25 8.5)
+		(end 12.25 -3.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "518a4969-d2d4-41ca-b57b-db6b9228a234")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 6.35 2.54 180)
+		(layer "F.Fab")
+		(uuid "5da9c35e-af31-46be-9739-777c1052ac9f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole oval
+		(at 0 0)
+		(size 3 2.5)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "fd84a443-7286-4fd7-9099-094702465b98")
+	)
+	(pad "1" thru_hole oval
+		(at 12.5 0)
+		(size 3 2.5)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0d056a26-6a87-4ce4-8ec8-773668449f67")
+	)
+	(pad "2" thru_hole oval
+		(at 0 5)
+		(size 3 2.5)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9ab1de86-9c48-40f9-a23c-daea63a8a193")
+	)
+	(pad "2" thru_hole oval
+		(at 12.5 5)
+		(size 3 2.5)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0e6b4309-43cf-4e0a-84a7-8f0ae603aa2f")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/430476043716 (rev1).stp"
+		(offset
+			(xyz 6.4 -2.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

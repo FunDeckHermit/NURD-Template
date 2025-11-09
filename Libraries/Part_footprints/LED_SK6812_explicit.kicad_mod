@@ -1,0 +1,354 @@
+(footprint "LED_SK6812_explicit"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "5.0mm x 5.0mm Addressable RGB LED NeoPixel, https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf")
+	(tags "LED RGB NeoPixel PLCC-4 5050")
+	(property "Reference" "D201"
+		(at 0 -3.35 0)
+		(layer "F.SilkS")
+		(uuid "02baa918-d981-4035-9621-d6ab75204662")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.18)
+			)
+		)
+	)
+	(property "Value" "SK6812"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "2d50f950-6a29-49dc-a450-4454114a2453")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "931d5b36-b8b1-48b1-8b89-f2eee93d33f9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d1e47909-be87-444a-bdae-e899367ccca7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "5x5mm, RGB, Addressable Lighting Neopixel 10 LED Discrete Serial (Shift Register)"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "26443666-3348-4595-84bf-ea4e9a1fb0f9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MF" "Adafruit"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "87670149-f24e-450e-b330-75bf1d20f45a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MP" "1655"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b132bc17-52d9-4533-b9db-2c8143221bad")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "4.19"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fc33ac0e-0bd3-4446-8858-513b306221b6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part number" "485-1655"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cbcf3817-7465-47cb-b76b-7334671c3da7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/48MnTmg"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "48266f8d-25d0-46fe-9200-8ec067addfd6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Description" "Adafruit Accessories SK6812 LEDs w/driverchip-10pack"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "870bde8d-426e-4291-ba4f-03298cced109")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Update date" "10-10-2023"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6d568d56-2b94-4253-b7b8-9813454a6ece")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -3.65 -2.75)
+		(end 3.65 -2.75)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2d8a71b5-2218-4742-8ae0-0253fd0ac5cc")
+	)
+	(fp_line
+		(start -3.65 2.75)
+		(end 3.65 2.75)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b3be3cf7-98ce-45b9-9308-3144f2c4538e")
+	)
+	(fp_poly
+		(pts
+			(xy 2.85 2.75) (xy 3.85 2.75) (xy 3.85 1.75)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "30dec138-9033-4f5d-b37c-915a0213798a")
+	)
+	(fp_line
+		(start -3.45 -2.75)
+		(end -3.45 2.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d460efdc-797d-4ffd-b942-4cf93c2c9a1d")
+	)
+	(fp_line
+		(start -3.45 2.75)
+		(end 3.45 2.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "cfee4db1-8452-477e-9e68-7559d7415ecb")
+	)
+	(fp_line
+		(start 3.45 -2.75)
+		(end -3.45 -2.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8657acf7-ab9d-4c34-a53c-b5181ab29a34")
+	)
+	(fp_line
+		(start 3.45 2.75)
+		(end 3.45 -2.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ac841316-0672-40fc-955c-8c43dbf2c983")
+	)
+	(fp_line
+		(start -2.5 -2.5)
+		(end -2.5 2.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7cd26fcb-d62b-4edd-964e-eb52c275f39c")
+	)
+	(fp_line
+		(start -2.5 2.5)
+		(end 2.5 2.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a8607c26-5368-416b-beee-2625bbae055a")
+	)
+	(fp_line
+		(start 2.5 -2.5)
+		(end -2.5 -2.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "becbbbdc-0fe3-4354-b12c-c1d345967e32")
+	)
+	(fp_line
+		(start 2.5 1.5)
+		(end 1.5 2.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "89e99ed3-cca5-483f-9e59-bd431236f29c")
+	)
+	(fp_line
+		(start 2.5 2.5)
+		(end 2.5 -2.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5702e94f-0bfc-4806-a317-c35023742358")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0 -2.000001)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "e3a1d762-84a6-4718-8168-d4b2508681e5")
+	)
+	(fp_text user "<- 1"
+		(at 3.4 1.8 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "441e4b00-06c4-45b0-90aa-b97af0ffc6ce")
+		(effects
+			(font
+				(size 1 0.5)
+				(thickness 0.125)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "1024922b-46d5-4361-baeb-0005388f25a4")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 2.45 1.6)
+		(size 1.5 1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "50ecbaa9-a2b2-4f9a-95c3-35e4c627f404")
+	)
+	(pad "2" smd rect
+		(at 2.45 -1.6)
+		(size 1.5 1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "a6e79327-2142-4c01-b3c0-15f09f616e0e")
+	)
+	(pad "3" smd rect
+		(at -2.45 -1.6)
+		(size 1.5 1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "a989c3fa-926f-442c-8ae7-38e60b5ab885")
+	)
+	(pad "4" smd rect
+		(at -2.45 1.6)
+		(size 1.5 1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "f9433c0e-7820-49cf-8122-819b3aa40907")
+	)
+	(model "${KICAD8_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

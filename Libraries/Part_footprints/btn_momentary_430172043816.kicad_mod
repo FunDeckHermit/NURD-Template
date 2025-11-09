@@ -1,0 +1,213 @@
+(footprint "btn_momentary_430172043816"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "SW101"
+		(at 0 8 180)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a165651d-09dd-4ece-8836-69bbd1cb639a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "430172043816"
+		(at 0 -10.17 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "5b15311e-4134-49e9-9642-974b901f0792")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "_projectlib:btn_momentary_430172043816"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "48225a62-e4cb-4a98-a6b8-096dd1473b37")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.we-online.com/components/products/datasheet/430172043816.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5fe976ba-abec-464d-bc3b-215312e596c5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "12x12mm, SMD Drukschakelaars WS-TASV Tact Switch NO almost flush button (Ø=6.8mm)"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "db62066a-6a6e-4638-bdaf-fd0cbbccfa1e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MF" "Wurth Elektronik"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "63aa63f7-8e39-4061-96d0-6d7a71d3845c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MP" "430172043816"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c479dfb4-5505-45b8-92a5-d52021b36493")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Description" "Drukschakelaars WS-TASV Tact Switch NO"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "28464980-52a7-40de-8069-f8b7ae47b997")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Part Number" "710-430172043816"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "493a5139-b8cb-4f50-a68c-da3af8a2424c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/3TKXsqu"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9caf35dc-0ddc-4eb8-9b2e-b68b67bdc613")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "0.403"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a1c58df5-7c0b-4c25-b650-ef90c6f001c0")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Update date" "05-05-2024"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a7936d97-6b32-40d4-90e6-54f39ce6a51d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -6 -6)
+		(end 6 6)
+		(stroke
+			(width 0.4)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "19b4d5a5-8832-4c11-847b-0798a57228ca")
+	)
+	(fp_rect
+		(start -6.7 -6.7)
+		(end 6.7 6.7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "2d596812-4db1-4c28-868c-b651fe167179")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -8.67 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "df5a163b-e112-481d-ba51-5e50325e1481")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -7.21 -2.5)
+		(size 2 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "97b35674-d86a-44cf-9afc-c7554dbaa266")
+	)
+	(pad "2" smd rect
+		(at 7.23 -2.52)
+		(size 2 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "84d3cd0a-cc31-4946-9d8d-e2e0ba3b0295")
+	)
+	(pad "3" smd rect
+		(at -7.21 2.5)
+		(size 2 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "31c2f9e2-08ba-49f4-adc9-60e3ea89372c")
+	)
+	(pad "4" smd rect
+		(at 7.23 2.48)
+		(size 2 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "1e9beb3b-3c93-44ed-8625-63a5aaab67e7")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/430172043816 (rev1).stp"
+		(offset
+			(xyz 0 0 1.7)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

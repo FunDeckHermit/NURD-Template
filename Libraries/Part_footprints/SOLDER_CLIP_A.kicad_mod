@@ -1,0 +1,202 @@
+(footprint "SOLDER_CLIP_A"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "CL101"
+		(at 0 -3 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "93dfc2a9-5d84-4392-8b36-6ea5497317a8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "SOLDER-CLIP-A"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "1d2bff25-018b-46d3-ae76-380cdad66ae2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "_projectlib:SOLDER_CLIP_A"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "591ff0d9-8d5b-4a31-b90a-7275a4805ffd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://nl.mouser.com/datasheet/2/229/17250_ds-1890756.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "882e94bf-8bcf-4779-9dda-e9fb94134748")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "LED Verlichting Installatietoebehoren Accessorymm (D) "
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ebce6e07-6a63-4d58-857f-27c23e75ed4a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "0.243"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "112668ae-4bb8-403e-ba32-cd9ea05a19c5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part number" "928-17250SOLDERCLIPA "
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "305f697b-3d1c-4493-b405-33d7fc6fee30")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/3uQUYOO"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0c804d37-d105-411f-b54e-92a5c9a98782")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Description" "LED Verlichting Installatietoebehoren Accessorymm (D) "
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "00bed405-9157-4c4d-a531-8f44c61a4197")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Update date" "29-02-2024"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f1a5d135-25f1-4f76-9dd9-24325311448b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "3c8be78a-75ac-45b9-b9b7-096866f97f6b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" smd custom
+		(at -2.3 0.05 270)
+		(size 1 1)
+		(property pad_prop_heatsink)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -2.35 0.5) (xy -2.35 -1) (xy -2.05 -1) (xy -2.05 -1.4) (xy -1.05 -1.4) (xy -1.05 -0.8) (xy 0 -0.8)
+					(xy 1.05 -0.8) (xy 1.05 -1.4) (xy 2.05 -1.4) (xy 2.05 -1) (xy 2.35 -1) (xy 2.35 0.5) (xy 0 0.5)
+				)
+				(width 0.001)
+				(fill yes)
+			)
+		)
+		(uuid "c425a1d4-1122-433e-ac95-638fcc5d707e")
+	)
+	(pad "" smd custom
+		(at 2.3 0 90)
+		(size 1 1)
+		(property pad_prop_heatsink)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -2.35 0.5) (xy -2.35 -1) (xy -2.05 -1) (xy -2.05 -1.4) (xy -1.05 -1.4) (xy -1.05 -0.8) (xy 0 -0.8)
+					(xy 1.05 -0.8) (xy 1.05 -1.4) (xy 2.05 -1.4) (xy 2.05 -1) (xy 2.35 -1) (xy 2.35 0.5) (xy 0 0.5)
+				)
+				(width 0.001)
+				(fill yes)
+			)
+		)
+		(uuid "21f4b9dd-22a7-4fec-8def-c4afc60a958e")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/F17250_SOLDER-CLIP-A_MechModel.stp"
+		(offset
+			(xyz 12.7 12.7 1)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 90)
+		)
+	)
+)

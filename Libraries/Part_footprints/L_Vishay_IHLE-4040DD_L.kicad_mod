@@ -1,0 +1,312 @@
+(footprint "L_Vishay_IHLE-4040DD_L"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Inductor, Vishay, IHLP series, 10.2mmx10.2mm")
+	(tags "inductor vishay ihlp smd")
+	(property "Reference" "L105"
+		(at 2.54 -6.08 0)
+		(layer "F.SilkS")
+		(uuid "28d922e7-5c68-483c-b3d3-70034d10e14d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "15uH"
+		(at 0 6.58 0)
+		(layer "F.Fab")
+		(uuid "38bdcd13-26f9-40a2-ba0e-e27c399bf6bc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "_projectlib:L_Vishay_IHLE-4040DD_L"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "45cb3f78-27fa-4ec6-8611-78528a0d69cf")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.vishay.com/docs/34380/ihle-4040dd-5a.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d50f8142-be41-41b9-9c7c-d115902d73d9")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "11x11mm, 15µH Shielded Inductor 5A 50mOhm Max"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8fe38fee-1c87-41b7-93a0-3747e21ed2c3")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MF" "Vishay"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0c2e7ddc-cf17-49ae-9e75-2f623751793a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MP" "IHLE4040DDER150M5A"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6bd35875-8cc8-40be-9729-c0df7e1fbb0b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Description" "Vermogensinductoren - SMD 15uH 20% e-field Shield"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "570f9a07-63b7-4783-b3b6-d2358f2e32bc")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/3TYDNES"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9af69ec3-a000-47ef-b0a0-17b8427bbaec")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Part number" "70-IHLE4040DDR150M5A"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "37f5c7fa-aded-415b-944f-ef43e0bb97c0")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "1.10"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "10f31e7b-6140-47fe-9892-b92e14116f75")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Update date" "02-04-2024"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bdb13ec5-49d0-46f0-8416-6daccd95d26d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -5.18 -5.18)
+		(end 5.18 -5.18)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cfdbb938-0e52-4ce7-811f-3dfeb5cf81f1")
+	)
+	(fp_line
+		(start -5.18 -2.775)
+		(end -5.18 -5.18)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7f3ab4cd-e6ff-4fe4-a7a4-8408aa09ec33")
+	)
+	(fp_line
+		(start -5.18 2.775)
+		(end -5.18 5.18)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0c58dd81-f8cb-428c-b74c-0415d8cb17b2")
+	)
+	(fp_line
+		(start -5.18 5.18)
+		(end 5.18 5.18)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ad99fce7-2d36-4304-a5c8-8d0dcae64c6c")
+	)
+	(fp_line
+		(start 5.18 -5.18)
+		(end 5.18 -2.775)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c91b1410-df6a-4a38-9a37-a195fbdfc475")
+	)
+	(fp_line
+		(start 5.18 5.18)
+		(end 5.18 2.775)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7ed9fb48-09e3-4ad9-b4ba-89a0af60489e")
+	)
+	(fp_circle
+		(center 2.121141 -4.628081)
+		(end 2.454902 -4.628081)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "f8d492d1-68d2-459f-b805-886743af2f49")
+	)
+	(fp_rect
+		(start -6.35 -6.35)
+		(end 6.35 6.35)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "03754529-2a55-4f6c-a28c-a9b918dbaada")
+	)
+	(fp_line
+		(start -5.08 -5.08)
+		(end -5.08 5.08)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "37bf9bfd-1196-4aa0-abf2-4854c909b93f")
+	)
+	(fp_line
+		(start -5.08 5.08)
+		(end 5.08 5.08)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "40345969-f92b-4f40-b41b-adcadf797dce")
+	)
+	(fp_line
+		(start 5.08 -5.08)
+		(end -5.08 -5.08)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ae573a0c-2abc-4a76-9d10-a1c40dfae987")
+	)
+	(fp_line
+		(start 5.08 5.08)
+		(end 5.08 -5.08)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d37b4fc7-9ed3-474d-aabd-71d8e64fa73b")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "201c7b6e-4581-4596-b36c-cb543ac6a323")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 -4.4725 90)
+		(size 3.135 3.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "f798f8a6-36b0-4c4f-97e1-6f72cc3ee786")
+	)
+	(pad "2" smd rect
+		(at 0 4.4725 90)
+		(size 3.135 3.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "e4b44620-b97f-4ad0-8910-febf35498f70")
+	)
+	(pad "3" smd rect
+		(at -4.6025 0)
+		(size 2.885 3.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "07959dd8-6309-4f28-865d-314320533eca")
+	)
+	(pad "4" smd rect
+		(at 4.6025 0)
+		(size 2.885 3.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "5dc80bd9-1a00-4f57-9ca1-225ecb96dab7")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/IHLE-4040DD.STEP"
+		(offset
+			(xyz 6.3 4.3 -3.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 90)
+		)
+	)
+)

@@ -1,0 +1,223 @@
+(footprint "L_0806A_Vishay"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Inductor SMD 1008 (2520 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://ecsxtal.com/store/pdf/ECS-MPI2520-SMD-POWER-INDUCTOR.pdf), generated with kicad-footprint-generator")
+	(tags "inductor")
+	(property "Reference" "L101"
+		(at 0 -2.05 0)
+		(layer "F.SilkS")
+		(uuid "1ea992e5-c0f3-4bc5-94d9-86691f5e4159")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "1.0uH"
+		(at 0 2.05 0)
+		(layer "F.Fab")
+		(uuid "8cf550ac-43f1-40ac-aa5c-d81640dffcf3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "_projectlib:L_0806A_Vishay"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7a58a112-7f53-414d-b878-add9705ea581")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.vishay.com/docs/34382/ihhp-0806az-01.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c0d0d68e-b4ea-42bf-8080-a6957f0f187e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "1.6x2.0mm, 1.0uH Shielded Inductor 3.1A 65mOhm Max"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5c3fd33b-61d1-44df-af75-5f1169b1b1e7")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MF" "Vishay"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5743ca8a-3d57-41cf-934e-dcba6b31e390")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MP" "IHHP0806AZER1R0M01"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d5f5965c-3d07-4bd4-bc35-d3843462d6a5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "0.198"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ae8a6e49-d61d-4464-99ad-9fd5451d50a7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part number" " 70-IHHP0806AZR1R0M01"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "62a3c7de-4420-45b5-9d20-a9ff5955ad4d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/3U1Qv5R"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b881f343-35bd-48fa-b407-35100565a290")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Description" "Vermogensinductoren - SMD 1uH 20% Low Profile High Current"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e69973d8-a2e3-4bdf-80fa-2acf6901f2f8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Update date" "02-04-2024"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "501b6f19-d0f5-4ec3-935f-9c0585a16e8a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.261252 -0.8)
+		(end 0.261252 -0.8)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "41d5de8b-c00d-499e-be11-ce5e942f1675")
+	)
+	(fp_line
+		(start -0.261252 0.8)
+		(end 0.261252 0.8)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "537d5d1a-8a37-44e6-9d8a-466a7d4756e5")
+	)
+	(fp_rect
+		(start -1.1 0.9)
+		(end 1.1 -0.9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "225cb0e8-b63c-46c4-91af-32993e618ed9")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "99e57438-d140-4e93-9b5b-7a0d68adca39")
+		(effects
+			(font
+				(size 0.31 0.31)
+				(thickness 0.0775)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.7 0)
+		(size 0.7 1.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "b69104c9-25ea-45d8-8bdd-73a6665e724c")
+	)
+	(pad "2" smd roundrect
+		(at 0.7 0)
+		(size 0.7 1.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "89719a33-8db3-4b73-bec1-f61aa1a7a8e4")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/IND_6AZER1R0M01_VIS.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

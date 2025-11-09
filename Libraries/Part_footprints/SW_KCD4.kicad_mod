@@ -1,0 +1,238 @@
+(footprint "SW_KCD4"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "SW105"
+		(at 2 1.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "ac09c2e2-bd8e-4577-bb89-bec4bc0ee11a")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "KCD4"
+		(at 0 0.9 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "77f209fe-acf0-4929-afe2-c33a8cd784b0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "_projectlib:SW_KCD4"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6c05fac6-70e2-481e-b00e-667d5e05f710")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://ampul.eu/en/rocker-switches/4897-rocker-switch-rectangular-kcd4-on-off-on-arrows-bl"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f004d6cd-b48b-4bf1-9fe8-309b4b3ade44")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Rocker switch rectangular KCD4, ON-OFF-ON, arrows, black 250V/15A"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "95ef2c26-4148-4a0e-a18c-6f18649c5e7e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start 0 -24.4)
+		(end 29.5 0)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "1d49ff5e-9ce0-408d-8f54-6ea604587ffc")
+	)
+	(fp_text user "NC"
+		(at 31 -11 180)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "075a1f8b-29f1-4406-9f34-23a662811199")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.5)
+				(bold yes)
+			)
+			(justify left mirror)
+		)
+	)
+	(fp_text user "COM"
+		(at 31 -1 180)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "83e5997a-1af0-46ba-9625-de2c29d28a7c")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.5)
+				(bold yes)
+			)
+			(justify left mirror)
+		)
+	)
+	(fp_text user "NO"
+		(at 31 -17 180)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "86a3ed88-eee2-433b-a9e4-426e1298eb96")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.5)
+				(bold yes)
+			)
+			(justify left mirror)
+		)
+	)
+	(fp_text user "COM"
+		(at -1 -23 0)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "8c5952b9-9eba-4ed2-bae4-5c5195698662")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.5)
+				(bold yes)
+			)
+			(justify left mirror)
+		)
+	)
+	(fp_text user "NC"
+		(at -1 -13 0)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "995c2315-8ff1-401a-ac29-25e9429acd3e")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.5)
+				(bold yes)
+			)
+			(justify left mirror)
+		)
+	)
+	(fp_text user "NO"
+		(at -1 -7 0)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "c816bfb0-adb4-4e52-a8bf-360361232f7e")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.5)
+				(bold yes)
+			)
+			(justify left mirror)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8dd31eeb-a8e4-4f99-a472-4db0cf24c0e8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -3 -10)
+		(size 3 3)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e891c8b9-0764-4500-88bc-a8716e33f0ef")
+	)
+	(pad "2" thru_hole circle
+		(at -3 -20)
+		(size 3 3)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5778170b-72db-44bb-8270-1f279c4a63fa")
+	)
+	(pad "3" thru_hole circle
+		(at -3 -4)
+		(size 3 3)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "13ea49f6-9c8f-4514-9d45-a99088100007")
+	)
+	(pad "4" thru_hole circle
+		(at 33 -14)
+		(size 3 3)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6f6e29f7-ed5b-4e08-8e89-aec93daef718")
+	)
+	(pad "5" thru_hole circle
+		(at 33 -4)
+		(size 3 3)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "b152a784-678c-4e1b-97ef-420610e9f28d")
+	)
+	(pad "6" thru_hole circle
+		(at 33 -20)
+		(size 3 3)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "57210401-d4aa-4950-94ce-d4e727c962c0")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/Rocker Switch 09.step"
+		(offset
+			(xyz 2 23 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

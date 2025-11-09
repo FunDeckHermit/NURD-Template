@@ -1,0 +1,376 @@
+(footprint "Vishay_PowerPAK_1212-8_Single"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "PowerPAK 1212-8 Single (https://www.vishay.com/docs/71656/ppak12128.pdf, https://www.vishay.com/docs/72597/72597.pdf)")
+	(tags "Vishay PowerPAK 1212-8 Single")
+	(property "Reference" "Q108"
+		(at 0 -2.7 0)
+		(layer "F.SilkS")
+		(uuid "e14bab7b-cf50-4dd6-9d0a-0b095fbab78e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SQS407ENW"
+		(at 0 2.7 0)
+		(layer "F.Fab")
+		(uuid "b18abdd5-4e58-4d18-92e3-d9fd950128f9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "_projectlib:Vishay_PowerPAK_1212-8_Single"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "474be14c-b9d0-43ab-a6f5-9da51806a052")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.vishay.com/docs/76627/sqs407enw.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "16c3d0f8-f118-4bef-833b-cc7d53503d1c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "3.3x3.3mm, 16A Id, 30V Vds, PowerPAK 1212-8W, 12A @ 3V"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "35bc7641-04ac-4e19-9a21-dccd516870fc")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MP" "SQS407ENW"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2934cdf9-fd14-4292-8a4a-bfec915bcf43")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MF" "Vishay"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5033420e-fcad-4c61-a557-2511dcdd7289")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "0.549"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "81f2c7a0-0741-4f0e-9d85-430db018f156")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Description" "P-Channel 30 V 16A (Tc) 62.5W (Tc) Surface Mount PowerPAK® 1212-8W"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ab476c2d-ce09-4b42-820e-d407f8e41fa2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part number" "78-SQS407ENW-T1_GE3"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c3954277-9a5e-451a-925e-f01396b1e33c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/3J0jCju"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c7f6ff07-cbf0-4b95-b40f-9474a786af8f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.635 -1.635)
+		(end -1.635 -1.45)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "32f1b8e0-dfe7-49bd-b16a-3d42637c939b")
+	)
+	(fp_line
+		(start -1.635 -1.635)
+		(end 1.635 -1.635)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6c4d764e-6891-4ae2-ae32-db80bdd26fd1")
+	)
+	(fp_line
+		(start -1.635 1.45)
+		(end -1.635 1.635)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6c3ed925-1468-4153-97b2-5b55af694449")
+	)
+	(fp_line
+		(start -1.635 1.635)
+		(end 1.635 1.635)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "064f8615-5e3d-4810-8bc0-c322d5029929")
+	)
+	(fp_line
+		(start 1.635 -1.635)
+		(end 1.635 -1.45)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c8316a0a-73a6-4352-b3c5-804428ddf1da")
+	)
+	(fp_line
+		(start 1.635 1.45)
+		(end 1.635 1.635)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "59a5aaf0-4248-4e00-83ae-647439f8b9ee")
+	)
+	(fp_poly
+		(pts
+			(xy -2.2 -1) (xy -2.53 -0.76) (xy -2.53 -1.24) (xy -2.2 -1)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "7c94f094-445b-419c-96c1-aa965f0c9d0c")
+	)
+	(fp_line
+		(start -2.18 -1.78)
+		(end -2.18 1.78)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3973bf2a-26ad-48b4-a9e9-9a71c9ef43cb")
+	)
+	(fp_line
+		(start -2.18 -1.78)
+		(end 2.18 -1.78)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "13fe6fbd-cd7b-4fea-8d35-254e497d0f75")
+	)
+	(fp_line
+		(start -2.18 1.78)
+		(end 2.18 1.78)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "bc1c4a99-2f21-4a9e-90c1-90139f28eea4")
+	)
+	(fp_line
+		(start 2.18 -1.78)
+		(end 2.18 1.78)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "19a1ec84-a1a3-4c9f-8451-1ae22c5c1a13")
+	)
+	(fp_line
+		(start -1.525 -0.8)
+		(end -1.525 1.525)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c3315fef-e7b5-4cf7-bde8-9493cfc73a7d")
+	)
+	(fp_line
+		(start -1.525 -0.8)
+		(end -0.8 -1.525)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "483f805d-1d1c-4338-9074-1edfcd8b3a7e")
+	)
+	(fp_line
+		(start -1.525 1.525)
+		(end 1.525 1.525)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "85d0483d-be38-4def-89c2-ba8023b9a04a")
+	)
+	(fp_line
+		(start -0.8 -1.525)
+		(end 1.525 -1.525)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f28c2960-7630-4612-b5f8-08a02fcc3f4b")
+	)
+	(fp_line
+		(start 1.525 -1.525)
+		(end 1.525 1.525)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1fb47e18-b8fa-4de4-914a-019819d1a3c5")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "df591c3f-e57c-4b96-bcda-9ff820330787")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.105)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.435 -0.99)
+		(size 0.99 0.405)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "08962663-57c8-468f-8b46-69569910b143")
+	)
+	(pad "2" smd rect
+		(at -1.435 -0.33)
+		(size 0.99 0.405)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "5bf1a2aa-31d4-4556-95f1-8df7692dd30a")
+	)
+	(pad "3" smd rect
+		(at -1.435 0.33)
+		(size 0.99 0.405)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "b727e069-fc08-42e7-aaa6-fbf6fe65b19b")
+	)
+	(pad "4" smd rect
+		(at -1.435 0.99)
+		(size 0.99 0.405)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "33ab6ad0-62eb-48b9-bf96-88195fb94617")
+	)
+	(pad "5" smd custom
+		(at 0.5575 0)
+		(size 1.725 2.235)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(zone_connect 2)
+		(thermal_bridge_angle 45)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 1.3725 -0.7875) (xy 0.8625 -0.7875) (xy 0.8625 -0.5325) (xy 1.3725 -0.5325) (xy 1.3725 -0.1275)
+					(xy 0.8625 -0.1275) (xy 0.8625 0.1275) (xy 1.3725 0.1275) (xy 1.3725 0.5325) (xy 0.8625 0.5325)
+					(xy 0.8625 0.7875) (xy 1.3725 0.7875) (xy 1.3725 1.195) (xy 0.6125 1.195) (xy 0.6125 -1.195) (xy 1.3725 -1.195)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "dcfc03f4-aee9-4964-9dc8-aeef2b463405")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/PowerPak_1212-8.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 90)
+		)
+	)
+)

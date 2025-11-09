@@ -1,0 +1,135 @@
+(footprint "SOLDER_CLIP_A"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.1 0.15 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "2263b652-c6f4-436c-a33b-6c74b5660490")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "SOLDER_CLIP_A"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "16eee4a9-9c8b-4280-94b5-d990f2f2f3fa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bb41f0ea-d5d3-4068-96f3-f2fcb283e1f0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fce4f42a-0c5c-4f97-aba4-341b06f8051c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "768477b3-ea7b-435f-abe8-f88aa245ee9c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "ab4b5171-ddde-4653-8fb6-0b903a773325")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd custom
+		(at -2.3 0.05 270)
+		(size 1 1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -2.35 0.5) (xy -2.35 -1) (xy -2.05 -1) (xy -2.05 -1.4) (xy -1.05 -1.4) (xy -1.05 -0.8) (xy 0 -0.8)
+					(xy 1.05 -0.8) (xy 1.05 -1.4) (xy 2.05 -1.4) (xy 2.05 -1) (xy 2.35 -1) (xy 2.35 0.5) (xy 0 0.5)
+				)
+				(width 0.001)
+				(fill yes)
+			)
+		)
+		(uuid "88fe5a5b-49c8-4ee0-a39e-8302cee9ce6b")
+	)
+	(pad "1" smd custom
+		(at 2.3 0 90)
+		(size 1 1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -2.35 0.5) (xy -2.35 -1) (xy -2.05 -1) (xy -2.05 -1.4) (xy -1.05 -1.4) (xy -1.05 -0.8) (xy 0 -0.8)
+					(xy 1.05 -0.8) (xy 1.05 -1.4) (xy 2.05 -1.4) (xy 2.05 -1) (xy 2.35 -1) (xy 2.35 0.5) (xy 0 0.5)
+				)
+				(width 0.001)
+				(fill yes)
+			)
+		)
+		(uuid "aa23a5c2-dbf7-40ff-97bb-0a54ee037039")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/F17250_SOLDER-CLIP-A_MechModel.stp"
+		(offset
+			(xyz 12.7 12.7 1)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 90)
+		)
+	)
+)

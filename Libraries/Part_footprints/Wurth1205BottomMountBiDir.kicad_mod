@@ -1,0 +1,281 @@
+(footprint "Wurth1205BottomMountBiDir"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "D103"
+		(at 0 -1.8 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "d7e63cbb-0f7a-488c-bfc7-07882b46e480")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "156125RV73000"
+		(at -0.2 -4.4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7730c8b9-842f-41d7-9d6b-d8442e13bdf8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "_projectlib:Wurth1205BottomMountBiDir"
+		(at 0.4 -5.2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3714eb56-003c-4f4c-bd96-7d3b2811b360")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.we-online.com/components/products/datasheet/156120RS82500.pdf"
+		(at 0.4 -5.2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f910c8d9-98d8-4c21-83b0-6f8a57a8e1fa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Standard LEDs - SMD WL-SBRW SMDRvsMnt BiClr Rect 1205 R/B"
+		(at 0.4 -5.2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3b868aff-a25a-4e8e-9e83-8445aa427f01")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MF" "Wurth Elektronik"
+		(at 0.4 -5.2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6e5d6d28-45ed-44da-80bb-ae0e7d9fe95b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MP" "156125RV73000"
+		(at 0.4 -5.2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d2bde300-6947-4e7b-85ec-5944a834f956")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "0.247"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8670e0cd-d1ca-4cf0-9653-417f388819b0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part number" " 710-156125RV73000"
+		(at 0.4 -5.2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6f737256-ac5a-478c-b37e-e2de3957503d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/3zheVQz"
+		(at 0.4 -5.2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c0887912-ebb1-47c1-90b7-cfcd0f5392f9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Description" "Standard LEDs - SMD WL-SBRW SMDRvsMnt BiClr Rect 1205 R/B"
+		(at 0.4 -5.2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "abf762d5-2f6c-4a27-8b96-e497c8a1c655")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Update date" "18-06-2024"
+		(at 0.4 -5.2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0eb10483-75e5-436d-b6c8-fa0594cd76d3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.129521 -0.60637)
+		(end -0.729521 -0.606369)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "b7ee3c36-753d-4651-a24d-af4d13ca3bf1")
+	)
+	(fp_line
+		(start -0.726392 0.626895)
+		(end -1.126392 0.626895)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "d5a1c8f6-4f2a-400f-a1dc-31495a99abba")
+	)
+	(fp_line
+		(start 0.732054 -0.597168)
+		(end 1.132055 -0.597168)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "fba7a3a9-58ce-4711-87c9-c6608a09426e")
+	)
+	(fp_line
+		(start 1.129521 0.60637)
+		(end 0.729521 0.606369)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "5ee4b3c5-0893-4fec-b94c-d59e912ca06a")
+	)
+	(fp_circle
+		(center -1.8 -1.4)
+		(end -1.6 -1.2)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "20aac4d0-ba1a-4d3e-b7fc-c7b156bfe523")
+	)
+	(fp_poly
+		(pts
+			(xy -2.4 -0.9) (xy -1 -0.9) (xy -0.25 -1.05) (xy 0.25 -1.05) (xy 1 -0.9) (xy 2.3 -0.900001) (xy 2.3 0.900001)
+			(xy 1 0.9) (xy 0.25 1.05) (xy -0.25 1.05) (xy -1 0.9) (xy -2.4 0.9)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "392744e8-693a-4fcc-868d-c47f5df3625f")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.6 -4.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dad3f40f-b2df-4fc1-a153-e41415448d30")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at 0 0)
+		(size 1.75 1.75)
+		(drill 1.75)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "5ffa7318-984d-437d-b203-08a56044997a")
+	)
+	(pad "1" smd rect
+		(at -1.65 -0.575 90)
+		(size 0.85 0.9)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "cb7f3a1e-1e3c-4775-9c30-09e8dfa67941")
+	)
+	(pad "2" smd rect
+		(at -1.65 0.575 90)
+		(size 0.85 0.9)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "17999fff-d87b-4ab3-9f1d-e9a1f7c5441d")
+	)
+	(pad "3" smd rect
+		(at 1.65 0.575 90)
+		(size 0.85 0.9)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "b9eb02e9-c9b0-41d8-8d13-65123c9d693e")
+	)
+	(pad "4" smd rect
+		(at 1.65 -0.575 90)
+		(size 0.85 0.9)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "fac66529-7a4d-4775-be21-c3b94f909400")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/WL-SBRW-1205 (rev1).stp"
+		(offset
+			(xyz 0 0 -0.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -90)
+		)
+	)
+)

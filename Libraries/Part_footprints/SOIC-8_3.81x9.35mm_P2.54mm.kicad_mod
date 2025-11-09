@@ -1,0 +1,334 @@
+(footprint "SOIC-8_3.81x9.35mm_P2.54mm"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "SOP, 8 Pin (http://www.ti.com/lit/ds/symlink/iso1050.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
+	(tags "SOP SO")
+	(property "Reference" "U124"
+		(at 0 -5.52 0)
+		(layer "F.SilkS")
+		(uuid "ebde707a-38c3-46fc-b4d0-5ee28561413f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CPC2317N"
+		(at 0 5.52 0)
+		(layer "F.Fab")
+		(uuid "3ce85529-ca33-402f-a88b-e511be6d052a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "_projectlib:SOIC-8_3.81x9.35mm_P2.54mm"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "47ad621a-b77b-49f2-a932-ee1aec997751")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" "https://nl.mouser.com/datasheet/2/240/media-3319700.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "84a507d1-3b50-4639-bb56-4f17ca8413d5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "120mA 2-Ch NO/NC, 8-SOP"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "15a991e6-59c7-44c0-9cf2-48572580a5ac")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MF" "Littlefuse"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "be9aa8cd-917f-4c60-ab5f-a0b3a2a40c2e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MP" "CPC2317N"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "060fa7a4-6566-4a6a-b42b-cd9f23d2363b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Description" "Solid State SPST-NO + SPST-NC (1 Form A and B) 8-SOP (0.150\", 3.81mm Width)"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "05a26cab-76b4-498e-b5b7-d78362a3caa4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/3NGIpM7"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a5e0b8c8-9fe5-4de7-b2ab-540e965327c4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Part number" "849-CPC2317N "
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0673316f-e243-4729-a8d2-d734cfb3211e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "1.38"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "27d89fe5-26c4-413d-9b2c-ef5eb9e10a42")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2 4.9)
+		(end -2 4.61)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fbd02d54-b912-40d1-9290-9343ed1e4ff2")
+	)
+	(fp_line
+		(start -0.9 -4.89)
+		(end -0.9 -4.605)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8b6c19e7-4639-4970-a34b-e448b463e062")
+	)
+	(fp_line
+		(start -0.9 -4.605)
+		(end -3.3 -4.605)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "88136cb9-f465-4475-b42d-a760cbd04213")
+	)
+	(fp_line
+		(start 2 -4.89)
+		(end -0.9 -4.89)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e8c79b6e-378c-42ed-af73-bab40ae7fe47")
+	)
+	(fp_line
+		(start 2 -4.89)
+		(end 2 -4.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "daf4f964-59b2-449f-a622-391566720fcc")
+	)
+	(fp_line
+		(start 2 4.9)
+		(end -2 4.9)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f5eb7441-da0f-404b-986e-458783b4bfd3")
+	)
+	(fp_line
+		(start 2 4.9)
+		(end 2 4.61)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "262f98fa-f283-4e25-8f46-8913d2d0017b")
+	)
+	(fp_rect
+		(start -3.5 -5)
+		(end 3.5 5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "b6347143-a245-408a-b6c8-661ce1cc4fa4")
+	)
+	(fp_line
+		(start -3.31 -3.575)
+		(end -2.31 -4.575)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0328a1d9-c7ae-410d-877d-686fabf5f0c7")
+	)
+	(fp_line
+		(start -3.31 4.575)
+		(end -3.31 -3.575)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "840a407d-2409-4b57-bea3-c471c7dc5ccb")
+	)
+	(fp_line
+		(start -2.31 -4.575)
+		(end 3.31 -4.575)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "583f92b8-927e-47b4-99b1-a1c54033ffa5")
+	)
+	(fp_line
+		(start 3.31 -4.575)
+		(end 3.31 4.575)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "be6d7c2d-65e9-46e7-b2a3-508418c387cc")
+	)
+	(fp_line
+		(start 3.31 4.575)
+		(end -3.31 4.575)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6953b220-f76a-4540-b4ad-50f2963995ef")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "239a2cc9-8b57-4c5e-83e0-075b8ab6b127")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd oval
+		(at -2.8 -3.81)
+		(size 1.3 0.55)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "a29edd03-a403-49f8-87a5-1f58a8f6b119")
+	)
+	(pad "2" smd oval
+		(at -2.8 -1.27)
+		(size 1.3 0.55)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "30e19b50-7c32-4848-9a18-3897f0f96208")
+	)
+	(pad "3" smd oval
+		(at -2.8 1.27)
+		(size 1.3 0.55)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "efd90f55-d833-46a0-bfd8-1a6357bddea6")
+	)
+	(pad "4" smd oval
+		(at -2.8 3.81)
+		(size 1.3 0.55)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "6422912a-0276-48f3-b226-b7109234c3d3")
+	)
+	(pad "5" smd oval
+		(at 2.8 3.81)
+		(size 1.3 0.55)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "6905d31d-7aea-4343-b962-5c0fb269f11e")
+	)
+	(pad "6" smd oval
+		(at 2.8 1.27)
+		(size 1.3 0.55)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "ba4a3865-c961-43fc-a3a0-8134339006bf")
+	)
+	(pad "7" smd oval
+		(at 2.8 -1.27)
+		(size 1.3 0.55)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "84745c03-f020-49d6-bad2-93292cf1b557")
+	)
+	(pad "8" smd oval
+		(at 2.8 -3.81)
+		(size 1.3 0.55)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "d29336b5-47a9-442c-ad37-6a343e74053e")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/CPC2317N_IXY.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

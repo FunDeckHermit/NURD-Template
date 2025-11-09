@@ -1,0 +1,227 @@
+(footprint "Terminal_691411510002"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "J105"
+		(at -1.8 5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "91af842c-a388-4631-a4e4-9493202277db")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "691411510002"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "d191700b-aa22-4b79-89cb-381e70699fdd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "Terminal_691411510002"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b8d9800e-08c3-4b39-a265-1cd97fc2260e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.we-online.com/components/products/datasheet/691411510002.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "27190103-4816-4567-86a7-10fa6a4a3513")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Fixed Terminal Blocks WR-TBL 5.08mm 2Pin 10A 250V 20mOhm"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b0a8bfbd-29df-463f-9953-460b353c09c8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MP" "691411510002"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b7599d45-2305-4ac7-8450-dd35c6e51b03")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MF" "Wurth Elektronik"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b760b63a-96d4-4d21-8666-31041b8dc6c6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "0.724"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9be8fa9a-c0bc-459c-a78c-0dbaafb76f1b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/3JZucrq"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "01e81117-26bc-41cd-a5d7-d463e68d5d4c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part number" "710-691411510002"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e19fc2c5-563f-4f1e-a1ea-9aeecfa03e8c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Description" " Fixed Terminal Blocks WR-TBL 5.08mm 2Pin 10A 250V 20mOhm"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6865cb2c-26eb-4fb1-acf1-79cbd7497071")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_poly
+		(pts
+			(xy -3.156 -8.636) (xy 8.128 -8.636) (xy 8.128 -8.128) (xy 8.636 -8.128) (xy 8.636 -6.296) (xy 8.128 -6.296)
+			(xy 8.128 1.832) (xy 8.636 1.832) (xy 8.636 3.048) (xy 8.128 3.048) (xy 8.128 3.556) (xy -3.156 3.556)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "d676d2a6-2239-4a83-91bb-97abace412e4")
+	)
+	(fp_rect
+		(start -3.4 -9)
+		(end 8.8 3.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "b3cc115d-0070-47d0-ace6-2814af80a241")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "948dadd4-d762-470e-9f9f-fecb5b0165bd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 5.08 -5.08)
+		(size 2 2)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f22831fa-0ff2-4909-9b0a-77d49d9c8c27")
+	)
+	(pad "1" thru_hole circle
+		(at 5.08 0)
+		(size 2 2)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0b69383b-6c42-4515-891e-02f500c6fb73")
+	)
+	(pad "2" thru_hole circle
+		(at 0 -5.08)
+		(size 2 2)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "dd4f9e01-6c74-4b62-b4d3-20b554635be5")
+	)
+	(pad "2" thru_hole circle
+		(at 0 0)
+		(size 2 2)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "09a9f384-fa94-430c-90d6-eae98d178b60")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/691411510002 (rev1).stp"
+		(offset
+			(xyz -3 -3.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 -90)
+		)
+	)
+)

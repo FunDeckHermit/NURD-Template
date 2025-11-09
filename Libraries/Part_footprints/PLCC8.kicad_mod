@@ -1,0 +1,266 @@
+(footprint "PLCC8"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "D109"
+		(at 2.6 -5.2 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "cc48cb2b-22e5-4256-8214-9bbcfd0aae5c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CLQ6B-TKW"
+		(at -6.45 -3.55 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b2d0c4c3-4fe5-4130-a5bd-ee9d125bb63d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "_projectlib:PLCC8"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bd916771-c72c-4dd2-be3b-501d08bd29c1")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" "https://downloads.cree-led.com/files/ds/h/HB-CLQ6B-TKW.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b0df13d0-9709-4c30-8418-84008ee29eb9")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "5.2x2.0mm, RGBW, 622nm Red, 528nm Green, 468nm Blue, 2.1V Red, 3V Green, 3.1V Blue, 2.9V White"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b9caf4a1-5f21-4021-87e9-1a870e040ca4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MP" "CLQ6B-TKW-S1L1R1H1TBB7935AA3"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8d8941da-611a-452e-8994-32ae5bb9033b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MF" "Cree LED"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "55cb8471-09ec-4e5a-9946-fe4df435c563")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part number" " 941-CLQ6BTKWS1L1R1A3"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0710cba5-b136-4ef7-ab98-20fa601ff895")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "0.721"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "88f5f3f9-0c89-4683-bc45-e1fee587cc85")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Description" "Hoogvermogen LEDs - Meerdere kleuren RGB - White SMD 5050Case Size LED"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "31e2429a-3906-40d5-8070-4ac378dfba44")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/3KTKl31"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e4985ce0-0b18-48b2-bcda-010e9242b5d7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_poly
+		(pts
+			(xy -0.4 0.6) (xy -0.4 -0.2) (xy 0.4 0.6)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "b012ba71-cc40-4e36-adbd-4f886dd5d0ac")
+	)
+	(fp_rect
+		(start 0 0)
+		(end 5.5 -4.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "eeb194e8-51ae-4b95-8b40-3cac45db235c")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -6.45 -2.05 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "bbf419b4-720d-4332-b262-5ab79ca43b81")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd custom
+		(at 0.1 -4.5)
+		(size 0.1 0.1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 0 0) (xy 3.32 0) (xy 3.32 1.11) (xy 1.11 1.11) (xy 0 0.78)
+				)
+				(width 0.01)
+				(fill yes)
+			)
+		)
+		(uuid "939ff8b5-c6ac-4b2b-9ceb-8cc31f99bd48")
+	)
+	(pad "2" smd rect
+		(at 1 -2.75)
+		(size 1.9 0.64)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "f06989f1-1c53-425d-b811-a93ee8a11f45")
+	)
+	(pad "3" smd rect
+		(at 1 -1.85)
+		(size 1.9 0.64)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "06d02d76-a84a-464e-affd-64805563e2d7")
+	)
+	(pad "4" smd custom
+		(at 0.1 -0.1)
+		(size 0.1 0.1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 0 0) (xy 3.32 0) (xy 3.32 -1.11) (xy 1.11 -1.11) (xy 0 -0.78)
+				)
+				(width 0.01)
+				(fill yes)
+			)
+		)
+		(uuid "969f4e61-e37e-4c65-a078-ef69c8c1bf0f")
+	)
+	(pad "5" smd rect
+		(at 4.6 -0.6)
+		(size 1.68 0.9)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "99381da8-30f4-4c50-a217-5b8aafd010cc")
+	)
+	(pad "6" smd rect
+		(at 3.85 -1.8)
+		(size 3.25 0.72)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "343a76ea-cf7b-4841-a0d7-d99563ec0660")
+	)
+	(pad "7" smd rect
+		(at 3.85 -2.8)
+		(size 3.25 0.72)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "5957eeb6-8506-442e-a742-b46536e778c5")
+	)
+	(pad "8" smd rect
+		(at 4.6 -4)
+		(size 1.68 0.9)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "81fe6c3f-bd45-45ef-93ce-dae79b28509d")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/CLQ6C.stp"
+		(opacity 0.9400)
+		(offset
+			(xyz 2.9 2.45 1)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

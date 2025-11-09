@@ -1,0 +1,406 @@
+(footprint "SOP65P640X120-17N"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "U103"
+		(at -1.28 -3.485 0)
+		(layer "F.SilkS")
+		(uuid "a5ea5620-bab8-41df-be25-2aa98bfd8f72")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "H-B_TEXI_DRV8874PWPR"
+		(at 4.816 3.485 0)
+		(layer "F.Fab")
+		(uuid "b3028078-9e30-4fdc-965e-46a91dfd6c4d")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "SOP65P640X120-17N"
+		(at -0.4 -5.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "385ee77a-9eb5-4762-b50d-b79c317f9673")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.ti.com/lit/gpn/drv8874"
+		(at -0.4 -5.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d9be4118-a62d-4b5b-a613-009d746328ba")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Motor/Motion/Ignition Controllers & Drivers 40-V, 6-A H-bridge motor driver with integrated current sensing feedback"
+		(at -0.4 -5.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "191a0b9a-2072-4c00-b55c-9120015c67e9")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MF" "Texas Instruments"
+		(at -0.4 -5.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0a975699-e5a3-47f5-b5d8-3c49a36f48ab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MP" "DRV8874PWPR"
+		(at -0.4 -5.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "198ba8ea-74ac-4563-b273-30f809de010f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "1.79"
+		(at -0.2 -5.8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "67df8487-febb-48f9-a31e-69915c758dfc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/4bfX1Ma"
+		(at -0.4 -5.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "beb78673-aaaa-4d4f-88d7-74c8f18fa101")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Description" "Motor/Motion/Ignition Controllers & Drivers 40-V, 6-A H-bridge motor driver with integrated current sensing feedback"
+		(at -0.4 -5.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "74f48517-102a-42fc-aa07-7f124c74920a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part number" "595-DRV8874PWPR"
+		(at -0.4 -5.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "da0db064-c3a4-4f44-862f-1d681e383671")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_poly
+		(pts
+			(xy -0.8 -1.075) (xy 0.8 -1.075) (xy 0.8 1.075) (xy -0.8 1.075)
+		)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.Paste")
+		(uuid "93ef94a5-f689-458e-bf2e-81cb13759b66")
+	)
+	(fp_line
+		(start -2.2 -2.8)
+		(end 2.2 -2.8)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3fdf82fd-6493-406c-9de3-08cf4cc3ae7b")
+	)
+	(fp_line
+		(start -2.2 2.8)
+		(end 2.2 2.8)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "12b344a7-73fc-4f2d-aad5-2851bc8b0d69")
+	)
+	(fp_circle
+		(center -4.2 -2.4)
+		(end -4.1 -2.4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "ba10edc1-3084-4cf6-bc89-13f3fbcaedb3")
+	)
+	(fp_line
+		(start -3.905 -2.8)
+		(end -3.905 2.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "03554d8b-71a1-44ea-b720-125d949d7e4e")
+	)
+	(fp_line
+		(start -3.905 -2.8)
+		(end 3.905 -2.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "bb97208c-e467-41cf-a88e-4a782899753b")
+	)
+	(fp_line
+		(start -3.905 2.8)
+		(end 3.905 2.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "dd72ea45-816b-4a51-bec1-8c1c348f4056")
+	)
+	(fp_line
+		(start 3.905 -2.8)
+		(end 3.905 2.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e9177b54-6235-4543-b547-d89d2feb6856")
+	)
+	(fp_line
+		(start -2.2 -2.5)
+		(end -2.2 2.5)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "361db693-23a9-4e4b-b4ff-c5062b03f2e7")
+	)
+	(fp_line
+		(start -2.2 -2.5)
+		(end 2.2 -2.5)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "484cecb1-b035-40e3-921f-327b21ed57d6")
+	)
+	(fp_line
+		(start -2.2 2.5)
+		(end 2.2 2.5)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7626dbc6-96a2-45c1-a5eb-ae155a2b6017")
+	)
+	(fp_line
+		(start 2.2 -2.5)
+		(end 2.2 2.5)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "719a0843-3dcc-4ee8-8f70-43ebef5c3bc1")
+	)
+	(fp_circle
+		(center -4.2 -2.4)
+		(end -4.1 -2.4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "30b37dea-d2be-4b73-a410-cb005e1d5bac")
+	)
+	(pad "1" smd roundrect
+		(at -2.87 -2.275)
+		(size 1.57 0.41)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "863d7174-68c1-440e-a8b1-d8081feec4d1")
+	)
+	(pad "2" smd roundrect
+		(at -2.87 -1.625)
+		(size 1.57 0.41)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "4f6d2517-cee9-41a0-964d-2c608d563160")
+	)
+	(pad "3" smd roundrect
+		(at -2.87 -0.975)
+		(size 1.57 0.41)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "09698e84-1f08-4f9c-b0b8-ed51810776ce")
+	)
+	(pad "4" smd roundrect
+		(at -2.87 -0.325)
+		(size 1.57 0.41)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "97ef15e7-190f-443f-9de6-b5ccdf915e2d")
+	)
+	(pad "5" smd roundrect
+		(at -2.87 0.325)
+		(size 1.57 0.41)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "2ab25450-6d3b-414a-9991-ede8d1a19ee2")
+	)
+	(pad "6" smd roundrect
+		(at -2.87 0.975)
+		(size 1.57 0.41)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "fdc64f5e-5273-4b65-b8db-2707d189c6f5")
+	)
+	(pad "7" smd roundrect
+		(at -2.87 1.625)
+		(size 1.57 0.41)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "33f96fe4-ed8f-45ed-8ce4-18016283521e")
+	)
+	(pad "8" smd roundrect
+		(at -2.87 2.275)
+		(size 1.57 0.41)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "4ff2cbf7-50e9-4a41-8c05-130348689b58")
+	)
+	(pad "9" smd roundrect
+		(at 2.87 2.275)
+		(size 1.57 0.41)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "c23b61d9-e8bf-49e5-b4ba-22a2f2986a42")
+	)
+	(pad "10" smd roundrect
+		(at 2.87 1.625)
+		(size 1.57 0.41)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "51a7ac66-b0ac-475c-a17e-eb399ebdb4c5")
+	)
+	(pad "11" smd roundrect
+		(at 2.87 0.975)
+		(size 1.57 0.41)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "c2b57736-442f-4243-b1a1-728587ce4a80")
+	)
+	(pad "12" smd roundrect
+		(at 2.87 0.325)
+		(size 1.57 0.41)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "ebe3b24b-b3df-4e36-835a-fbd2b4f67a2b")
+	)
+	(pad "13" smd roundrect
+		(at 2.87 -0.325)
+		(size 1.57 0.41)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "2d6c0faf-1c68-4353-8b23-2052f94f9dda")
+	)
+	(pad "14" smd roundrect
+		(at 2.87 -0.975)
+		(size 1.57 0.41)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "d1993893-6ef3-4708-b6d2-c075af4f1e42")
+	)
+	(pad "15" smd roundrect
+		(at 2.87 -1.625)
+		(size 1.57 0.41)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "73ea21a6-72b0-4ebf-bcb9-b705aec2e572")
+	)
+	(pad "16" smd roundrect
+		(at 2.87 -2.275)
+		(size 1.57 0.41)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "4beb9144-eac9-4771-a234-0ee031f93013")
+	)
+	(pad "17" smd rect
+		(at 0 0)
+		(size 2.48 3.4)
+		(layers "F.Cu" "F.Mask")
+		(uuid "efab43fe-f6f0-45e7-a396-09368dad2716")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/DRV8874PWPR.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

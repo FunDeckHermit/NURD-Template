@@ -1,0 +1,208 @@
+(footprint "LEILA-SC-RS"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "L108"
+		(at 0 -3.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "f18d7810-7db6-4944-9b5a-b30c77b27e8b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "CP17587"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "aec9ff93-c051-46d7-87dc-a8c1b8be68af")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "_projectlib:LEILA-SC-RS"
+		(at -1.25 -20.25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f466c63f-ab4e-425f-8728-cdf38fa1efc6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://nl.mouser.com/datasheet/2/229/17587_ds-1890750.pdf"
+		(at -1.25 -20.25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "60bf3495-a5af-4686-9a1a-a86f3d91a255")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Lens With Holder Clear 9.6° Spot Snap-In"
+		(at -1.25 -20.25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f2ecdc30-c788-40b7-b32e-b4dda5e64772")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "1.76"
+		(at -1 -20.25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bc2db36c-f1d3-4153-834b-3a6606ad47ad")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part number" "928-CP17587LEILASCRS "
+		(at -1.25 -20.25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "abf6526e-fdf0-4212-a340-a4549c672f91")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/3uQbZJ2"
+		(at -1.25 -20.25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "79a67947-5172-4c3a-94b7-c1d3f5839bb2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Description" "Sets ledverlichtingslenzen Assemblyround1 Pos21.6mm (D) "
+		(at -1.25 -20.25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "889cf58b-9d3e-469c-9e19-ba8e6ec7665f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -7.8 -1)
+		(end -7.8 1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "387df71f-e069-41c4-a6c6-d1b4989edbaa")
+	)
+	(fp_line
+		(start -0.25 0)
+		(end 0.25 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6fcacf35-053c-4775-a68d-f0668c611675")
+	)
+	(fp_line
+		(start 0 -0.25)
+		(end 0 0.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "abc32af0-25cb-4773-ba98-5dae090af7b5")
+	)
+	(fp_line
+		(start 7.8 -1)
+		(end 7.8 1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3fd5647f-5147-44c4-ac82-79c191e35d90")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 10.75 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "0b2e1ac5-d17e-47a1-a802-8d938a478a67")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 8.5 6.75)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "3b84aec3-f20f-4db1-9846-4e5131753f45")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "9b4e856c-a2b9-4d02-a479-fd24000c4d73")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/CP17587_LEILA-SC-RS_MechanicalModel.stp"
+		(opacity 0.8300)
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

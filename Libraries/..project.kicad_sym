@@ -1,0 +1,68 @@
+(kicad_symbol_lib
+	(version 20231120)
+	(generator "kicad_symbol_editor")
+	(generator_version "8.0")
+	(symbol ".GeneralTipsAndTricks"
+		(pin_numbers hide)
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(property "Reference" "X"
+			(at -4.064 5.842 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol ".GeneralTipsAndTricks_1_1"
+			(text "1. Try to use the Reel (not tube) variant\n2. No text over Symbol\n3. Use question marks after designator type (ex. IC?)\n4. Parts with other required part: Write both in MF, Part number and sum price\n5. Use KiCAD footprints whenever possible\n6. Don't pick the smallest part (Thanks Gert!)\n7. Write descriptions with the most important information first\n8. Use this template or copy the libraries dir over to a new project\n9. For maintainers, validate footprints!\n10. Don't rely on external footprints, just make it yourself\n11. Format is XXX_YYYY_whatever\n12. If this library is still in use after 2040, invite me over for a beer: 0639830271\n13. Use special characters to set list order ( ˍ , _ , - , …)\n14. When creating shield footprints: don't take the default paste mask.\n15. Digikey often has better descriptions then Mouser/Farnel\n16. Make sure the part is in stock before adding it\n17. When using slots in footprints, make them at least 0.62mm wide"
+				(at 0 0.254 0)
+				(effects
+					(font
+						(face "Arial")
+						(size 2 2)
+					)
+					(justify left bottom)
+				)
+			)
+		)
+	)
+)

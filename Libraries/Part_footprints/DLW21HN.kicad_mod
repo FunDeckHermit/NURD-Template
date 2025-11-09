@@ -1,0 +1,268 @@
+(footprint "DLW21HN"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "FL101"
+		(at 0.1 -1.4 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "b4d69e61-0667-4711-9a26-dd8327495580")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "DLW21HN900SQ2"
+		(at 0 0.9 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "78bedd49-1ebc-49c6-b958-134bbb918ffc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "_projectlib:DLW21HN"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1dbfb441-1b6f-4986-a657-84a8dcf24cc2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://nl.mouser.com/datasheet/2/281/DLW21HN900SQ2_23-1915492.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d5af13f4-7b1b-41bc-bd1c-1b15a8bec367")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "USB2.0 Common Mode Choke Surface Mount 90 Ohms @ 100 MHz 330mA DCR 350mOhm"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "00ef67f1-c839-41e0-bad8-ae1eafda9f9d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "0.20"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "29eb8ead-4cee-4999-b5ee-3d48572a5009")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part number" " 81-DLW21HN900SQ2L"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6d27f579-ebc0-4c89-af96-9bf12f25b8f4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/49gpSOF"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ff8d035a-25b8-4e38-9113-01118e90931c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Description" "2 Line Common Mode Choke Surface Mount 90 Ohms @ 100 MHz 330mA DCR 350mOhm"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f4b794b0-c6cf-461a-bd28-5fbc2181337b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MF" "Murata"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ddbcd73b-2d58-4817-8a2e-20058270c3a7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MP" "DLW21HN900SQ2"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bb11d106-299c-47eb-9d65-7df22addb6ad")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.3 -0.6)
+		(end 0.3 -0.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "da811645-0b3f-4102-859a-b7e4173cc067")
+	)
+	(fp_line
+		(start -0.3 0.6)
+		(end 0.3 0.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "7b9ba57f-5190-4668-9bd5-8c6a289ff68b")
+	)
+	(fp_line
+		(start 1.3 -0.2)
+		(end 1.3 0.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "0d651d5c-aef8-40cd-9f1e-0a78db5d0b3e")
+	)
+	(fp_circle
+		(center -1.35 -0.15)
+		(end -1.3 -0.15)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "910a1924-f689-4c16-84bd-ebc148c07f66")
+	)
+	(fp_circle
+		(center -1.35 0.15)
+		(end -1.3 0.15)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "1d9b5714-3e5d-4b21-a3f4-f0ec0f334ba5")
+	)
+	(fp_rect
+		(start -1.4 -0.7)
+		(end 1.4 0.7)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "b95940af-bce4-4452-8410-a4dff568a9b0")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "201bff26-beef-4296-9cb8-e201bc5a3a04")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.8 -0.425)
+		(size 0.9 0.4)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.06)
+		(thermal_bridge_angle 45)
+		(uuid "a530b415-7fc8-4b5c-8777-912783bd1cba")
+	)
+	(pad "2" smd roundrect
+		(at 0.8 -0.425)
+		(size 0.9 0.4)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.06)
+		(thermal_bridge_angle 45)
+		(uuid "3ca88e99-c16e-40a8-9670-5f5c70bebe38")
+	)
+	(pad "3" smd roundrect
+		(at 0.8 0.425)
+		(size 0.9 0.4)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.06)
+		(thermal_bridge_angle 45)
+		(uuid "91bf420a-965b-4601-ac7e-c40f4c7cfa65")
+	)
+	(pad "4" smd roundrect
+		(at -0.8 0.425)
+		(size 0.9 0.4)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.06)
+		(thermal_bridge_angle 45)
+		(uuid "b368351e-08ad-4c19-81e1-3f8d1ce20ab2")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/DLW21HN900SQ2L--3DModel-STEP-1.STEP"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

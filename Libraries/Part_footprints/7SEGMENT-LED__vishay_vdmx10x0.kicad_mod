@@ -1,0 +1,269 @@
+(footprint "7SEGMENT-LED__vishay_vdmx10x0"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "7-Segment Display, HDSM53x, https://docs.broadcom.com/docs/AV02-0713EN")
+	(tags "7segment LED HDSM531 HDSM533")
+	(property "Reference" "U159"
+		(at 0 -6 0)
+		(layer "F.SilkS")
+		(uuid "21970eb1-9f99-4815-a822-1b09f0315594")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "VDMR10A0"
+		(at 0 7 0)
+		(layer "F.Fab")
+		(uuid "fa6055aa-8121-4379-811d-434f7f74e034")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "Display_7Segment:7SEGMENT-LED__HDSM531_HDSM533_SMD"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "721fc99f-1d85-486c-ab53-1b7aae9596f2")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.vishay.com/doc?84196"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cc7850f8-e7a0-4d50-b315-5f5f8970eeb9")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "15x10x3.15mm SMD, Common Anode 2V, Single digit 7 segment display, super bright red"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "349827d8-5a5b-41c5-9de6-9e6a944f000a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "0.831"
+		(at 2 1.1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "85db7de7-00e6-41d7-9171-67e34e38befe")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Description" "LED Displays & Accessories 7-Seg SuperRed 631nm Common Anode"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "89110595-a2fa-4a2b-b456-9c4f6b59eb3c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/3J8kvXt"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6fd96561-0465-46e6-bb86-ae610894df66")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part number" "78-VDMR10A0"
+		(at 2 1.1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "45eb2fa6-ae6d-4f99-913e-893659b93ec0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MF" "Vishay"
+		(at 2 1.1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7e112411-ed24-4eb3-b046-b8f721e65fa9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MP" "VDMR10A0"
+		(at 2 1.1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b04333af-12bd-47ed-9185-31cda6297a6e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(solder_paste_margin -0.2)
+	(attr smd)
+	(fp_line
+		(start -7.425 5)
+		(end 7.425 5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0ac6e09b-1672-4691-8e42-8f9b1a8d3fe1")
+	)
+	(fp_line
+		(start 7.425 -5)
+		(end -7.425 -5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bea45778-8662-479c-bf57-9fcfd3cdf16d")
+	)
+	(fp_rect
+		(start -9.5 -5.5)
+		(end 9.5 5.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "aff5e739-6674-47b6-a441-84e4c8cb8f48")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 2 1.1 0)
+		(layer "F.Fab")
+		(uuid "773de8b8-77f0-4c91-accc-888c382f0544")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -7.5 -3.8 270)
+		(size 1.65 3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_paste_margin -0.2)
+		(uuid "d66cabc2-94db-48b4-b0dd-5fe176e4ea3c")
+	)
+	(pad "2" smd rect
+		(at -7.5 -1.9 270)
+		(size 1.65 3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_paste_margin -0.2)
+		(uuid "f8ab0edc-6707-4ea0-9281-f1ed1411240b")
+	)
+	(pad "3" smd rect
+		(at -7.5 0 270)
+		(size 1.65 3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_paste_margin -0.2)
+		(uuid "bffbe051-0f7e-47be-a507-e7eb3026f7e7")
+	)
+	(pad "4" smd rect
+		(at -7.5 1.9 270)
+		(size 1.65 3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_paste_margin -0.2)
+		(uuid "e71e2110-f1b4-4a7a-87ec-87f843677427")
+	)
+	(pad "5" smd rect
+		(at -7.5 3.8 270)
+		(size 1.65 3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_paste_margin -0.2)
+		(uuid "e27c965b-e35a-4324-b828-201593463619")
+	)
+	(pad "6" smd rect
+		(at 7.5 3.8 270)
+		(size 1.65 3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_paste_margin -0.2)
+		(uuid "c3fda16d-21cd-4c1f-b482-e6e3d0c6910d")
+	)
+	(pad "7" smd rect
+		(at 7.5 1.9 270)
+		(size 1.65 3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_paste_margin -0.2)
+		(uuid "943d24a5-02b4-44fc-88ed-f852078f5a59")
+	)
+	(pad "8" smd rect
+		(at 7.5 0 270)
+		(size 1.65 3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_paste_margin -0.2)
+		(uuid "fddf1879-6f73-434b-a94f-940d0c812829")
+	)
+	(pad "9" smd rect
+		(at 7.5 -1.9 270)
+		(size 1.65 3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_paste_margin -0.2)
+		(uuid "8abd94e0-6841-49ea-b739-e03582542b47")
+	)
+	(pad "10" smd rect
+		(at 7.5 -3.8 270)
+		(size 1.65 3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_paste_margin -0.2)
+		(uuid "ac2270c7-7548-48f3-a136-3b350116b3c7")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/1segment_display_10mm_SMD_VDMx10x0.stp"
+		(offset
+			(xyz 0 0 0.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -90)
+		)
+	)
+)

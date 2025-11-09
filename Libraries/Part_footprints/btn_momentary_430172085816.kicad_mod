@@ -1,0 +1,213 @@
+(footprint "btn_momentary_430172085816"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "SW103"
+		(at 0 8 180)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "ae0bc279-c5cf-444d-b06e-7388c0c1c104")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "430172085816"
+		(at 0 -10.17 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "cca86264-0215-429e-ae34-e88ac61be808")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "_projectlib:btn_momentary_430172085816"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cf0b160e-e057-4647-8e0b-3114ae239552")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.we-online.com/components/products/datasheet/430172085816.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0c65913a-109a-4acc-8408-04ebecee657b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "12x12mm, SMD Drukschakelaars WS-TASV Tact Switch NO raised (8.5mm) button (Ø=6.8mm)"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "98961680-191c-4215-92db-014152257589")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MF" "Wurth Elektronik"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fcb9c841-aba2-44de-a5d5-cf6ff1019319")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MP" "430172085816"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4e0a6b95-6079-421f-b73c-9a6192f35689")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Description" "Drukschakelaars WS-TASV Tact Switch NO"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fb242f4b-1ff8-4f32-9599-b699ddd88383")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Part Number" "710-430172085816"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7d5c7265-2008-45c8-847c-bde976ca22cf")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/48x3ktK"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "04125e14-1a2e-4ebd-afd7-44ace514bed1")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "0.416"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4d8419bf-2ba5-429b-a725-af675e3be070")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Update date" "05-05-2024"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "43e9b4d4-0b0e-4180-8223-ecc56ca90219")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -6 -6)
+		(end 6 6)
+		(stroke
+			(width 0.4)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "fdaee877-85a4-410d-b5e5-965457ec0450")
+	)
+	(fp_rect
+		(start -6.7 -6.7)
+		(end 6.7 6.7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "43d9c382-0741-4155-b9cd-2ec3f9c7b391")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -8.67 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "098f0471-5f42-4e7d-8e0f-e9f770997762")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -7.21 -2.5)
+		(size 2 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "33048726-4533-4380-9b86-179e765ff4d5")
+	)
+	(pad "2" smd rect
+		(at 7.23 -2.52)
+		(size 2 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "9fbf60ac-c310-4e55-80f4-fe042cb8c189")
+	)
+	(pad "3" smd rect
+		(at -7.21 2.5)
+		(size 2 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "a8521b50-b8ee-4806-8fcc-8d8ad9b408ca")
+	)
+	(pad "4" smd rect
+		(at 7.23 2.48)
+		(size 2 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "4bdcf125-3d2d-4d28-bb7d-27b423042f7c")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/STP_430172085816 (rev1).stp"
+		(offset
+			(xyz -0.2 0 1.7)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

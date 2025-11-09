@@ -1,0 +1,238 @@
+(footprint "SW_PRDDD3"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "SW105"
+		(at -12.75 13.75 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "ad7d624c-a8cf-4e62-af18-841389a0f81e")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "PRDDD3"
+		(at -14.75 13.15 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "eb9bfd52-7f8e-4917-a05a-7abffee3a93c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "SW_PRDDD3"
+		(at -14.75 12.25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "201a8618-754d-40c9-90e0-5f942a89b63e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://nl.mouser.com/datasheet/2/418/NG_CD_1571113_E2-685621.pdf"
+		(at 0 14.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6b04c4c5-625b-465e-bb0f-593bc1a5fc6b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Rocker switch rectangular KCD4, ON-OFF-ON, arrows, black 250V/15A"
+		(at -14.75 12.25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e8b70047-cfbe-4831-a5b2-0407041cc53d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -13.8 -12.75)
+		(end 13.8 12.75)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "fa9e3128-116a-4242-9657-36983f6d5573")
+	)
+	(fp_text user "NC"
+		(at 16.25 1.25 180)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "3ba2168e-59dc-428e-a845-18d3a708131c")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.5)
+				(bold yes)
+			)
+			(justify left mirror)
+		)
+	)
+	(fp_text user "COM"
+		(at 16.25 11.25 180)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "48122cee-e376-4626-bc2a-68759d2c2aaf")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.5)
+				(bold yes)
+			)
+			(justify left mirror)
+		)
+	)
+	(fp_text user "NO"
+		(at -15.75 5.25 0)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "ab0ad00f-b6ec-4b81-91ad-fe643cddeb2e")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.5)
+				(bold yes)
+			)
+			(justify left mirror)
+		)
+	)
+	(fp_text user "COM"
+		(at -15.75 -10.75 0)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "b29b826e-ea4b-4eff-83f1-3cd810627997")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.5)
+				(bold yes)
+			)
+			(justify left mirror)
+		)
+	)
+	(fp_text user "NC"
+		(at -15.75 -0.75 0)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "c7ed09e1-9dd2-401c-ab9c-241a947dfce5")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.5)
+				(bold yes)
+			)
+			(justify left mirror)
+		)
+	)
+	(fp_text user "NO"
+		(at 16.25 -4.75 180)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "fe4fe2b4-14cf-4d98-a003-32f2d18c7f73")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.5)
+				(bold yes)
+			)
+			(justify left mirror)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at -14.75 14.65 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "17416ef6-d38c-4763-9d98-8f43889c0922")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -17.75 2.25)
+		(size 3 3)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "56d7e27b-7ce5-47ed-9bdc-e1bcfb5d1e3c")
+	)
+	(pad "2" thru_hole circle
+		(at -17.75 -7.75)
+		(size 3 3)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "be1767f2-0e87-4daf-b9e1-f0617504e0c9")
+	)
+	(pad "3" thru_hole circle
+		(at -17.75 8.25)
+		(size 3 3)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e4000d43-ba6e-40b5-9d48-1a111cddd63d")
+	)
+	(pad "4" thru_hole circle
+		(at 18.25 -1.75)
+		(size 3 3)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "887739b0-1fa3-4860-8beb-af8220e3556c")
+	)
+	(pad "5" thru_hole circle
+		(at 18.25 8.25)
+		(size 3 3)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "72dc7db2-a8bc-4cda-8cd5-10e45a67557d")
+	)
+	(pad "6" thru_hole circle
+		(at 18.25 -7.75)
+		(size 3 3)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "aaa0b15a-0c60-4be7-9ea5-a19b8251da77")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/PRDDD3-16F-BB000.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

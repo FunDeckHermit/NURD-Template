@@ -1,0 +1,240 @@
+(footprint "SW_16mm_ILUM"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "SW101"
+		(at 0 -0.4 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "e7dcc9af-e0d8-4540-ab4b-272cd873e6ee")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "SW_16mm_RED"
+		(at 0 0.9 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d271a66b-41e2-4456-89b8-e78fc2ab83bb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "_projectlib:SW_16mm_ILUM"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a9810a1a-ca69-4b12-8a17-d957153f8e36")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "http://www.nkkswitches.com/pdf/gwillum.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dc27de3b-cbdf-4f55-b7c9-1c36b2baaa42")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Switch, single pole double throw, illuminated ring RED"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7238e628-eb03-47a2-88eb-36759265ef69")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_poly
+		(pts
+			(xy 5.8 -10) (xy 11.560254 0.022947) (xy 5.760254 10.022947) (xy -5.8 10) (xy -11.560254 -0.022947)
+			(xy -5.760254 -10.022947)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill none)
+		(layer "B.SilkS")
+		(uuid "c5625075-ba9c-483d-ae9a-e6b8ccb87299")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 9 0)
+		(stroke
+			(width 0.3)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "96e454d1-3082-4a2f-9c92-ea2c729c8a20")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 8 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "bd03429d-b535-4a6e-bb8c-035564520987")
+	)
+	(fp_text user "NO"
+		(at 13 -1.5 0)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "3096f971-9164-4b34-a869-901721af202b")
+		(effects
+			(font
+				(size 1.4 1.4)
+				(thickness 0.35)
+				(bold yes)
+			)
+			(justify bottom mirror)
+		)
+	)
+	(fp_text user "LED_{+}"
+		(at 12 8 0)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "4cc35b55-d555-483b-8655-c67c486d4951")
+		(effects
+			(font
+				(size 1.4 1.4)
+				(thickness 0.35)
+				(bold yes)
+			)
+			(justify bottom mirror)
+		)
+	)
+	(fp_text user "GND"
+		(at -12 8.5 0)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "9b803daf-f81e-479c-a9b3-bde471664a36")
+		(effects
+			(font
+				(size 1.4 1.4)
+				(thickness 0.35)
+				(bold yes)
+			)
+			(justify bottom mirror)
+		)
+	)
+	(fp_text user "NC"
+		(at 12 -6.5 0)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "a71ff3d6-1bfe-4c8f-8971-de004b2d074a")
+		(effects
+			(font
+				(size 1.4 1.4)
+				(thickness 0.35)
+				(bold yes)
+			)
+			(justify bottom mirror)
+		)
+	)
+	(fp_text user "C"
+		(at -10 -7 0)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "ef7ff1cc-17e2-44b5-bcad-0582a530eb44")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.5)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bdff91bf-bab6-4a5b-a445-73d9b74102b8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -12 5)
+		(size 2.286 2.286)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "2b2c414c-d334-417c-abb2-3edaa3bf2961")
+	)
+	(pad "2" thru_hole circle
+		(at 12 5)
+		(size 2.286 2.286)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1d4e0d62-4455-4f7f-98d7-137b701c0f0c")
+	)
+	(pad "3" thru_hole circle
+		(at -12 -5)
+		(size 2.286 2.286)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "277e65e9-e1cb-4fb3-9356-d309183f4b72")
+	)
+	(pad "4" thru_hole circle
+		(at 12 -5)
+		(size 2.286 2.286)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "3b203fc5-96a8-41a0-82e5-ba2b85973a4b")
+	)
+	(pad "5" thru_hole circle
+		(at 13 0)
+		(size 2.286 2.286)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9d690cfd-1929-490b-9bbb-6aa90bf23016")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/Metal_Pushbutton_Green.STEP"
+		(offset
+			(xyz 0 0 -29.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

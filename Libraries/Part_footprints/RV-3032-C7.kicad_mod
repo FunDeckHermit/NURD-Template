@@ -1,0 +1,259 @@
+(footprint "RV-3032-C7"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "MicroCrystal C7 SON, 8 Pin (https://www.microcrystal.com/fileadmin/Media/Products/RTC/App.Manual/RV-3028-C7_App-Manual.pdf#page=107), generated with kicad-footprint-generator ipc_noLead_generator.py")
+	(tags "MicroCrystal SON NoLead MicroCrystal-RV3028-C7")
+	(property "Reference" "REF**"
+		(at 0 -2.55 0)
+		(layer "F.SilkS")
+		(uuid "37dc9055-c284-473f-9d18-28304fe2c588")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "RV-3032-C7"
+		(at 0 2.55 0)
+		(layer "F.Fab")
+		(uuid "93f095c1-d435-4c57-b4cc-c43e5104e27d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "68acf9e6-79b8-44be-913b-7630e708304e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1f1d096b-b624-48f4-b4b1-12cde428cfb5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f398af64-155b-4a7d-9d13-e524b37e6e6f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.75 -1.935)
+		(end 0.75 -1.935)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a5db9e24-a083-4ba3-8d50-0e226aa74284")
+	)
+	(fp_line
+		(start -0.75 1.935)
+		(end 0.75 1.935)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e1ed8dd1-0a4f-4f2d-bf6a-fe599ef1030c")
+	)
+	(fp_poly
+		(pts
+			(xy -1.27 -1.82) (xy -1.55 -1.82) (xy -1.27 -2.1) (xy -1.27 -1.82)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "162f7b8e-3f0c-47b1-a103-533de72c7b14")
+	)
+	(fp_line
+		(start -1.38 -1.85)
+		(end -1.38 1.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "139d442a-148a-4c62-88c9-2be2c2cd26c7")
+	)
+	(fp_line
+		(start -1.38 1.85)
+		(end 1.38 1.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d492edc5-6fcb-4b17-816e-5ef4dcd68dda")
+	)
+	(fp_line
+		(start 1.38 -1.85)
+		(end -1.38 -1.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "22095468-46fe-493e-bbbb-31af475b4ae4")
+	)
+	(fp_line
+		(start 1.38 1.85)
+		(end 1.38 -1.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "10a0c1c7-98f5-4af4-9672-6543b34d128e")
+	)
+	(fp_line
+		(start -0.75 -1.225)
+		(end -0.375 -1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ff1f1cbf-b77b-4045-96f4-68eb05e58b6c")
+	)
+	(fp_line
+		(start -0.75 1.6)
+		(end -0.75 -1.225)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "030821f5-e913-4a41-bc31-90fcc1d08c9d")
+	)
+	(fp_line
+		(start -0.375 -1.6)
+		(end 0.75 -1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c355bb75-655c-4dbd-b7ea-f260cfd36522")
+	)
+	(fp_line
+		(start 0.75 -1.6)
+		(end 0.75 1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "bf0018e9-ec23-40cc-aeb4-858a21881652")
+	)
+	(fp_line
+		(start 0.75 1.6)
+		(end -0.75 1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fefe8e91-c4b4-4129-8292-382e63d671bc")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 90)
+		(layer "F.Fab")
+		(uuid "3c5b57e6-f890-4789-b31a-59961b836e04")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.6 -1.35)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "b7ad1a7d-93a5-4325-9fed-21d5d6970039")
+	)
+	(pad "2" smd rect
+		(at -0.6 -0.45)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "c66c87ea-95eb-46c4-98be-94a0d7c2caec")
+	)
+	(pad "3" smd rect
+		(at -0.6 0.45)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "06574c2a-eb6e-4b58-bb1a-81aa08dbf691")
+	)
+	(pad "4" smd rect
+		(at -0.6 1.35)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "ba065a21-e22e-4c7c-b920-c2efb517855b")
+	)
+	(pad "5" smd rect
+		(at 0.6 1.35)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "76923e6c-48f5-4b62-9bc2-e74dfb272a6e")
+	)
+	(pad "6" smd rect
+		(at 0.6 0.45)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "b872d3a7-3acc-4b26-85a5-0db969aeec9d")
+	)
+	(pad "7" smd rect
+		(at 0.6 -0.45)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "33a91907-a431-4307-9cdb-c17fdfae9271")
+	)
+	(pad "8" smd rect
+		(at 0.6 -1.35)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "ac8b37fe-a879-4af2-b6a4-18c43074510a")
+	)
+	(model "${KIPRJMOD}/3D models/RV-3032-C7.STEP"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

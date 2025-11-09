@@ -1,0 +1,336 @@
+(footprint "SOIC-8_Microchip_P1.27mm"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "SOIC, 8 Pin (JEDEC MS-012AA, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_8.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
+	(tags "SOIC SO")
+	(property "Reference" "U137"
+		(at 0 -3.4 0)
+		(layer "F.SilkS")
+		(uuid "d8cdd5a5-5dff-4a3e-aa9e-78fa36887df0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "MIC5021"
+		(at 0 3.4 0)
+		(layer "F.Fab")
+		(uuid "e35ab467-e119-4ab7-8623-374cac5aa1de")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "_projectlib:SOIC-8_Microchip_P1.27mm"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0d006402-7877-495f-b0f9-2730f4ed12f3")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/20005677A.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4fb5738f-c8a9-402c-b87f-6ee73c3233d7")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "High Side NFET gate driver, external bootstrap cap, current sense and I trip"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f04641e4-7e9c-464e-a152-0b87f7f7af50")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MF" "Microchip Technologies"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dd8dc5cd-92e3-4a7c-9aaf-7b8424b985dd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MP" "MIC5021YM-TR"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3f167d67-e71d-4ee3-a3f2-375ba1097f60")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "2.46"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aaa55f2d-757b-464d-a79f-1ef39aa179e2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part number" "998-MIC5021YMTR"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "86e51189-1093-4aff-b504-2cdb4fbcd114")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/3vDjuDq"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c901efc8-4b66-41fd-8797-1792cca3d2c1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Description" "High-Side Gate Driver IC Non-Inverting 8-SOIC"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ab32a9b1-2689-46e7-8096-f801e49a6a43")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 0 -2.56)
+		(end -1.95 -2.56)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7ae0801e-08a4-4de7-9754-b05a2f5ac9d9")
+	)
+	(fp_line
+		(start 0 -2.56)
+		(end 1.95 -2.56)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1950f294-4bc3-4f6a-a534-71d4da35573b")
+	)
+	(fp_line
+		(start 0 2.56)
+		(end -1.95 2.56)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "72eac8a5-f417-42df-97d9-58fd663ada2e")
+	)
+	(fp_line
+		(start 0 2.56)
+		(end 1.95 2.56)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fc1d3a3a-f309-462e-8494-81213696a2ba")
+	)
+	(fp_poly
+		(pts
+			(xy -2.7 -2.465) (xy -2.94 -2.795) (xy -2.46 -2.795) (xy -2.7 -2.465)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "f1108be0-c202-4f85-a83f-002eb9b91039")
+	)
+	(fp_rect
+		(start -4 -2.8)
+		(end 4 2.6)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "37223f75-142f-46a6-92bf-d4efc1653b17")
+	)
+	(fp_line
+		(start -1.95 -1.475)
+		(end -0.975 -2.45)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "662452be-b6ff-4136-8595-37772635ff0f")
+	)
+	(fp_line
+		(start -1.95 2.45)
+		(end -1.95 -1.475)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2c66f899-528c-432e-bdcf-eb9cdff6a219")
+	)
+	(fp_line
+		(start -0.975 -2.45)
+		(end 1.95 -2.45)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2bcd3735-d473-496e-9e07-1ddbb15f6926")
+	)
+	(fp_line
+		(start 1.95 -2.45)
+		(end 1.95 2.45)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b9aa730c-bc7f-42bc-a01f-048dc3cd0d1b")
+	)
+	(fp_line
+		(start 1.95 2.45)
+		(end -1.95 2.45)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "40d540d7-2dca-4c7e-b3ef-99a068136991")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "a1b23d10-f264-4883-877f-fee6488bd309")
+		(effects
+			(font
+				(size 0.98 0.98)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -2.75 -1.905)
+		(size 2.2 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.1)
+		(uuid "bf204d7e-3c04-4b41-8935-176df0da31bc")
+	)
+	(pad "2" smd roundrect
+		(at -2.75 -0.635)
+		(size 2.2 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.1)
+		(uuid "45b9f387-2099-4ef3-9506-61221b3f1e30")
+	)
+	(pad "3" smd roundrect
+		(at -2.75 0.635)
+		(size 2.2 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.1)
+		(uuid "9c99ec11-0be8-43b5-b542-5ed788ab1ca0")
+	)
+	(pad "4" smd roundrect
+		(at -2.75 1.905)
+		(size 2.2 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.1)
+		(uuid "6177bf75-ff43-4202-ba30-46e875156a80")
+	)
+	(pad "5" smd roundrect
+		(at 2.75 1.905)
+		(size 2.2 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.1)
+		(uuid "5aa707fc-08a1-47e9-ae03-47a2dbef0477")
+	)
+	(pad "6" smd roundrect
+		(at 2.75 0.635)
+		(size 2.2 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.1)
+		(uuid "ab5934bc-5403-47bc-b01c-2e16a460397a")
+	)
+	(pad "7" smd roundrect
+		(at 2.75 -0.635)
+		(size 2.2 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.1)
+		(uuid "850ed17d-718e-496a-8814-bc87aa8a436b")
+	)
+	(pad "8" smd roundrect
+		(at 2.75 -1.905)
+		(size 2.2 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.1)
+		(uuid "49ea68db-8277-4d97-a44f-5dd5893c738f")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/SOIC-8_M_MCH.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

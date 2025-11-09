@@ -1,0 +1,232 @@
+(footprint "DISP_PZEM-025"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "MOD101"
+		(at -37 22.2 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "9074325b-be55-47bc-87eb-0fba56230177")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "PZEM-025"
+		(at -37 23.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3302ce5c-bc5e-4fb2-859b-cb8ab7d56d11")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "_projectlib:DISP_PZEM-025"
+		(at -37 22.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d4fe4add-bde1-43fa-85ab-1f85f0245fb2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "http://en.peacefair.cn/products/590.html"
+		(at -37 22.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3206fd56-9eb9-42a8-b9a4-8823e570e7e6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Peacefair PZEM-025 300V Current Power Meter Kwh Wattmeter DC Ampere Digital Watt Volt Meter LCD Voltmeter"
+		(at 1 24 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "50a99f09-2eeb-4ecc-bbf3-d98fd8c8bb59")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -41 -20.5)
+		(end 41 20.5)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "4994ef93-80e3-47fc-9acd-969c998bb7dd")
+	)
+	(fp_text user "V_{mon}"
+		(at -47 -3.5 0)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "74382f5a-040a-4dc0-beb9-0be820c50189")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+			)
+			(justify left mirror)
+		)
+	)
+	(fp_text user "GND"
+		(at -47 -18.5 0)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "bc37b02e-fad3-40d4-9414-f8f1c0ca4c31")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+			)
+			(justify left mirror)
+		)
+	)
+	(fp_text user "LOAD"
+		(at -48 14 0)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "d21800d6-3c98-433a-8436-add5e1cfcdba")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+			)
+			(justify left mirror)
+		)
+	)
+	(fp_text user "GND"
+		(at -47 -7.5 0)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "dfee619f-24cb-4fc9-8f98-8d051ff97e7f")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+			)
+			(justify left mirror)
+		)
+	)
+	(fp_text user "+5V"
+		(at -47 -14.5 0)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "e37e10a5-f8ee-420e-94b7-22254ee0b85f")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+			)
+			(justify left mirror)
+		)
+	)
+	(fp_text user "SRC"
+		(at -48 6 0)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "ec9ec27e-47d2-4249-92b9-6df895fda7a0")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+			)
+			(justify left mirror)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at -37 25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6e611046-4e6d-4938-9c28-896aa046e082")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -46 6)
+		(size 4 4)
+		(drill 1.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "607960de-8aeb-4b73-8f6a-a0805977812e")
+	)
+	(pad "2" thru_hole circle
+		(at -46 14)
+		(size 4 4)
+		(drill 1.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "424c84d8-9ea4-4557-af14-24a7047e938d")
+	)
+	(pad "3" thru_hole circle
+		(at -46 -14.5)
+		(size 2 2)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "45f59875-7fef-41a6-825b-a7c1277ec932")
+	)
+	(pad "4" thru_hole circle
+		(at -46 -18.5)
+		(size 2 2)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "fe863b08-386b-471f-ab5a-a98ab774d3ed")
+	)
+	(pad "5" thru_hole circle
+		(at -46 -3.5)
+		(size 2 2)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a282c3e1-a490-4113-8553-13a1da0a4eae")
+	)
+	(pad "6" thru_hole circle
+		(at -46 -7.5)
+		(size 2 2)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0dda2db7-61ed-4695-befc-988a12406cc6")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/PZEM-025.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -180 0 -180)
+		)
+	)
+)

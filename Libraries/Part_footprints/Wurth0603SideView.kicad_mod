@@ -1,0 +1,274 @@
+(footprint "Wurth0603SideView"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "D116"
+		(at 0 -2 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "5f1986e2-90a4-4e4b-baa0-19e2cc486570")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "155060BS73200"
+		(at 0 0.9 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "86fcaba8-4e52-437b-befe-a813ca4b0d1d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "_projectlib:Wurth0603SideView"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "68b7ac80-a360-4c75-8add-baa74785bc03")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.we-online.com/components/products/datasheet/155060BS73200.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cfaadc3b-5c9b-4dea-ad07-9728624f0213")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Side View Round 465nm Blue 3.2V 0603"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9af328a8-e2a1-4d2e-85db-52cf56277d66")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MF" "Wurth Elektronik"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "877db8c5-2fcc-45a4-aebc-4a80d4dbbc66")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MP" "155060BS73200"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ac5fcd47-e5f8-4ecf-806a-3eb8dc211c08")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "0.247"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "153925a8-3ae4-460f-99a0-c4cfc81dc0ef")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part number" " 710-155060BS73200"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "64fc1f21-ba3d-47bf-b7fa-fe72aeb26d5f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/3xsuVyg"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2187a11a-fb09-42cf-a853-cd9ce9db424d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Description" "Standaard Led's - SMD WL-SMCW SMDMono TpVw Waterclr 0603 Blue"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "60c8519b-be1a-47bf-8f6e-726a70a86dc3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Update date" "02-04-2024"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f0998691-3f6e-4b27-bb1b-dc714743c9c0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.35 -0.2)
+		(end 0.35 -0.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "e91fa8f1-802c-4d68-a5bf-d8d54d686904")
+	)
+	(fp_line
+		(start -0.35 0.2)
+		(end -0.25 0.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "2e2af8ef-e331-49f9-9373-5172a1490ccf")
+	)
+	(fp_line
+		(start 0.25 0.2)
+		(end 0.35 0.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "ad54717e-2c1d-46a6-b61c-34da6b0423a8")
+	)
+	(fp_circle
+		(center -0.321364 0.410186)
+		(end -0.261364 0.410186)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "62dca603-ac9c-42b0-9ecd-d54b788658d3")
+	)
+	(fp_rect
+		(start -1.1 -1.1)
+		(end 1.1 0.6)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "d70bc949-35f4-426c-ac93-c0062c489fd5")
+	)
+	(fp_arc
+		(start -0.774999 -0.35)
+		(mid 0 -0.989382)
+		(end 0.774999 -0.35)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "6c4ecd4f-2563-49ec-8f16-4ef73bb356ad")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4da90eb7-9df1-484c-b8a1-1325eb8e8239")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" smd roundrect
+		(at 0 0.3)
+		(size 0.4 0.5)
+		(property pad_prop_heatsink)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.02)
+		(thermal_bridge_angle 45)
+		(uuid "865eb1ba-6785-432d-98cd-1646c66cdc43")
+	)
+	(pad "1" smd roundrect
+		(at -0.7 0)
+		(size 0.6 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.02)
+		(thermal_bridge_angle 45)
+		(uuid "bacdb023-912d-4234-92b7-071733964388")
+	)
+	(pad "2" smd roundrect
+		(at 0.7 0)
+		(size 0.6 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.02)
+		(thermal_bridge_angle 45)
+		(uuid "d231e2fb-a4fd-413b-93e6-22a0901a8e84")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/155060xx73200 (rev1).stp"
+		(offset
+			(xyz 0 -0.2 0.3)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 90 90)
+		)
+	)
+)

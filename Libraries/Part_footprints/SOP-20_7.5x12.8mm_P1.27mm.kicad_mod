@@ -1,0 +1,489 @@
+(footprint "SOP-20_7.5x12.8mm_P1.27mm"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "SOP, 20 Pin (https://www.holtek.com/documents/10179/116723/sop20-300.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
+	(tags "SOP SO")
+	(property "Reference" "QN101"
+		(at 0 -7.35 0)
+		(layer "F.SilkS")
+		(uuid "228eafdf-3c3d-4f97-9bc3-48ec380732f0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "QN_ULN2803A"
+		(at 0 7.35 0)
+		(layer "F.Fab")
+		(uuid "da5ec1a0-e880-4798-ae0e-3681c80f6fcb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "Package_SO:SOP-20_7.5x12.8mm_P1.27mm"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3575086f-14fb-4ac5-aeeb-b34a6513aaaa")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" "http://www.ti.com/lit/ds/symlink/uln2803a.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4e247f61-4ab4-4024-9405-c9d0f35c5ccc")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Bipolar (BJT) Transistor Array 8 NPN Darlington 50V 500mA Surface Mount 20-SOIC"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "03b29b1a-7cd1-426a-a063-290a0e52e2b0")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MF" "Texas Instruments"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "33ad0d31-e0be-4ee6-a027-6bfa21ed7b87")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MP" "ULN2803CDWR"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1471199c-5a75-413c-8e86-2d2dbc74ba71")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "0.73"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "533fd4d6-7988-444f-b9b3-8fa39d895e79")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part number" " 595-ULN2803CDWR "
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "da61a3c5-3251-4c18-9a7a-e54291bcde4f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/3W2ZQvF"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "22a7cd4d-1682-4d28-a262-fc14160efad6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Description" "Bipolar (BJT) Transistor Array 8 NPN Darlington 50V 500mA Surface Mount 20-SOIC"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ec2b588f-950a-40ad-abdb-ebdb06c0bab7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -3.86 -6.51)
+		(end -3.86 -6.275)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "359d8f55-ecc8-41ff-962e-b50e5b99f17b")
+	)
+	(fp_line
+		(start -3.86 6.51)
+		(end -3.86 6.275)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cfdb4def-69e3-4708-8c6a-84cac5bb782a")
+	)
+	(fp_line
+		(start 0 -6.51)
+		(end -3.86 -6.51)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "77adf2cc-ee33-4811-bf80-3bcfad5b8a01")
+	)
+	(fp_line
+		(start 0 -6.51)
+		(end 3.86 -6.51)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d567e2b0-b6d2-47fb-bab5-4e4aa20756aa")
+	)
+	(fp_line
+		(start 0 6.51)
+		(end -3.86 6.51)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d0f40ac5-50ae-46d2-92f2-de612a535051")
+	)
+	(fp_line
+		(start 0 6.51)
+		(end 3.86 6.51)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f079f8a6-ce8f-424e-9e88-3e587bc38d58")
+	)
+	(fp_line
+		(start 3.86 -6.51)
+		(end 3.86 -6.275)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4db31938-74bd-4ba5-a36c-8405cbf07529")
+	)
+	(fp_line
+		(start 3.86 6.51)
+		(end 3.86 6.275)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "116d34e5-0fc6-491b-8a6a-3f44253cafcc")
+	)
+	(fp_poly
+		(pts
+			(xy -4.65 -6.275) (xy -4.99 -6.745) (xy -4.31 -6.745) (xy -4.65 -6.275)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "870436b0-831e-40ca-91a2-cdca938e8cd0")
+	)
+	(fp_line
+		(start -5.8 -6.65)
+		(end -5.8 6.65)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4fa8eedf-aed5-4790-8650-3e4a660bae6e")
+	)
+	(fp_line
+		(start -5.8 6.65)
+		(end 5.8 6.65)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4ef8273f-e80f-4176-80c0-611b59eb0ddf")
+	)
+	(fp_line
+		(start 5.8 -6.65)
+		(end -5.8 -6.65)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "600bc974-1300-47b9-acd6-c13dfdb04401")
+	)
+	(fp_line
+		(start 5.8 6.65)
+		(end 5.8 -6.65)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "10cb87f4-c031-494c-8ff0-03e25bb373c7")
+	)
+	(fp_line
+		(start -3.75 -5.4)
+		(end -2.75 -6.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1f43439d-f8a8-4ac4-8bb3-ca2615e19f62")
+	)
+	(fp_line
+		(start -3.75 6.4)
+		(end -3.75 -5.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3c5a901c-229e-443d-8c4e-d480c5b2725b")
+	)
+	(fp_line
+		(start -2.75 -6.4)
+		(end 3.75 -6.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "bf9f184e-1af2-47ca-bf79-4d56c87a2903")
+	)
+	(fp_line
+		(start 3.75 -6.4)
+		(end 3.75 6.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a5f8e8aa-a17f-4624-b904-ba71c16eef5c")
+	)
+	(fp_line
+		(start 3.75 6.4)
+		(end -3.75 6.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e17af2d8-bbc7-45c9-8b8f-d58d8fdc9544")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "b47b18e0-ffd1-4ea1-8b2b-ea673d43019e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -4.6 -5.715)
+		(size 1.9 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "9de0adc5-4065-4c3c-bbbc-fd7b742246f1")
+	)
+	(pad "2" smd roundrect
+		(at -4.6 -4.445)
+		(size 1.9 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "055b71d5-43f4-470b-9975-c470e8da100f")
+	)
+	(pad "3" smd roundrect
+		(at -4.6 -3.175)
+		(size 1.9 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "f7db5d19-48e6-403c-a313-07c2d28413f1")
+	)
+	(pad "4" smd roundrect
+		(at -4.6 -1.905)
+		(size 1.9 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "f4988f50-021f-4475-9f07-3530c9003b5a")
+	)
+	(pad "5" smd roundrect
+		(at -4.6 -0.635)
+		(size 1.9 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "78863fdf-5b0c-4106-b2f6-8349fc6d71ef")
+	)
+	(pad "6" smd roundrect
+		(at -4.6 0.635)
+		(size 1.9 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "c8b96d01-c301-4b73-a195-c0e2e6a80f9e")
+	)
+	(pad "7" smd roundrect
+		(at -4.6 1.905)
+		(size 1.9 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "a3561f80-5ead-4b2a-bda5-49b0371840e3")
+	)
+	(pad "8" smd roundrect
+		(at -4.6 3.175)
+		(size 1.9 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "137ffd53-4f58-44d6-a810-1ed442d973b5")
+	)
+	(pad "9" smd roundrect
+		(at -4.6 4.445)
+		(size 1.9 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "cc660ff1-9593-45da-a526-2c157767e8f0")
+	)
+	(pad "10" smd roundrect
+		(at -4.6 5.715)
+		(size 1.9 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "e2dd7405-382c-42e5-90d4-7510e866b028")
+	)
+	(pad "11" smd roundrect
+		(at 4.6 5.715)
+		(size 1.9 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "cecfd744-ddf2-44f9-8097-a2b9e6b668e8")
+	)
+	(pad "12" smd roundrect
+		(at 4.6 4.445)
+		(size 1.9 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "d8a41906-23f1-441f-a1c2-0aaf09bf13ac")
+	)
+	(pad "13" smd roundrect
+		(at 4.6 3.175)
+		(size 1.9 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "6deb10a2-a285-4c0d-afc8-a432e841ddb6")
+	)
+	(pad "14" smd roundrect
+		(at 4.6 1.905)
+		(size 1.9 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "1108a338-8c67-4574-853c-e7999fc2c615")
+	)
+	(pad "15" smd roundrect
+		(at 4.6 0.635)
+		(size 1.9 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "7c31f864-55b9-47b4-9a9b-e914fcf06a94")
+	)
+	(pad "16" smd roundrect
+		(at 4.6 -0.635)
+		(size 1.9 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "28501335-4bbf-4ae1-ba80-7f33dfd1dad7")
+	)
+	(pad "17" smd roundrect
+		(at 4.6 -1.905)
+		(size 1.9 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "a4c8da37-5549-4d16-8f73-a249e698b660")
+	)
+	(pad "18" smd roundrect
+		(at 4.6 -3.175)
+		(size 1.9 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "38937b7a-0b14-402c-9877-15440f85445f")
+	)
+	(pad "19" smd roundrect
+		(at 4.6 -4.445)
+		(size 1.9 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "b7ecba38-858e-4abb-94f1-dc4dbce1d28b")
+	)
+	(pad "20" smd roundrect
+		(at 4.6 -5.715)
+		(size 1.9 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "ab81332a-41a2-4f2c-afef-6301ea98656c")
+	)
+	(model "${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-20W_7.5x12.8mm_P1.27mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

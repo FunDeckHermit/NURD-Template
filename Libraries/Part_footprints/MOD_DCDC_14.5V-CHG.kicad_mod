@@ -1,0 +1,204 @@
+(footprint "MOD_DCDC_14.5V-CHG"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "MOD103"
+		(at -37 36.6 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "e728e93d-d24b-4f2b-96fe-e80d9f6f9546")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "~"
+		(at -37 37.9 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d5a65650-b4b4-4aaf-aad3-eee69055b92f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "_projectlib:MOD_DCDC_14.5V-CHG"
+		(at -37 37 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9f0edde5-15ba-4ff8-a12d-b5d584e38163")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at -37 37 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "57e18594-712a-4e1a-9a1c-04a01e6c3f73")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "10V-36V 12V24V to 13.8V 16.8V 12.6V 14.5V 5A -15A 12V Lithium Battery Chargers BOOST BUCK DC DC Charger For Dual-battery System"
+		(at -37 37 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5a40b8f0-f3e0-4d45-a3e5-f8b9ab89c911")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -37 -37)
+		(end 37 37)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "f7017004-067b-41c9-af75-c2bedf9bc5a9")
+	)
+	(fp_text user "Geel"
+		(at -20 41 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "806d0bbb-8888-48c6-b45a-66a06d3ecf2e")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.5)
+				(bold yes)
+			)
+		)
+	)
+	(fp_text user "Zwart"
+		(at 10 41 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "87e12f0f-155a-4fa6-8bf0-1a2cd2ea8906")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.5)
+				(bold yes)
+			)
+		)
+	)
+	(fp_text user "Zwart"
+		(at -10 41 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "cc404352-c4b5-4d2b-a80e-398964c154b3")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.5)
+				(bold yes)
+			)
+		)
+	)
+	(fp_text user "Rood"
+		(at 20 41 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "d5512d7e-cc66-4a87-b186-2cafde4e279e")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.5)
+				(bold yes)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at -37 39.4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cf54f00e-82dd-4a64-92ca-cd60c6bb48dc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at -32.55 0)
+		(size 5 5)
+		(drill 5)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "07ddd8fc-4125-4932-b9fd-4be09d98b105")
+	)
+	(pad "" np_thru_hole circle
+		(at 32.55 0)
+		(size 5 5)
+		(drill 5)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "9b3c9159-a1bd-4746-9a9a-e20fd1e5f0ad")
+	)
+	(pad "1" thru_hole circle
+		(at 20 45)
+		(size 3 3)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5260315c-ade0-4c77-9422-d2152b14c736")
+	)
+	(pad "2" thru_hole circle
+		(at 10 45)
+		(size 3 3)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "fc23e17d-238f-4b16-a78a-55795145186b")
+	)
+	(pad "3" thru_hole circle
+		(at -20 45)
+		(size 3 3)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0199e7ab-cd4e-4ae9-ac36-0b0453993d50")
+	)
+	(pad "4" thru_hole circle
+		(at -10 45)
+		(size 3 3)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "bba108fb-8c3d-40eb-97ca-e676ae6ab9ee")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/CPT 12V-24V-5V 20A 100W Converter.STEP"
+		(offset
+			(xyz 0 0 1.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

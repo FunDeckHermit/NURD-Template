@@ -1,0 +1,237 @@
+(footprint "Toshiba-11-2D1A"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "SOP, 4 Pin ")
+	(tags "SOP SO")
+	(property "Reference" "U126"
+		(at 0 -1.75 0)
+		(layer "F.SilkS")
+		(uuid "fb3cb473-3823-4f93-9e7c-60a9203cb3e0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TLP3403R"
+		(at 0 3 0)
+		(layer "F.Fab")
+		(uuid "ac8411cc-858e-438a-988c-3d5f58559463")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "_projectlib:Toshiba-11-2D1A"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "782dfe03-8a9e-44fd-99b3-36329ec189bf")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" "https://toshiba.semicon-storage.com/info/TLP3403R_datasheet_en_20230525.pdf?did=55301&prodName=TLP3403R"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1fc193d2-20a1-4108-b535-8efd0aff0d83")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "20V max, 1000mA, 180mR, SSR RELAY SPST-NO"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2640f832-1356-4999-9a33-165b3e3f624e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MF" "Toshiba"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "96560503-1051-4a77-bd53-2b052ee00c11")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MP" "TLP3403R"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b925474c-bb8c-4baf-a4a4-945bc3d5bc9d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "2.16"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "35b969d8-bdaa-4adc-8a4a-6666dcfe3df9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part number" " 757-TLP3431TPF "
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "df9e194a-ba78-4675-8a5e-8842a4aa3ffb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/4ajS44L"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "02328a53-df43-48ea-97d3-7abfa7a80a3d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Description" "Solid State SPST-NO (1 Form A) 4-SMD (0.108\", 2.75mm)"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8d2d5729-921c-4758-a781-518bbe54e81d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.3 -0.75)
+		(end 0.3 -0.75)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "7d8b5a76-cab6-4bf0-8b6f-feae9d55fa63")
+	)
+	(fp_line
+		(start -0.3 0.75)
+		(end 0.3 0.75)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "9382219f-854a-45ae-a753-3afa0a3910cf")
+	)
+	(fp_circle
+		(center -1.4 -0.8)
+		(end -1.35 -0.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "4e74cd4b-eeef-46a3-9ba8-a294e20d4aa3")
+	)
+	(fp_rect
+		(start -1.6 -0.8)
+		(end 1.6 0.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "8e66f78b-c65f-42ad-9922-dfd59728291e")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "fdf457b7-65f4-4568-a15d-2f2c86759a8e")
+		(effects
+			(font
+				(size 0.95 0.95)
+				(thickness 0.14)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.875 -0.4)
+		(size 1 0.55)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "be64c252-ba4a-49f3-b99b-ce1d7b6009cc")
+	)
+	(pad "2" smd roundrect
+		(at -0.875 0.4)
+		(size 1 0.55)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "83d7fa63-cfbf-42c4-938a-499a4cbf2657")
+	)
+	(pad "3" smd roundrect
+		(at 0.875 0.4)
+		(size 1 0.55)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "c167f50e-7ff3-47c5-9bdf-b3bb7516d7bb")
+	)
+	(pad "4" smd roundrect
+		(at 0.875 -0.4)
+		(size 1 0.55)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.05)
+		(uuid "2d5a85a3-7f56-49cc-b1f2-785507642488")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/VSON4_90deg.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

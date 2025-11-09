@@ -1,0 +1,300 @@
+(footprint "Wurth1206BottomMountDome"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "D117"
+		(at 0 -1.8 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "3a423f47-e75a-4788-9603-1dda7d88479e")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "156120BS82500P"
+		(at 0 0.9 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9d198ef8-87a9-4346-b57e-e5e1021018d9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "_projectlib:Wurth1206BottomMountDome"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c2265038-c31f-44f3-b9ef-8e448a62701b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.we-online.com/components/products/datasheet/156120BS82500P.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "85eb854c-f97e-4323-93d8-07f49cfa9a47")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Bottom mount dome 470nm blue 3.2V 1206"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5c795bf5-00d5-4dff-a31c-1ad50f9c4efe")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MF" "Wurth Elektronik"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "581377a5-2af9-49bc-a354-65d67bc5cd3d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MP" "156120BS82500P"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "28faa307-67a2-4627-82e7-d469cdc0cb88")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Price @ 100" "0.247"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "78b24484-8780-49fb-a861-4213ea981f2b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part number" " 710-156120BS82500P "
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "eefc36de-1b22-4e5e-b446-8bcee963b805")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/3U31Gec"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0fd55388-a7a9-44e5-a21d-688997f1d8df")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Description" "Standaard Led's - SMD WL-SMRW To Mount Waterclear 1206 dome Type 470 nm Blue 700 mcd 3.2V "
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "63b81055-38b9-4276-b7e5-965db8e6e3f7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Update date" "02-04-2024"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f4181ea3-70c5-4a0c-8b06-a3c14f8040d7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.15 0)
+		(end -2.3 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "bb99519a-af3d-4add-93cc-2f1b8e334e2b")
+	)
+	(fp_line
+		(start 2.2 -0.7)
+		(end 2.2 0.7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "8933e7cd-ab9a-4bad-a701-e18b7e7e19f3")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 1.15 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "58b122c9-0eb2-4f4b-9588-465589458d71")
+	)
+	(fp_poly
+		(pts
+			(xy -2.4 -0.9) (xy -1 -0.9) (xy -0.25 -1.25) (xy 0.25 -1.25) (xy 1 -0.9) (xy 2.3 -0.9) (xy 2.3 0.9)
+			(xy 1 0.9) (xy 0.25 1.25) (xy -0.25 1.25) (xy -1 0.9) (xy -2.4 0.9)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "b888e0f0-36e6-4e4f-90e7-f7c1302bca34")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3a3779ac-51c1-4c59-bc32-2844b4d036b6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd custom
+		(at -1.8 0)
+		(size 0.4 0.4)
+		(property pad_prop_heatsink)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -0.2 -0.242) (xy -0.199391 -0.245061) (xy -0.197657 -0.247657) (xy -0.195061 -0.249391) (xy -0.192 -0.25)
+					(xy 0.192 -0.25) (xy 0.195061 -0.249391) (xy 0.197657 -0.247657) (xy 0.199391 -0.245061) (xy 0.2 -0.242)
+					(xy 0.2 0.242) (xy 0.199391 0.245061) (xy 0.197657 0.247657) (xy 0.195061 0.249391) (xy 0.192 0.25)
+					(xy -0.192 0.25) (xy -0.195061 0.249391) (xy -0.197657 0.247657) (xy -0.199391 0.245061) (xy -0.2 0.242)
+				)
+				(width 0)
+				(fill yes)
+			)
+			(gr_poly
+				(pts
+					(arc
+						(start 0.6 -0.8)
+						(mid 0.357779 0)
+						(end 0.6 0.8)
+					)
+					(xy -0.3 0.8) (xy -0.3 -0.8)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "7052bb73-6baf-472b-9713-cec4b1ae4e24")
+	)
+	(pad "2" smd custom
+		(at 1.8 0 180)
+		(size 0.4 0.4)
+		(property pad_prop_heatsink)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -0.2 -0.242) (xy -0.199391 -0.245061) (xy -0.197657 -0.247657) (xy -0.195061 -0.249391) (xy -0.192 -0.25)
+					(xy 0.192 -0.25) (xy 0.195061 -0.249391) (xy 0.197657 -0.247657) (xy 0.199391 -0.245061) (xy 0.2 -0.242)
+					(xy 0.2 0.242) (xy 0.199391 0.245061) (xy 0.197657 0.247657) (xy 0.195061 0.249391) (xy 0.192 0.25)
+					(xy -0.192 0.25) (xy -0.195061 0.249391) (xy -0.197657 0.247657) (xy -0.199391 0.245061) (xy -0.2 0.242)
+				)
+				(width 0)
+				(fill yes)
+			)
+			(gr_poly
+				(pts
+					(arc
+						(start 0.6 -0.8)
+						(mid 0.357779 0)
+						(end 0.6 0.8)
+					)
+					(xy -0.3 0.8) (xy -0.3 -0.8)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "a92e9028-afb5-40d8-8d2c-c862db0737f0")
+	)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/SMRW-1206dome (rev1).stp"
+		(offset
+			(xyz 0 0 0.28)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 180 180)
+		)
+	)
+)

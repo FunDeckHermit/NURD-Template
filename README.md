@@ -3,7 +3,7 @@
 > This repository has shifted from a **KiCad project template** to a **Plugin & Content Manager (PCM) library package**. The instructions below replace the older “new project from template” guidance.
 
 ## What this is
-A distributable **KiCad library package** that can be installed and updated via **Preferences → Manage Plugins and Content (PCM)**. It provides standardized symbol metadata for consistent BOMs and sourcing.
+A distributable **KiCad library package** that can be installed and updated via **Preferences → Manage Plugins and Content (PCM)**.
 
 **Package includes:**
 
@@ -17,11 +17,11 @@ A distributable **KiCad library package** that can be installed and updated via 
 
 1. Open **KiCad → Preferences → Manage Plugins and Content**.
 2. Go to **Repositories → Add Repository** and paste your repository index URL (served by GitHub Pages or any web host), for example:  
-   `https://<your-user>.github.io/<your-repo>/repository.json`
+   `https://fundeckhermit.github.io/NURD-Template/repository.json`
 3. In the **Browse** tab, find **NURD Symbol Library** and click **Install**.
 4. After install, symbols/footprints are available via the standard library tables.
 
-> If you don’t run a repository index, you can also install a **local ZIP** (containing `metadata.json` at its root) via **Install from File** in PCM.`gh-pages`.
+> Yu can also install a **local ZIP** (containing the release .zip file) via **Install from File** in PCM.
 
 ## CI: automated releases
 
@@ -31,8 +31,9 @@ A distributable **KiCad library package** that can be installed and updated via 
 ### Expected files for the index workflow
 ```
 .pcm/
-├─ packages.template.json     # PackageArray template (uses $VERSION, $DOWNLOAD_URL, …)
-└─ repository.template.json   # Repository template (uses $PACKAGES_URL, …)
+├─ packages.template.json     # PackageArray template
+├─ repository.template.json   # Repository template
+└─ version.template.json      # Package version template
 
 .github/workflows/
 ├─ release.yml                # creates the ZIP release
@@ -43,7 +44,7 @@ A distributable **KiCad library package** that can be installed and updated via 
 
 After installation via PCM, verify in:
 - **Preferences → Manage Symbol Libraries** (global/project) — entries for your `.kicad_sym` files
-- **Preferences → Manage Footprint Libraries** — entries for `.pretty` directories (if supplied)
+- **Preferences → Manage Footprint Libraries** — entries for `.pretty` directories
 
 You can now place symbols/footprints directly in schematics/PCBs.
 

@@ -1,0 +1,568 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "1b1d42dc-f63c-49d9-9b61-b09c30b6ea01")
+	(paper "A4")
+	(title_block
+		(rev "V1.0.0")
+		(company "NURD-template")
+	)
+	(lib_symbols
+		(symbol "Mechanical:Fiducial"
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "FID"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fiducial"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fiducial Marker"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fiducial marker"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Fiducial*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fiducial_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(rectangle
+		(start 242.57 34.29)
+		(end 255.27 102.87)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 255246fd-083e-4975-94f8-b0baea7690bc)
+	)
+	(rectangle
+		(start 255.27 34.29)
+		(end 278.13 102.87)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 2d879929-4ec4-4305-a7cf-e3537c714c38)
+	)
+	(rectangle
+		(start 184.15 39.37)
+		(end 278.13 102.87)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 44c05fc5-574b-49fe-98fb-cf5f536baa57)
+	)
+	(rectangle
+		(start 184.15 34.29)
+		(end 194.31 102.87)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 4948a331-2c1e-4a83-864d-f5852823c6b3)
+	)
+	(rectangle
+		(start 194.31 34.29)
+		(end 242.57 102.87)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 4e08f58a-84a5-4e12-bc7c-8648f6c14ec4)
+	)
+	(rectangle
+		(start 184.15 24.13)
+		(end 278.13 39.37)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid c3778e92-1149-4703-aabf-521ca5944f30)
+	)
+	(rectangle
+		(start 248.92 26.67)
+		(end 248.92 26.67)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid ed1ec8ef-ab65-4110-8f3d-256f7ce29ac1)
+	)
+	(text "Nature of changes"
+		(exclude_from_sim no)
+		(at 194.818 37.592 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(thickness 0.6096)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "08a259b7-3fe0-43cc-8c48-49c3f576f058")
+	)
+	(text "Initial work done"
+		(exclude_from_sim no)
+		(at 196.85 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "0de165a6-45eb-4981-bee3-5350c8a37efb")
+	)
+	(text "1.0"
+		(exclude_from_sim no)
+		(at 186.436 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "44cbe6fd-0619-49f0-ad6a-05b705e9b45b")
+	)
+	(text "Approved by"
+		(exclude_from_sim no)
+		(at 255.524 37.592 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(thickness 0.6096)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "4775bc07-211f-4881-bbaa-1f586370f7e5")
+	)
+	(text "Fee"
+		(exclude_from_sim no)
+		(at 256.794 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "74b13ff0-1324-40a8-a597-fa0846fae24c")
+	)
+	(text "08-12-25"
+		(exclude_from_sim no)
+		(at 243.332 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a3af0240-1480-469e-b372-b15125fe5931")
+	)
+	(text "Date"
+		(exclude_from_sim no)
+		(at 243.078 37.592 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(thickness 0.6096)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "b1797f8c-0201-409b-9135-754bf9d708c4")
+	)
+	(text "Revision history\n"
+		(exclude_from_sim no)
+		(at 230.124 30.48 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+				(thickness 0.6096)
+				(bold yes)
+			)
+		)
+		(uuid "bbdc0ded-5965-4e95-8b31-05236cacadd7")
+	)
+	(text "0.1\n"
+		(exclude_from_sim no)
+		(at 186.436 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "cddc0fbe-3806-41c6-9e1f-b57ac6d3fae2")
+	)
+	(text "Rev"
+		(exclude_from_sim no)
+		(at 187.452 37.592 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(thickness 0.6096)
+				(bold yes)
+			)
+		)
+		(uuid "e12a63cc-27fc-4196-b1e8-ac2b88e193af")
+	)
+	(text "31-08-25\n"
+		(exclude_from_sim no)
+		(at 243.332 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "e754da88-b4b4-407c-91f6-b492a5ae0727")
+	)
+	(symbol
+		(lib_id "Mechanical:Fiducial")
+		(at 20.32 39.37 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05b235dc-41b6-43c6-bf53-c72dcc4eae0b")
+		(property "Reference" "FID104"
+			(at 22.86 38.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 22.86 40.6399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1mm"
+			(at 20.32 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 20.32 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 20.32 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "NURD-template Template"
+				(path "/1b1d42dc-f63c-49d9-9b61-b09c30b6ea01"
+					(reference "FID104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Fiducial")
+		(at 20.32 34.29 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b2bcb2a9-3785-4d75-b897-b5e04e5fb25a")
+		(property "Reference" "FID103"
+			(at 22.86 33.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 22.86 35.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1mm"
+			(at 20.32 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 20.32 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 20.32 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "NURD-template Template"
+				(path "/1b1d42dc-f63c-49d9-9b61-b09c30b6ea01"
+					(reference "FID103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Fiducial")
+		(at 20.32 29.21 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d6259287-1f17-43ac-89b8-0519ba5fa8b5")
+		(property "Reference" "FID102"
+			(at 22.86 27.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 22.86 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1mm"
+			(at 20.32 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 20.32 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 20.32 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "NURD-template Template"
+				(path "/1b1d42dc-f63c-49d9-9b61-b09c30b6ea01"
+					(reference "FID102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Fiducial")
+		(at 20.32 24.13 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e373f381-db48-422f-8db1-c6cd3c19d60e")
+		(property "Reference" "FID101"
+			(at 22.86 22.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial"
+			(at 22.86 25.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1mm"
+			(at 20.32 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 20.32 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fiducial Marker"
+			(at 20.32 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "NURD-template Template"
+				(path "/1b1d42dc-f63c-49d9-9b61-b09c30b6ea01"
+					(reference "FID101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

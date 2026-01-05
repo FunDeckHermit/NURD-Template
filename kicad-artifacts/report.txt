@@ -1,0 +1,35 @@
+KiCad Export Report
+===================
+
+Project: NURD-template
+Run at: 2026-01-05 21:01:31
+Duration: 15s
+
+Render settings:
+  Quality: high
+  Resolution: 1400x1400
+  Isometric rotation: 315,0,45
+
+Gerber layers:
+  F.Cu,In1.Cu,In2.Cu,B.Cu,F.Mask,B.Mask,F.Paste,B.Paste,F.SilkS,B.SilkS,Edge.Cuts
+
+Drill:
+  Format: Excellon
+  Map: PDF
+
+Placement:
+  Format: CSV
+  Units: mm
+  Side: both
+
+Generated files:
+drill
+NURD-template_board.step
+NURD-template_bom.csv
+NURD-template_gerbers.zip
+NURD-template_pcb.pdf
+NURD-template_placement.csv
+NURD-template_render-bottom.png
+NURD-template_render-iso.png
+NURD-template_render-top.png
+NURD-template_schematic.pdf

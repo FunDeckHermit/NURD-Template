@@ -1,0 +1,208 @@
+(footprint "LED_WURTH_1313210530000"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "D17"
+		(at 0 -2.5 180)
+		(layer "F.SilkS")
+		(uuid "6f98a906-af00-44cc-9ca6-dea342e593b8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "WS2812B_side"
+		(at 7.92 3.185 180)
+		(layer "F.Fab")
+		(uuid "69332a7a-2a8b-4c2b-87e0-86e8d1082969")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.we-online.com/components/products/datasheet/1313210530000.pdf"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5f5d339c-12e0-47db-89eb-1ea7457be773")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "RGB LED with integrated controller"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e625c797-0828-4952-aabf-2d0a522837a7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part number" "1313210530000"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0a2c16a4-9033-4866-9da0-d3874f21ce5d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2 -0.5)
+		(end 2 -0.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "9f1d10b0-0307-4929-9ac6-5de9d444039a")
+	)
+	(fp_line
+		(start -2 0.25)
+		(end -2 -0.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "802c2114-93aa-4da4-9159-049b900ce5d2")
+	)
+	(fp_line
+		(start -2 0.25)
+		(end -1.9 0.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "b2719262-c71a-46c9-9cab-b7b957db63f0")
+	)
+	(fp_line
+		(start -1.1 0.25)
+		(end -0.85 0.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "9042a7a2-0a6d-43df-b03f-f3733e6836c8")
+	)
+	(fp_line
+		(start -0.075 0.25)
+		(end 0.075 0.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "156dd643-658a-45b1-aec6-5ef2a04e66e5")
+	)
+	(fp_line
+		(start 0.85 0.25)
+		(end 1.1 0.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "b70c34b4-356b-4624-bf39-1baf4097e06b")
+	)
+	(fp_line
+		(start 1.9 0.25)
+		(end 2 0.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a5a3b4cb-01cd-412e-b1d6-f49aacd8878d")
+	)
+	(fp_line
+		(start 2 -0.5)
+		(end 2 0.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6884641b-bae7-41f1-af00-8a09fadf4688")
+	)
+	(fp_arc
+		(start -1.25 -0.5)
+		(mid 0 -1.75)
+		(end 1.25 -0.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "99312ddb-1ab8-40e7-a174-0512e09778f8")
+	)
+	(fp_rect
+		(start -2.25 -2)
+		(end 2.25 0.95)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "d30b357c-011c-4b5b-8111-220cae7c03e7")
+	)
+	(pad "1" smd roundrect
+		(at 1.5 0.2)
+		(size 0.6 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.01)
+		(uuid "f235c1b4-30ee-4512-99ef-42b78aa99d36")
+	)
+	(pad "2" smd roundrect
+		(at 0.45 0.4625)
+		(size 0.6 0.875)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.01)
+		(uuid "3f1b1d1c-afbc-4ac3-b085-e6c3f70f58b4")
+	)
+	(pad "3" smd roundrect
+		(at -0.45 0.4625)
+		(size 0.6 0.875)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.01)
+		(uuid "51b6a665-12ae-4e43-9c2b-5bf45d34b3bc")
+	)
+	(pad "4" smd roundrect
+		(at -1.5 0.2)
+		(size 0.6 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.01)
+		(uuid "16ffb6d3-8a20-422d-aea4-04a3abee0e6d")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/1313210530000_ (rev1).stp"
+		(offset
+			(xyz 0 -0.2 0.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 90 -180 -0)
+		)
+	)
+)

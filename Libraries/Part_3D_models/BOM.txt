@@ -1,0 +1,3 @@
+3DX_Same_Sky_Supplier: Same Sky
+3DX_Same_Sky_Description: Type-C, USB 2.0, 480 Mbps, 20 Vdc, 5 A, Horizontal, Surface Mount Anchor Pins Mounting Style, Surface Mount Contact Pin Type, Gold Flash, 16 Pins, USB Receptacle
+3DX_Same_Sky_Model Number: UJ20-C-H-C-4-SMT-TR

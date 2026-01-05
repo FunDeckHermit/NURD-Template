@@ -1,75 +1,61 @@
-# NURD Symbol Library — KiCad PCM Package
+## NURDspace KiCAD template
 
-> This repository has shifted from a **KiCad project template** to a **Plugin & Content Manager (PCM) library package**. The instructions below replace the older “new project from template” guidance.
+This is a custom KiCAD symbol library.
+ It includes electronic parts grouped by type for easy use in circuit design.
 
-## What this is
-A distributable **KiCad library package** that can be installed and updated via **Preferences → Manage Plugins and Content (PCM)**.
+## 📘Overview
 
-**Package includes:**
+- **Total libraries:** 26
+- **Total parts:** 1,614
+- **Format:** `.kicad_sym` (KiCAD 6+ compatible)  
 
-- `symbols/` — KiCad `.kicad_sym` libraries (required for symbols)
-- `footprints/` — optional KiCad `.pretty` footprint libs
-- `3dmodels/` — optional STEP/WRL models
-- `README.md`
-- `metadata.json` — **required** package manifest at the ZIP root
+Each library holds parts like resistors, capacitors, diodes, and connectors. They are organised to make schematic design faster and more consistent.
 
-## Quick install
+---
 
-1. Open **KiCad → Preferences → Manage Plugins and Content**.
-2. Go to **Repositories → Add Repository** and paste your repository index URL (served by GitHub Pages or any web host), for example:  
-   `https://fundeckhermit.github.io/NURD-Template/repository.json`
-3. In the **Browse** tab, find **NURD Symbol Library** and click **Install**.
-4. After install, symbols/footprints are available via the standard library tables.
+## How to Use the Template
 
-> Yu can also install a **local ZIP** (containing the release .zip file) via **Install from File** in PCM.
+This template works with KiCAD’s *Create a New Project from Template* feature.
+ It sets up a ready-to-use schematic, PCB, and library configuration for new designs.
 
-## CI: automated releases
+### Step 1 — Place the Template Folder
 
-- **Release workflow:** bumps the version in `metadata.json`, tags `vX.Y.Z`, builds the ZIP, and creates a GitHub Release.
-- **Index workflow:** on successful release, computes ZIP size & SHA256, fills JSON templates, and pushes `packages.json` + `repository.json` to **`gh-pages`**.
+Copy the entire `NURDspace Template` folder into the KiCAD template directory.
+The location depends on your operating system.
 
-### Expected files for the index workflow
+**Windows:**
+
 ```
-.pcm/
-├─ packages.template.json     # PackageArray template
-├─ repository.template.json   # Repository template
-└─ version.template.json      # Package version template
-
-.github/workflows/
-├─ release.yml                # creates the ZIP release
-└─ publish-repo-index.yml     # fills templates and publishes to gh-pages
+C:\Users\<username>\Documents\KiCad\9.0\template\
 ```
 
-## Using the library in KiCad
+**Linux:**
 
-After installation via PCM, verify in:
-- **Preferences → Manage Symbol Libraries** (global/project) — entries for your `.kicad_sym` files
-- **Preferences → Manage Footprint Libraries** — entries for `.pretty` directories
+```
+/home/<username>/.local/share/kicad/9.0/template/
+```
 
-You can now place symbols/footprints directly in schematics/PCBs.
+### Step 2 — Start KiCAD and Create a Project
 
-## Custom attributes
+1. Open KiCAD.
+2. Go to **File → New Project → New Project from Template**.
+3. Select **NURDspace Template** from the list.
+4. Choose a folder and name for your new project.
+5. KiCAD will copy all project files and libraries into the new folder.
 
-These standardized properties appear on many symbols to support procurement and documentation. When contributing parts, please fill them in where applicable:
+### Step 3 — Start Designing
 
-| Attribute          | Description                               |
-|--------------------|-------------------------------------------|
-| **MPN**            | Manufacturer Part Number                  |
-| **MF**             | Manufacturer name                         |
-| **S1 Description** | Supplier’s catalog description            |
-| **S1 Part number** | Supplier’s unique part number             |
-| **S1 Part link**   | URL to supplier’s product page            |
-| **S1 Price @ 100** | Price per unit at quantity 100            |
-| **Update date**    | Last update or verification date          |
+The new project will include:
 
-*(S1 = primary supplier, typically Mouser.eu)
+- A schematic with linked libraries.
+- A PCB layout with standard design rules.
+- Configured symbol and footprint tables.
+- Folders for BOM, Exports, and Gerbers.
 
-## Contributing
+You can now start adding your own components and making changes.
 
-- Follow KiCad Library Convention (KLC) where applicable.
-- Keep `metadata.json` valid and bump the version for changes.
-- For PCM index hosting, ensure CI keeps `packages.json` and `repository.json` in sync with releases.
+## Notes
 
-## License
-
-This library package is released under **MIT**.
+- The library names start with `.NRD_`.
+- The _project library can be used for project specific parts
+- Based on Roy's MIT licensed NURDspace Library

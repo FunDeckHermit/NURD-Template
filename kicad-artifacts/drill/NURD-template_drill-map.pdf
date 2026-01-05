@@ -1,0 +1,158 @@
+%PDF-1.5
+%€‚ƒ
+5 0 obj
+<< /Length 6 0 R /Filter /FlateDecode >>
+stream
+xÚ—İ$5…ïû)ê.v;—ˆ	ÄĞ/°ZÚÕ4?#$$ãÚ™İª$î1£™®Ö×'9±'M‰¨åü÷ÃãëÛÆÛwø{ûl¿==üôíÆ–Sá¾ıs™Ø¥sbé¬ˆ6Id•›mFª’:«TÚnã,ÕßjégöpfEÈÔ¡ÖÁNcŞcÃ˜?_îyn–Z%ûkcÄÀö`ìŸ½zÏŠVÖÔ	…Å¢š“³îqûòº}şı›×¯~ùæßÿŞ˜º&ÕíúëV¶ë#ŞÓvıwûä«Ç7Ÿn×·Û××Ë/¸K£”•;ıß‰xõçæƒAE[UÊ˜Â¸&ÌÖH¶3ÃNÒ3>´‡8¦®´Z`‡¬Ô•2¢®ì>jm…
+˜hMÔ^Ÿ”…²QA5–Ö½Xjµ˜´¿S†tWª%-ÙY0+ğ³2 ®Äkb q?~¸Ôöì6¤“’…“VËÖVÊÜ¢§ª½´•Û#TzFÅ4Íš:Ò1+ÅÜ‰<»éX	Çúš+á^õMÊV¡Ó\tRXÅZ’7™Âee¯„Zé©ªa÷3·U>#êJaKÒ´3ûœ÷Üõ¹âCº+;ü ›ÙÒmD]©È5±Rvä“²°Ú¡#»¯ög3÷“QQ²ØŸ!æ¯/ò¶¿šó@w¥¯3	­æŒèíÎJ>¾Î»nqìXª8pŒ±E-—„Í€Yì•îJÂ)ÖLj]ìÏÊiŒÓ1é³Û&Pf,sµ³Cº+=YmßŸ“ÛˆÊÉmGIFT½ƒnOì¾rÈgï¨Ì¬­ìù$¯xÍøü“2¢·KEHj;¸ÍsÆtT¬’×-£´J×yf5{ôŠõ§ØÆtW"*„Yç>SW"³`yš{BL]	×H¯•¼TFÔ•ê~¬iàö¡cõÁ2ÆRñ~ÛˆngeDG·ã^‰©+½‹sg“6ï•˜Êñ´é[j'ç…Û#òÉÁgt•Ï³2+#:Uüpªì]“:.5}ª¡+¸ §–Ñ¾m©<U<{‡©luQ·!u¥À-¡e©Œ¨+Õı(¦EÅ‡tWá´Ç·ï&1u¥÷[î&çÏ;eDGeé>jË$²Péè'F5.F·G:FhÚe!³2íì•0+#:UßèÖ£‘„p?nÓ:3š1¾éÕZ×Ê€Ş¦Q·!İ•¾\ò[]ÎĞÛ•¼`/v;Tü)SÅ‡tœs:?C:Fh1g@owVò‚uŞqûW‡k
+endstream
+endobj
+6 0 obj
+965
+endobj
+7 0 obj
+<<
+/Type /Page
+/Parent 1 0 R
+/Resources <<
+    /ProcSet [/PDF /Text /ImageC /ImageB]
+    /Font 2 0 R
+    /XObject 3 0 R >>
+/MediaBox [0 0 841.896 595.296]
+/Contents 5 0 R
+>>
+endobj
+8 0 obj
+<</S /GoTo /D [7 0 R /Fit]
+>>
+endobj
+10 0 obj
+<< /BaseFont /Helvetica
+   /Type /Font
+   /Subtype /Type1
+   /Encoding /WinAnsiEncoding
+>>
+endobj
+11 0 obj
+<< /BaseFont /Helvetica-Oblique
+   /Type /Font
+   /Subtype /Type1
+   /Encoding /WinAnsiEncoding
+>>
+endobj
+12 0 obj
+<< /BaseFont /Helvetica-Bold
+   /Type /Font
+   /Subtype /Type1
+   /Encoding /WinAnsiEncoding
+>>
+endobj
+13 0 obj
+<< /BaseFont /Helvetica-BoldOblique
+   /Type /Font
+   /Subtype /Type1
+   /Encoding /WinAnsiEncoding
+>>
+endobj
+2 0 obj
+<<
+    /KicadFont 10 0 R
+    /KicadFontI 11 0 R
+    /KicadFontB 12 0 R
+    /KicadFontBI 13 0 R
+>>
+endobj
+3 0 obj
+<<
+>>
+endobj
+4 0 obj
+<< /JavaScript
+ << /Names
+    [ (JSInit) << /Type /Action /S /JavaScript /JS (
+function ShM\(aEntries\) {
+    var aParams = [];
+    for \(var i in aEntries\) {
+        aParams.push\({
+            cName: aEntries[i][0],
+            cReturn: aEntries[i][1]
+        }\)
+    }
+
+    var cChoice = app.popUpMenuEx.apply\(app, aParams\);
+    if \(cChoice != null && cChoice.substring\(0, 1\) == '#'\) this.pageNum = parseInt\(cChoice.slice\(1\)\);
+    else if \(cChoice != null && cChoice.substring\(0, 4\) == 'http'\) app.launchURL\(cChoice\);
+    else if \(cChoice != null && cChoice.substring\(0, 4\) == 'file'\) app.openDoc\(cChoice.substring\(7\)\);
+}
+) >> ]
+ >>
+>>
+endobj
+1 0 obj
+<<
+/Type /Pages
+/Kids [
+7 0 R
+]
+/Count 1
+>>
+endobj
+14 0 obj
+<<
+/Producer (KiCad PDF)
+/CreationDate (D:20260105210145)
+/Creator (PCBNEW)
+/Title (NURD-template-drl_map.pdf)
+/Author ()
+/Subject ()
+>>
+endobj
+9 0 obj
+<<
+/Title (Page 1)
+/Parent 15 0 R
+/A 8 0 R
+>>
+endobj
+15 0 obj
+<< /Type /Outlines
+   /Count 1
+   /First 9 0 R
+   /Last 9 0 R
+>>
+endobj
+16 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/Version /1.5
+/PageMode /UseOutlines
+/Outlines 15 0 R
+/Names 4 0 R
+/PageLayout /SinglePage
+>>
+endobj
+xref
+0 17
+0000000000 65535 f 
+0000002573 00000 n 
+0000001760 00000 n 
+0000001873 00000 n 
+0000001894 00000 n 
+0000000015 00000 n 
+0000001054 00000 n 
+0000001073 00000 n 
+0000001262 00000 n 
+0000002785 00000 n 
+0000001307 00000 n 
+0000001414 00000 n 
+0000001529 00000 n 
+0000001641 00000 n 
+0000002632 00000 n 
+0000002846 00000 n 
+0000002927 00000 n 
+trailer
+<< /Size 17 /Root 16 0 R /Info 14 0 R >>
+startxref
+3068
+%%EOF

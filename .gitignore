@@ -1,0 +1,18 @@
+# KiCad generated files
+*.kicad_prl
+*.kicad_pro-bak
+*.kicad_sch-bak
+*.kicad_pcb-bak
+
+# Backup files
+*~
+*.bak
+*.backup
+*.tmp
+*-backups
+
+# Footprint/Library backups
+*-cache.lib
+*-rescue.lib
+*.kicad_sym-bak
+

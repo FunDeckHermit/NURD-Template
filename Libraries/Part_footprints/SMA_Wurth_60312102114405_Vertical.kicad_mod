@@ -1,0 +1,307 @@
+(footprint "SMA_Wurth_60312102114405_Vertical"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Würth WR-SMA PCB SMT Jack, Vertical (https://www.we-online.com/components/products/datasheet/60312102114405.pdf)")
+	(tags "Coaxial Connector 50 ohms Female")
+	(property "Reference" "J500"
+		(at -1.4 -4.2 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "b36dc5a8-da52-4e5c-bafa-61a3eba60da1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "60312102114405"
+		(at 0 4.8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "61155660-5db3-4ba5-84b0-7160e126f8f7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.we-online.com/components/products/datasheet/60312102114405.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "383f0feb-8ebf-42b0-bc6d-bc5de55ecc63")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3fffd8bf-1af7-4c21-8c14-f2bb10fde0c4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MF" "Wurth"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "866e25e9-5136-4970-a30a-afcfc2763d56")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "60312102114405 "
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "748a6caa-39e9-429c-8e7e-23483b1f5a51")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Price @100" "6.70"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "48506201-483f-4b75-8a73-e5e76f61fdfb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part link" "https://mou.sr/3Xkkdnl"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c82795a8-a9ae-4493-8143-978e43b2067f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part number" "710-60312102114405 "
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c4083f99-f56b-49d3-958d-675e165e6875")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Description" "RF Connectors / Coaxial Connectors WR-SMA STRAIGHT JACK PCB SMT "
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8831b155-b54f-4d7f-bdfa-e58074466d17")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -3.29 -0.5)
+		(end -3.29 0.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a2b93a03-282b-471d-a7bd-2c31429d9ba4")
+	)
+	(fp_line
+		(start 3.29 -0.5)
+		(end 3.29 0.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "d7fd517d-0dcd-4ff7-971c-872e2cd74966")
+	)
+	(fp_poly
+		(pts
+			(xy -1.6523 1.205) (xy -3.56 1.205) (xy -3.56 3.555) (xy -1.205 3.555) (xy -1.205 1.6523) (xy -1.331585 1.556258)
+			(xy -1.556258 1.331585)
+		)
+		(stroke
+			(width 0.001)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "f365cbb6-24d8-478b-bad6-59a133f319a9")
+	)
+	(fp_poly
+		(pts
+			(xy -1.205 -1.6523) (xy -1.205 -3.555) (xy -3.56 -3.555) (xy -3.56 -1.205) (xy -1.6523 -1.205) (xy -1.556258 -1.331585)
+			(xy -1.331585 -1.556258)
+		)
+		(stroke
+			(width 0.001)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "7b3d049c-e8aa-40ea-946b-d477f4fbc42a")
+	)
+	(fp_poly
+		(pts
+			(xy 1.205 1.6523) (xy 1.205 3.555) (xy 3.56 3.555) (xy 3.56 1.205) (xy 1.6523 1.205) (xy 1.556258 1.331585)
+			(xy 1.331585 1.556258)
+		)
+		(stroke
+			(width 0.001)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "a4c2c576-9218-44a8-b982-958530311c80")
+	)
+	(fp_poly
+		(pts
+			(xy 1.6523 -1.205) (xy 3.56 -1.205) (xy 3.56 -3.555) (xy 1.205 -3.555) (xy 1.205 -1.6523) (xy 1.331585 -1.556258)
+			(xy 1.556258 -1.331585)
+		)
+		(stroke
+			(width 0.001)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "0034ed33-1659-4f34-a4ca-c813e4a30e97")
+	)
+	(fp_rect
+		(start 4.06 -4.06)
+		(end -4.06 4.06)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "abdcc461-a601-4bf0-9ee6-7af9a24f6bfa")
+	)
+	(fp_rect
+		(start 3.175 -3.175)
+		(end -3.175 3.175)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "ff5de17c-1d80-42a7-bfc4-d66a6c719326")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "f639d8f2-2025-47ea-ae2e-606fda37a82b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd circle
+		(at 0 0 270)
+		(size 1.73 1.73)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "19babd72-8698-49a4-9ab9-05241f499c29")
+	)
+	(pad "2" smd custom
+		(at 0 -2.8 90)
+		(size 1 1)
+		(layers "F.Cu" "F.Mask")
+		(thermal_bridge_angle 45)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -1.595 1.6523) (xy -1.595 3.56) (xy 0.755 3.56) (xy 0.755 -3.56) (xy -1.595 -3.56) (xy -1.595 -1.6523)
+					(xy -1.47693 -1.562945) (xy -1.26536 -1.355798) (xy -1.085876 -1.120305) (xy -0.94223 -0.861389)
+					(xy -0.837425 -0.584464) (xy -0.773653 -0.295319) (xy -0.752246 0) (xy -0.773653 0.295319) (xy -0.837425 0.584464)
+					(xy -0.94223 0.861389) (xy -1.085876 1.120305) (xy -1.26536 1.355798) (xy -1.47693 1.562945)
+				)
+				(width 0.001)
+				(fill yes)
+			)
+		)
+		(uuid "799ce0e7-d8d8-4b4a-ba4c-410fc88db29e")
+	)
+	(pad "2" smd custom
+		(at 0 2.8 270)
+		(size 1 1)
+		(layers "F.Cu" "F.Mask")
+		(thermal_bridge_angle 45)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -0.837425 0.584464) (xy -0.94223 0.861389) (xy -1.085876 1.120305) (xy -1.26536 1.355798) (xy -1.47693 1.562945)
+					(xy -1.595 1.6523) (xy -1.595 3.56) (xy 0.755 3.56) (xy 0.755 -3.56) (xy -1.595 -3.56) (xy -1.595 -1.6523)
+					(xy -1.47693 -1.562945) (xy -1.26536 -1.355798) (xy -1.085876 -1.120305) (xy -0.94223 -0.861389)
+					(xy -0.837425 -0.584464) (xy -0.773653 -0.295319) (xy -0.752246 0) (xy -0.773653 0.295319)
+				)
+				(width 0.001)
+				(fill yes)
+			)
+		)
+		(uuid "c070b28a-8261-4d3f-a17b-10a0fb882993")
+	)
+	(embedded_fonts no)
+	(model "./Libraries/Part_3D_models/60312102114405.stp"
+		(offset
+			(xyz 0 0 2)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -180 -0)
+		)
+	)
+)

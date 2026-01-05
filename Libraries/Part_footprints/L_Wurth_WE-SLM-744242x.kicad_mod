@@ -1,0 +1,237 @@
+(footprint "L_Wurth_WE-SLM-744242x"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Common Mode Line Filter, body 5x3.3x3.3mm, https://www.we-online.com/en/components/products/WE-SLM#/articles/WE-SL2_SIZE")
+	(tags "SMT")
+	(property "Reference" "REF**"
+		(at 0 -2.9 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "ef7a8087-f31b-44e2-a497-f6fd200ca019")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L_Wurth_WE-SLM-744242x"
+		(at 0 2.9 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "97d9d03a-19ca-4007-8ef9-17f433189bfc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "db47ebee-3520-4352-b63e-4850c0afbc80")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a6e16c9b-aa9a-48c7-ac65-f32d71fda388")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.61 0)
+		(end -2.61 0.075)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "00254d2f-d668-4131-a223-34c3b74d8345")
+	)
+	(fp_line
+		(start -2.61 1.76)
+		(end -2.61 1.195)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5d5836f1-44c4-46c0-a6ca-0a97301b7db2")
+	)
+	(fp_line
+		(start -2.61 1.76)
+		(end 2.61 1.76)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "db7de7fe-02d3-49e1-9fca-e968cfeea2a7")
+	)
+	(fp_line
+		(start 0 -1.76)
+		(end 2.61 -1.76)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b8075543-95a4-40b7-a1f8-86d79fb74552")
+	)
+	(fp_line
+		(start 2.61 -1.76)
+		(end 2.61 -1.195)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "39b07c79-9279-476e-8809-91f074e22b88")
+	)
+	(fp_line
+		(start 2.61 -0.075)
+		(end 2.61 0.075)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b626a6fd-638b-4c97-9c5d-a44ac427fde1")
+	)
+	(fp_line
+		(start 2.61 1.76)
+		(end 2.61 1.195)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "04e93161-f346-418b-8c6a-b121acc81d8b")
+	)
+	(fp_rect
+		(start -3.45 -1.9)
+		(end 3.45 1.9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "beb26ee6-620f-4df5-9a15-001005676581")
+	)
+	(fp_line
+		(start -2.5 -0.825)
+		(end -2.5 1.65)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "859c3e02-274d-42c7-a3f4-515b9dd95a54")
+	)
+	(fp_line
+		(start -2.5 1.65)
+		(end 2.5 1.65)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "22469dfc-8105-4050-aa5e-48fa4fe83818")
+	)
+	(fp_line
+		(start -1.675 -1.65)
+		(end -2.5 -0.825)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "36adbad5-7c42-48e2-b67d-0b7eca08bcce")
+	)
+	(fp_line
+		(start 2.5 -1.65)
+		(end -1.675 -1.65)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8212b282-742c-4f84-8b8f-708cbca48abc")
+	)
+	(fp_line
+		(start 2.5 1.65)
+		(end 2.5 -1.65)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3bd63f43-aad6-4815-9be5-c869dc8f3a9a")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "0e6bdad9-fe63-4c1f-9d6c-bf142c11453c")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.075)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.275 -0.635)
+		(size 1.85 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ee775e8d-fe67-4970-898b-cd4b73724580")
+	)
+	(pad "2" smd rect
+		(at -2.275 0.635)
+		(size 1.85 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7dc894a6-202b-4b2e-8d04-286073a1d874")
+	)
+	(pad "3" smd rect
+		(at 2.275 0.635)
+		(size 1.85 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "63010a53-7058-4675-9ade-61c762f2278d")
+	)
+	(pad "4" smd rect
+		(at 2.275 -0.635)
+		(size 1.85 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "640b0826-fef5-4a0d-b062-1c15ee221ab5")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/L_Wurth_WE-SLM-744242x.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

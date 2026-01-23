@@ -205,7 +205,7 @@ $KICAD_CLI sch export bom "$SCHEMATIC" \
     --output "$OUTPUT_DIR/${PROJECT_NAME}_bom.csv"
 
 ###############################################################################
-# Gerbers → ZIP
+# Gerbers → ZIP (with Excellon Drill Files)
 ###############################################################################
 
 GERBER_LAYERS="F.Cu,In1.Cu,In2.Cu,B.Cu,F.Mask,B.Mask,F.Paste,B.Paste,F.SilkS,B.SilkS,Edge.Cuts"
@@ -215,7 +215,14 @@ $KICAD_CLI pcb export gerbers "$PCB" \
     --output "$OUTPUT_DIR/gerbers" \
     --layers $GERBER_LAYERS
 
-echo "Zipping Gerbers…"
+echo "Exporting Drill Files (Excellon)…"
+$KICAD_CLI pcb export drill "$PCB" \
+    --output "$OUTPUT_DIR/gerbers" \
+    --format excellon \
+    --excellon-min-header \
+    --excellon-zeros-format keep
+
+echo "Zipping Gerbers and Drill Files…"
 (
     cd "$OUTPUT_DIR/gerbers"
     zip -r "../${PROJECT_NAME}_gerbers.zip" .

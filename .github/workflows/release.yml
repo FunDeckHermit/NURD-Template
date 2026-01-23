@@ -1,8 +1,9 @@
-name: Create Release with Auto-Incremented Minor Version
+name: Create Release on Push
 
 on:
-  workflow_dispatch:  # Allows manual trigger from GitHub UI
-  # You can also trigger on push to main, tag, etc. if desired
+  push:
+    branches:
+      - main  # or 'master' — adjust if your default branch has a different name
 
 jobs:
   release:
@@ -14,21 +15,24 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Needed to get all tags for version detection
+          fetch-depth: 0  # Fetch all history to read tags
 
-      - name: Get latest tag
+      - name: Get latest version tag
         id: get_tag
         run: |
-          # Get the latest semantic version tag (vX.Y.Z)
-          LATEST_TAG=$(git describe --tags --match "v[0-9]*.[0-9]*.[0-9]*" --abbrev=0 2>/dev/null || echo "v0.0.0")
-          echo "Latest tag: $LATEST_TAG"
+          # Try to get the latest tag matching v[0-9].[0-9].[0-9]
+          LATEST_TAG=$(git describe --tags --match "v[0-9]*.[0-9]*.[0-9]*" --abbrev=0 2>/dev/null || echo "")
+          if [[ -z "$LATEST_TAG" ]]; then
+            echo "No valid tag found. Starting from v1.1.0"
+            LATEST_TAG="v1.1.0"
+          fi
           echo "tag=$LATEST_TAG" >> $GITHUB_OUTPUT
 
       - name: Increment minor version
         id: inc_version
         run: |
           TAG="${{ steps.get_tag.outputs.tag }}"
-          # Strip 'v' prefix
+          # Remove leading 'v'
           VERSION=${TAG#v}
           IFS='.' read -r MAJOR MINOR PATCH <<< "$VERSION"
           
@@ -39,9 +43,9 @@ jobs:
           echo "New version: $NEW_VERSION"
           echo "version=$NEW_VERSION" >> $GITHUB_OUTPUT
 
-      - name: Create ZIP archive
+      - name: Create ZIP archive named NURD-Template.zip
         run: |
-          zip -r repo-${{ steps.inc_version.outputs.version }}.zip .
+          zip -r NURD-Template.zip .
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
@@ -50,5 +54,5 @@ jobs:
           name: Release ${{ steps.inc_version.outputs.version }}
           draft: false
           prerelease: false
-          files: repo-${{ steps.inc_version.outputs.version }}.zip
+          files: NURD-Template.zip
           generate_release_notes: true

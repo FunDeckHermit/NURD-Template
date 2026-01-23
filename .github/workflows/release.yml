@@ -3,7 +3,7 @@ name: Create Release on Push
 on:
   push:
     branches:
-      - main  # or 'master' — adjust if your default branch has a different name
+      - master
 
 jobs:
   release:

@@ -1,0 +1,54 @@
+name: Create Release with Auto-Incremented Minor Version
+
+on:
+  workflow_dispatch:  # Allows manual trigger from GitHub UI
+  # You can also trigger on push to main, tag, etc. if desired
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Required to create releases and upload assets
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Needed to get all tags for version detection
+
+      - name: Get latest tag
+        id: get_tag
+        run: |
+          # Get the latest semantic version tag (vX.Y.Z)
+          LATEST_TAG=$(git describe --tags --match "v[0-9]*.[0-9]*.[0-9]*" --abbrev=0 2>/dev/null || echo "v0.0.0")
+          echo "Latest tag: $LATEST_TAG"
+          echo "tag=$LATEST_TAG" >> $GITHUB_OUTPUT
+
+      - name: Increment minor version
+        id: inc_version
+        run: |
+          TAG="${{ steps.get_tag.outputs.tag }}"
+          # Strip 'v' prefix
+          VERSION=${TAG#v}
+          IFS='.' read -r MAJOR MINOR PATCH <<< "$VERSION"
+          
+          # Increment minor, reset patch to 0
+          NEW_MINOR=$((MINOR + 1))
+          NEW_VERSION="v${MAJOR}.${NEW_MINOR}.0"
+          
+          echo "New version: $NEW_VERSION"
+          echo "version=$NEW_VERSION" >> $GITHUB_OUTPUT
+
+      - name: Create ZIP archive
+        run: |
+          zip -r repo-${{ steps.inc_version.outputs.version }}.zip .
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.inc_version.outputs.version }}
+          name: Release ${{ steps.inc_version.outputs.version }}
+          draft: false
+          prerelease: false
+          files: repo-${{ steps.inc_version.outputs.version }}.zip
+          generate_release_notes: true

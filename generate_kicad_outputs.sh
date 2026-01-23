@@ -205,7 +205,7 @@ $KICAD_CLI sch export bom "$SCHEMATIC" \
     --output "$OUTPUT_DIR/${PROJECT_NAME}_bom.csv"
 
 ###############################################################################
-# Gerbers → ZIP (with Excellon Drill Files)
+# Gerbers → ZIP (KiCad 9, JLCPCB-Compatible)
 ###############################################################################
 
 GERBER_LAYERS="F.Cu,In1.Cu,In2.Cu,B.Cu,F.Mask,B.Mask,F.Paste,B.Paste,F.SilkS,B.SilkS,Edge.Cuts"
@@ -213,14 +213,19 @@ GERBER_LAYERS="F.Cu,In1.Cu,In2.Cu,B.Cu,F.Mask,B.Mask,F.Paste,B.Paste,F.SilkS,B.S
 echo "Exporting Gerbers…"
 $KICAD_CLI pcb export gerbers "$PCB" \
     --output "$OUTPUT_DIR/gerbers" \
-    --layers $GERBER_LAYERS
+    --layers "$GERBER_LAYERS"
 
-echo "Exporting Drill Files (Excellon)…"
+echo "Exporting Drill Files (JLCPCB-compatible Excellon)…"
 $KICAD_CLI pcb export drill "$PCB" \
     --output "$OUTPUT_DIR/gerbers" \
     --format excellon \
-    --excellon-min-header \
-    --excellon-zeros-format keep
+    --drill-origin absolute \
+    --excellon-zeros-format decimal \
+    --excellon-units mm \
+    --excellon-oval-format route
+
+echo "Removing Gerber Job file (if present)…"
+rm -f "$OUTPUT_DIR/gerbers/"*.gbrjob
 
 echo "Zipping Gerbers and Drill Files…"
 (

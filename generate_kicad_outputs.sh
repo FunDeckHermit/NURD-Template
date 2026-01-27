@@ -194,15 +194,50 @@ $KICAD_CLI pcb export pos "$PCB" \
     --side both \
     --format csv \
     --units mm \
-    --use-drill-file-origin
-
+    --use-drill-file-origin \
+    --exclude-dnp
+    
+sed -i '1s/Ref,Val,Package,PosX,PosY,Rot,Side/Designator,Val,Package,"Mid X","Mid Y",Rotation,Layer/' "$OUTPUT_DIR/${PROJECT_NAME}_placement.csv"
 ###############################################################################
 # BOM
 ###############################################################################
 
 echo "Exporting BOM CSV…"
 $KICAD_CLI sch export bom "$SCHEMATIC" \
+    --fields 'Reference,Value,Footprint,${QUANTITY}' \
+    --labels 'Designator, Comment, Footprint, Quantity' \
+    --exclude-dnp \
+    --group-by "Reference" \
+    --ref-range-delimiter "" \
     --output "$OUTPUT_DIR/${PROJECT_NAME}_bom.csv"
+
+# Fix oversized Designator fields (>2048 chars) for JLCPCB/PCBWay compatibility
+gawk -i inplace -F',' 'NR==1 {print; next}
+{
+  # Extract first quoted field (Designator) and everything after it
+  if (match($0, /^"([^"]*)",(.*)$/, a)) {
+    refs_str = a[1]          # Raw designator list without quotes
+    rest = a[2]              # Everything after first field: ," Comment",...
+    
+    # Split into individual refs
+    n = split(refs_str, refs, ",")
+    
+    chunk = ""
+    for (i = 1; i <= n; i++) {
+      test = (chunk == "" ? refs[i] : chunk "," refs[i])
+      # Check if QUOTED length would exceed 2048 chars
+      if (length("\"" test "\"") > 2048) {
+        print "\"" chunk "\"," rest
+        chunk = refs[i]
+      } else {
+        chunk = test
+      }
+    }
+    if (chunk != "") print "\"" chunk "\"," rest
+  } else {
+    print  # Fallback for malformed lines
+  }
+}' "$OUTPUT_DIR/${PROJECT_NAME}_bom.csv"
 
 ###############################################################################
 # Gerbers → ZIP (KiCad 9, JLCPCB-Compatible)

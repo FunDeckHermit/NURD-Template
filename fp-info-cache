@@ -1,4 +1,4 @@
-382148707482332
+376840254251035
 0_NRD_footprints
 1x2 RJ12_WURTH_615012143921
 RJ25 6P6C Socket 90 degrees, https://wayconn.com/wp-content/themes/way/datasheet/MJEA-660X1XXX_RJ25_6P6C_PCB_RA.pdf
@@ -1236,8 +1236,8 @@ TPS63070
 
 
 0
-0
-0
+18
+14
 0_NRD_footprints
 TS11-674-50-BK-160-RA-D
 tactile switch SPST right angle, PTS645VL31-2 LFS
@@ -1301,27 +1301,6 @@ USB C Type-C Receptacle SMD
 0
 20
 17
-0_NRD_footprints
-Untitled
-
-
-0
-0
-0
-0_NRD_footprints
-Untitled_1
-
-
-0
-0
-0
-0_NRD_footprints
-Untitled_2
-
-
-0
-0
-0
 0_NRD_footprints
 VLP_300_F
 

@@ -1,4 +1,4 @@
-376840773482472
+380390740658416
 0_NRD_footprints
 1x2 RJ12_WURTH_615012143921
 RJ25 6P6C Socket 90 degrees, https://wayconn.com/wp-content/themes/way/datasheet/MJEA-660X1XXX_RJ25_6P6C_PCB_RA.pdf
@@ -20,6 +20,13 @@ RJ12 RJ18 RJ25 jack connector 6P6C
 0
 4
 1
+0_NRD_footprints
+ALQ105
+http://www.hsinda.com.tw/upload/file/Y14-20200430135145.pdf
+Relay Y14
+0
+5
+5
 0_NRD_footprints
 AMT0660007DB0000G
 
@@ -951,6 +958,13 @@ https://www.susumu.co.jp/usa/tech/rep-data-rand.php
 0
 4
 4
+0_NRD_footprints
+Relay_SPDT_HLS8
+http://www.hsinda.com.tw/upload/file/Y14-20200430135145.pdf
+Relay Y14
+0
+5
+5
 0_NRD_footprints
 SAMTEC_BSW-106-X-X-D
 

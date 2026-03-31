@@ -1,0 +1,339 @@
+(footprint "ALQ105"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "http://www.hsinda.com.tw/upload/file/Y14-20200430135145.pdf")
+	(tags "Relay Y14")
+	(property "Reference" "K2"
+		(at -8.9 -6.985 180)
+		(layer "F.SilkS")
+		(uuid "4152c72a-9143-49b0-9e4b-92aaf5644910")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "HLS8L-5V"
+		(at -30.96 -1.16 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "49c896f2-8460-4213-81b8-5e04818cce5a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.helishun.com/helishun/2024/11/15/hls8-t73.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c383d010-ef24-4965-91bb-6bbf1496922b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "hot selling SPDT 5PIN 7A 10A mini power relay T73 PCB PIN HLS8"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "52718227-5fef-4daa-b18a-c66b0d595cbc")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MF" "helishun"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bd2e22c0-04b0-4573-93c1-8a829fb40567")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "HLS8L-DC5V-S-C"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "43172cb7-10cc-43cc-87cf-6f8e2c1cdc2e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Price @100" "1.10"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "db0661a0-320e-46ea-8d64-df4da68fa0d6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part number" "SKU26524"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5d0f3454-b452-4afa-8fe0-5d9461346e0f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part link" "https://shop.sb-components.co.uk/products/hls8l-dc5v-s-c-5v-relay?variant=40543085756499"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e22cb413-cc68-4342-a43c-f3f93f8bba2e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Description" "HLS8L-DC5V-S-C 5V Relay "
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "859c327b-edff-4f3b-9a57-a4d812c94410")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -7.122 -1.27)
+		(end -5.598 -1.27)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d561eec8-a5f5-4544-8480-087bd7258131")
+	)
+	(fp_line
+		(start -7.122 1.27)
+		(end -7.122 -1.27)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f133b015-f92b-41d1-a048-d34c23683620")
+	)
+	(fp_line
+		(start -6.36 -3.81)
+		(end -7.376 -3.81)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "22734151-b283-4276-8f15-972002f282e8")
+	)
+	(fp_line
+		(start -6.36 -1.27)
+		(end -6.36 -3.81)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6e869dd0-7210-474e-a45b-e9240c235567")
+	)
+	(fp_line
+		(start -6.36 1.27)
+		(end -6.36 3.81)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a81566b9-3011-40d2-951f-02255d1000c0")
+	)
+	(fp_line
+		(start -6.36 3.81)
+		(end -7.376 3.81)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "fbac6299-de98-4da2-b816-fb6090a42a43")
+	)
+	(fp_line
+		(start -5.598 -1.27)
+		(end -5.598 1.27)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8b90fceb-56d6-429a-8ff7-3bda0167d9dc")
+	)
+	(fp_line
+		(start -5.598 0.508)
+		(end -7.122 -0.508)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "831418ec-e588-4d7e-b638-3a85517e2425")
+	)
+	(fp_line
+		(start -5.598 1.27)
+		(end -7.122 1.27)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e548b221-93c2-44b9-b07a-6294293b046e")
+	)
+	(fp_rect
+		(start -10.15 -5.25)
+		(end 10.1 5.25)
+		(stroke
+			(width 0.3)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "7988a96e-0922-402c-9879-0d45f303e597")
+	)
+	(fp_rect
+		(start -10.678 -5.842)
+		(end 10.912 5.842)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "b761ff96-cd3e-44ac-99c9-beab9a34694d")
+	)
+	(fp_text user "COM"
+		(at 1.26 2 0)
+		(unlocked yes)
+		(layer "F.SilkS" knockout)
+		(uuid "284d951c-3df6-4c1c-8d0c-ec0bfb3ebed9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+				(bold yes)
+			)
+		)
+	)
+	(fp_text user "NO"
+		(at 8.88 2 0)
+		(unlocked yes)
+		(layer "F.SilkS" knockout)
+		(uuid "e8301470-73bd-4c19-9d3c-15aaef501991")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+				(bold yes)
+			)
+		)
+	)
+	(fp_text user "NC"
+		(at 6.25 -1.75 0)
+		(unlocked yes)
+		(layer "F.SilkS" knockout)
+		(uuid "fab309f9-b189-4c6b-97d3-dab1b7dc9d17")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+				(bold yes)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 1.26 3.81 180)
+		(size 2.1 2.1)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e21738d3-7280-4168-82fc-657af9c0b0cd")
+	)
+	(pad "2" thru_hole circle
+		(at -8.9 -3.81 180)
+		(size 2.1 2.1)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "2da62461-f1b4-4a1d-81fe-43a8f421f0e3")
+	)
+	(pad "3" thru_hole circle
+		(at -8.9 3.81 180)
+		(size 2.1 2.1)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "57f50c42-44a6-426e-afe7-13aef6138f8b")
+	)
+	(pad "4" thru_hole circle
+		(at 6.34 -3.81 180)
+		(size 2.1 2.1)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "21e1ff26-8a3a-47e5-b863-52eff2e41db4")
+	)
+	(pad "5" thru_hole circle
+		(at 8.88 3.81 180)
+		(size 2.1 2.1)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "203dc385-ca88-40c6-a718-821365c9a7c9")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/panasonic_ALQ1.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -180)
+		)
+	)
+)

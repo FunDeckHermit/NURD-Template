@@ -2,8 +2,9 @@ KiCad Export Report
 ===================
 
 Project: NURD-template
-Run at: 2026-01-05 21:01:31
+Run at: 2026-04-13 21:42:01
 Duration: 15s
+KiCad Type: Flatpak
 
 Render settings:
   Quality: high
@@ -22,8 +23,17 @@ Placement:
   Units: mm
   Side: both
 
+Interactive BOM:
+  Fields: Value, Footprint, MF, MPN
+  Grouped by: Value, Footprint
+  DNP filtering: Enabled (kicad_dnp field)
+  Layout: left-right
+  Layer view: Front
+
 Generated files:
+build.log
 drill
+ibom.html
 NURD-template_board.step
 NURD-template_bom.csv
 NURD-template_gerbers.zip

@@ -1,0 +1,362 @@
+Detected gerber layers: F.Cu,In1.Cu,In2.Cu,B.Cu,F.Mask,B.Mask,F.Paste,B.Paste,F.SilkS,B.SilkS,Edge.Cuts
+→ Exporting schematic PDF
+Plotted to '.kicad-build-temp/NURD-template_schematic.pdf'.
+Done.
+→ Exporting PCB PDF
+Plotted to '.kicad-build-temp/pcb-multipage/NURD-template.pdf'.
+Done.
+→ Exporting top render
+Loading…
+Build board outline
+
+Create layers
+Create tracks and vias
+Create zones
+Build Tech layers
+Build Tech layer 11
+Build Tech layer 9
+Build Tech layer 15
+Build Tech layer 13
+Build Tech layer 7
+Build Tech layer 5
+Build Tech layer 3
+Build Tech layer 1
+Build Tech layer 17
+Build Tech layer 19
+Build Tech layer 21
+Build Tech layer 23
+Build Tech layer 39
+Build Tech layer 41
+Build Tech layer 43
+Build Tech layer 45
+Build Tech layer 47
+Build Tech layer 49
+Build Tech layer 51
+Build Tech layer 53
+Build Tech layer 55
+Build Tech layer 57
+Build Tech layer 59
+Build Tech layer 61
+Build Tech layer 63
+Build Tech layer 65
+Build Tech layer 67
+Build Tech layer 69
+Build Tech layer 71
+Build Tech layer 73
+Build Tech layer 75
+Build Tech layer 77
+Build Tech layer 79
+Build Tech layer 81
+Build Tech layer 83
+Build Tech layer 85
+Build Tech layer 87
+Build Tech layer 89
+Build Tech layer 91
+Build Tech layer 93
+Build Tech layer 95
+Build Tech layer 97
+Build Tech layer 99
+Build Tech layer 101
+Build Tech layer 103
+Build Tech layer 105
+Build Tech layer 107
+Build Tech layer 109
+Build Tech layer 111
+Build Tech layer 113
+Build Tech layer 115
+Build Tech layer 117
+Build Tech layer 119
+Build Tech layer 121
+Build Tech layer 123
+Build Tech layer 125
+Build Tech layer 127
+Simplifying copper layer polygons
+Simplify holes contours
+Build BVH for holes and vias
+Load Raytracing: board
+Load Raytracing: layers
+Loading 3D models...
+Reload time 0.044 s
+Rendering: 14 %
+Rendering: 27 %
+Rendering: 40 %
+Rendering: 53 %
+Rendering: 66 %
+Rendering: 79 %
+Rendering: 92 %
+Rendering: 100 %
+Rendering: Post processing shader
+Rendering time 3.299 s
+Successfully created 3D render image
+→ Exporting bottom render
+Loading…
+Build board outline
+
+Create layers
+Create tracks and vias
+Create zones
+Build Tech layers
+Build Tech layer 11
+Build Tech layer 9
+Build Tech layer 15
+Build Tech layer 13
+Build Tech layer 7
+Build Tech layer 5
+Build Tech layer 3
+Build Tech layer 1
+Build Tech layer 17
+Build Tech layer 19
+Build Tech layer 21
+Build Tech layer 23
+Build Tech layer 39
+Build Tech layer 41
+Build Tech layer 43
+Build Tech layer 45
+Build Tech layer 47
+Build Tech layer 49
+Build Tech layer 51
+Build Tech layer 53
+Build Tech layer 55
+Build Tech layer 57
+Build Tech layer 59
+Build Tech layer 61
+Build Tech layer 63
+Build Tech layer 65
+Build Tech layer 67
+Build Tech layer 69
+Build Tech layer 71
+Build Tech layer 73
+Build Tech layer 75
+Build Tech layer 77
+Build Tech layer 79
+Build Tech layer 81
+Build Tech layer 83
+Build Tech layer 85
+Build Tech layer 87
+Build Tech layer 89
+Build Tech layer 91
+Build Tech layer 93
+Build Tech layer 95
+Build Tech layer 97
+Build Tech layer 99
+Build Tech layer 101
+Build Tech layer 103
+Build Tech layer 105
+Build Tech layer 107
+Build Tech layer 109
+Build Tech layer 111
+Build Tech layer 113
+Build Tech layer 115
+Build Tech layer 117
+Build Tech layer 119
+Build Tech layer 121
+Build Tech layer 123
+Build Tech layer 125
+Build Tech layer 127
+Simplifying copper layer polygons
+Simplify holes contours
+Build BVH for holes and vias
+Load Raytracing: board
+Load Raytracing: layers
+Loading 3D models...
+Reload time 0.043 s
+Rendering: 13 %
+Rendering: 26 %
+Rendering: 40 %
+Rendering: 53 %
+Rendering: 66 %
+Rendering: 80 %
+Rendering: 93 %
+Rendering: 100 %
+Rendering: Post processing shader
+Rendering time 3.290 s
+Successfully created 3D render image
+→ Exporting isometric render
+Loading…
+Build board outline
+
+Create layers
+Create tracks and vias
+Create zones
+Build Tech layers
+Build Tech layer 11
+Build Tech layer 9
+Build Tech layer 15
+Build Tech layer 13
+Build Tech layer 7
+Build Tech layer 5
+Build Tech layer 3
+Build Tech layer 1
+Build Tech layer 17
+Build Tech layer 19
+Build Tech layer 21
+Build Tech layer 23
+Build Tech layer 39
+Build Tech layer 41
+Build Tech layer 43
+Build Tech layer 45
+Build Tech layer 47
+Build Tech layer 49
+Build Tech layer 51
+Build Tech layer 53
+Build Tech layer 55
+Build Tech layer 57
+Build Tech layer 59
+Build Tech layer 61
+Build Tech layer 63
+Build Tech layer 65
+Build Tech layer 67
+Build Tech layer 69
+Build Tech layer 71
+Build Tech layer 73
+Build Tech layer 75
+Build Tech layer 77
+Build Tech layer 79
+Build Tech layer 81
+Build Tech layer 83
+Build Tech layer 85
+Build Tech layer 87
+Build Tech layer 89
+Build Tech layer 91
+Build Tech layer 93
+Build Tech layer 95
+Build Tech layer 97
+Build Tech layer 99
+Build Tech layer 101
+Build Tech layer 103
+Build Tech layer 105
+Build Tech layer 107
+Build Tech layer 109
+Build Tech layer 111
+Build Tech layer 113
+Build Tech layer 115
+Build Tech layer 117
+Build Tech layer 119
+Build Tech layer 121
+Build Tech layer 123
+Build Tech layer 125
+Build Tech layer 127
+Simplifying copper layer polygons
+Simplify holes contours
+Build BVH for holes and vias
+Load Raytracing: board
+Load Raytracing: layers
+Loading 3D models...
+Reload time 0.043 s
+Rendering: 13 %
+Rendering: 26 %
+Rendering: 40 %
+Rendering: 53 %
+Rendering: 66 %
+Rendering: 79 %
+Rendering: 92 %
+Rendering: 100 %
+Rendering: Post processing shader
+Rendering time 3.320 s
+Successfully created 3D render image
+→ Exporting drill files
+Created file '.kicad-build-temp/drill/NURD-template.drl'
+Created file '.kicad-build-temp/drill/NURD-template-drl_map.pdf'.
+Done.
+→ Exporting STEP model
+Determining PCB data.
+Build STEP data.
+Create PCB solid model.
+Board outline: found 4 initial points.
+Build board outlines (1 outlines) with 4 points.
+Build board cutouts and holes (0 hole(s)).
+Generate board full shape.
+Writing STEP file.
+
+*******************************************************************
+******        Statistics on Transfer (Write)                 ******
+
+*******************************************************************
+******        Transfer Mode = 0  I.E.  As Is       ******
+******        Transferring Shape, ShapeType = 0                      ******
+** WorkSession : Sending all data
+ Step File Name : $tempfile$.step(202 ents)  Write  Done
+STEP file '.kicad-build-temp/NURD-template_board.step' created.
+
+Export time 0.004 s
+→ Exporting placement CSV
+Wrote position data to '.kicad-build-temp/NURD-template_placement.csv'.
+→ Exporting BOM CSV
+Wrote bill of materials to '.kicad-build-temp/NURD-template_bom.csv'.
+→ Generating Interactive HTML BOM
+→ Running InteractiveHtmlBom generate_interactive_bom...
+21:42:15: Debug: Adding duplicate image handler for 'PNG file'
+21:42:15: Debug: Adding duplicate image handler for 'JPEG file'
+21:42:15: Debug: Adding duplicate image handler for 'TIFF file'
+21:42:15: Debug: Adding duplicate image handler for 'GIF file'
+21:42:15: Debug: Adding duplicate image handler for 'PNM file'
+21:42:15: Debug: Adding duplicate image handler for 'PCX file'
+21:42:15: Debug: Adding duplicate image handler for 'IFF file'
+21:42:15: Debug: Adding duplicate image handler for 'Windows icon file'
+21:42:15: Debug: Adding duplicate image handler for 'Windows cursor file'
+21:42:15: Debug: Adding duplicate image handler for 'Windows animated cursor file'
+21:42:15: Debug: Adding duplicate image handler for 'TGA file'
+21:42:15: Debug: Adding duplicate image handler for 'XPM file'
+21:42:15: Debug: Adding duplicate image handler for 'PNG file'
+21:42:15: Debug: Adding duplicate image handler for 'JPEG file'
+21:42:15: Debug: Adding duplicate image handler for 'TIFF file'
+21:42:15: Debug: Adding duplicate image handler for 'GIF file'
+21:42:15: Debug: Adding duplicate image handler for 'PNM file'
+21:42:15: Debug: Adding duplicate image handler for 'PCX file'
+21:42:15: Debug: Adding duplicate image handler for 'IFF file'
+21:42:15: Debug: Adding duplicate image handler for 'Windows icon file'
+21:42:15: Debug: Adding duplicate image handler for 'Windows cursor file'
+21:42:15: Debug: Adding duplicate image handler for 'Windows animated cursor file'
+21:42:15: Debug: Adding duplicate image handler for 'TGA file'
+21:42:15: Debug: Adding duplicate image handler for 'XPM file'
+Loading ./NURD-template.kicad_pcb
+2026-04-13 21:42:15,416 WARNING Assuming extra data file to be the pcb file since --extra-data-file was not specified.
+Loading ./NURD-template.kicad_pcb
+2026-04-13 21:42:15,416 WARNING Assuming extra data file to be the pcb file since --extra-data-file was not specified.
+2026-04-13 21:42:15,457 INFO Compressing pcb data
+2026-04-13 21:42:15,457 INFO Compressing pcb data
+2026-04-13 21:42:15,466 INFO Dumping pcb data
+2026-04-13 21:42:15,466 INFO Dumping pcb data
+2026-04-13 21:42:15,467 INFO Created file /home/roy/Music/NURD-Template/.kicad-build-temp/ibom.html
+2026-04-13 21:42:15,467 INFO Created file /home/roy/Music/NURD-Template/.kicad-build-temp/ibom.html
+✓ Interactive BOM generated successfully
+→ Exporting Gerbers
+Plotted to '.kicad-build-temp/gerbers/NURD-template-F_Cu.gtl'.
+Plotted to '.kicad-build-temp/gerbers/NURD-template-In1_Cu.g1'.
+Plotted to '.kicad-build-temp/gerbers/NURD-template-In2_Cu.g2'.
+Plotted to '.kicad-build-temp/gerbers/NURD-template-B_Cu.gbl'.
+Plotted to '.kicad-build-temp/gerbers/NURD-template-F_Paste.gtp'.
+Plotted to '.kicad-build-temp/gerbers/NURD-template-B_Paste.gbp'.
+Plotted to '.kicad-build-temp/gerbers/NURD-template-F_Silkscreen.gto'.
+Plotted to '.kicad-build-temp/gerbers/NURD-template-B_Silkscreen.gbo'.
+Plotted to '.kicad-build-temp/gerbers/NURD-template-F_Mask.gts'.
+Plotted to '.kicad-build-temp/gerbers/NURD-template-B_Mask.gbs'.
+Plotted to '.kicad-build-temp/gerbers/NURD-template-Edge_Cuts.gm1'.
+→ Exporting Drill Files (JLCPCB-compatible Excellon)
+Created file '.kicad-build-temp/gerbers/NURD-template.drl'
+Done.
+→ Removing Gerber Job file (if present)
+→ Zipping Gerbers and Drill Files
+→ Writing report.txt
+→ Moving files to final output directory
+
+✓ All artifacts generated in: kicad-artifacts
+✓ Build log: kicad-artifacts/build.log
+kicad-artifacts:
+build.log
+drill
+ibom.html
+NURD-template_board.step
+NURD-template_bom.csv
+NURD-template_gerbers.zip
+NURD-template_pcb.pdf
+NURD-template_placement.csv
+NURD-template_render-bottom.png
+NURD-template_render-iso.png
+NURD-template_render-top.png
+NURD-template_schematic.pdf
+report.txt
+
+kicad-artifacts/drill:
+NURD-template_drill-map.pdf
+NURD-template.drl

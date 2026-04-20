@@ -1,0 +1,256 @@
+(footprint "SW_Wurth_WS-TATL_440XX67082622"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Illuminated Tact Switch 12 x 12 mm, body 12x12x8.2mm, https://www.we-online.com/en/components/products/datasheet/440XX67082622?ki")
+	(tags "THT")
+	(property "Reference" "REF**"
+		(at 5.08 -4.71 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "02595fff-5e4f-4027-8bdc-9734210d36e5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SW_Wurth_WS-TATL_440XX67082622"
+		(at 5.08 9.79 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c3bd1f29-1d0b-43ff-be20-b6e5ffec1697")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b2d4b288-700b-4858-a42a-d95b301a850f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "11c8ef9a-ed40-44b3-a66e-bd35dc235cf3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -1.255 -0.9)
+		(end -1.255 0.9)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f4426492-eead-404a-a177-43d2322b0281")
+	)
+	(fp_line
+		(start -1.03 -3.57)
+		(end -1.03 -1.16)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6fb9018d-3a9c-4591-a2b1-9eaf44760f35")
+	)
+	(fp_line
+		(start -1.03 -3.57)
+		(end 11.19 -3.57)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b9b8436c-f72f-4b97-96e4-8f017a61ea75")
+	)
+	(fp_line
+		(start -1.03 8.65)
+		(end -1.03 6.24)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "80c38647-d63b-4d52-8412-f8287df8d119")
+	)
+	(fp_line
+		(start -1.03 8.65)
+		(end 11.19 8.65)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2ab8aa2c-8a2c-402f-8b46-ac0a69d13261")
+	)
+	(fp_line
+		(start 11.19 -3.57)
+		(end 11.19 -1.16)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ba39d192-d23e-447b-8a79-ef6186607b06")
+	)
+	(fp_line
+		(start 11.19 8.65)
+		(end 11.19 6.24)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e5a2483d-6a3b-4a42-8fc9-7d866466034c")
+	)
+	(fp_rect
+		(start -1.17 -3.71)
+		(end 11.33 8.79)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "b0985033-6941-469f-b4f0-a71f505438ee")
+	)
+	(fp_line
+		(start -0.92 -0.9)
+		(end 0.16 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2ec16466-816e-4a10-8165-3a2edcfeffa1")
+	)
+	(fp_line
+		(start -0.92 0.9)
+		(end 0.16 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2d4ec9be-b75d-4afa-81d5-135bff0615d7")
+	)
+	(fp_rect
+		(start -0.92 -3.46)
+		(end 11.08 8.54)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "627f336e-dcd2-4929-9449-7397a73d6fd5")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 5.08 2.54 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "2ce2bdcc-3895-4043-ab3e-d950c853e1b4")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.075)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at 2.54 5.08)
+		(size 1 1)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(uuid "236b3950-b107-4006-8fff-37bc4fa938f1")
+	)
+	(pad "" np_thru_hole circle
+		(at 7.62 5.08)
+		(size 1 1)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(uuid "4ca5ed41-5399-4678-b35a-fe3208ec9738")
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "8ee50cfd-c12f-4ca7-b6f1-11af27e75410")
+	)
+	(pad "2" thru_hole circle
+		(at 0 5.08)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c99fa183-7d3e-4436-b57e-620570631dfa")
+	)
+	(pad "3" thru_hole circle
+		(at 10.16 5.08)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c028f521-ac9e-4b88-8067-8b29a01240d4")
+	)
+	(pad "4" thru_hole circle
+		(at 10.16 0)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "7a061a2b-1b70-4490-9c7d-76dd4f76d7cd")
+	)
+	(pad "A" thru_hole circle
+		(at 0 2.54)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "781c6b6f-b5eb-4fed-8c0b-7d3c05eb926a")
+	)
+	(pad "B" thru_hole circle
+		(at 10.16 2.54)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f8402622-1c26-4351-a8ec-75c4cebb6599")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/SW_Wurth_WS-TATL_440XX67082622.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

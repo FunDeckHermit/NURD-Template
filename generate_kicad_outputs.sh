@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+###############################################################################
+# KiCad Artifact Generation Script
+# Commit: 6653fbfa4651c2b271a23c62324b2debf185073e
+# Latest: Fix incomplete mv command at end of script
+###############################################################################
+
 START_TIME=$(date +%s)
 RUN_DATETIME="$(date +"%Y-%m-%d %H:%M:%S")"
 

@@ -1,0 +1,172 @@
+(footprint "PTN78000"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "MOD2"
+		(at 7.9375 -12.7 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "14cba6c4-c634-4e1b-ad83-e3a035cfcdd1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "PTN78000WAH"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "9c0de9ab-c7d4-49d8-9c88-74d040d44559")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1e993a4d-c5c7-47cd-9eab-e082b8f066c8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1594f9f7-d2c1-472b-8ef6-7fc4b4ea783b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "S1 Part number" "PTN78000WAH"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "708fd2c1-beac-4f4c-8952-538755ebe005")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(sheetname "/")
+	(sheetfile "DV-PumpFix.kicad_sch")
+	(attr board_only)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.905 -11.43)
+		(end 17.78 1.905)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "64f9dccb-f464-4534-81e7-d8bcb965c9a5")
+	)
+	(fp_rect
+		(start -2.2 -11.8)
+		(end 18 2.2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "6de37ea9-548d-4c1d-969b-b6f1b16f45e1")
+	)
+	(fp_text user "${VALUE}"
+		(at 7.62 -6.35 0)
+		(unlocked yes)
+		(layer "F.SilkS" knockout)
+		(uuid "d643e476-854e-4adb-b332-caf600423645")
+		(effects
+			(font
+				(size 2 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "f6d421a5-9a16-4a38-8aef-9d369c65895a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 -9.525)
+		(size 2.54 2.54)
+		(drill 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1e3cdd98-2563-4852-adce-518ced843599")
+	)
+	(pad "2" thru_hole circle
+		(at 0 -3.175)
+		(size 2.54 2.54)
+		(drill 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "42009dc3-9895-4b2b-b359-02f53db4e983")
+	)
+	(pad "3" thru_hole circle
+		(at 0 0)
+		(size 2.54 2.54)
+		(drill 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "59e77da9-2c48-431a-b972-be0652ad49e8")
+	)
+	(pad "4" thru_hole circle
+		(at 15.875 0)
+		(size 2.54 2.54)
+		(drill 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "cd2b4c97-0388-43a0-9b90-8e0384fa4025")
+	)
+	(pad "5" thru_hole circle
+		(at 15.875 -9.525)
+		(size 2.54 2.54)
+		(drill 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "3c155e5f-e4e7-41da-b2e9-d31ea4eb0c68")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/Libraries/Part_3D_models/PTN78000.STEP"
+		(offset
+			(xyz 8 4.8 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

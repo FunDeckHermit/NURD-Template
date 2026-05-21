@@ -261,7 +261,7 @@ run_kicad_cmd "Exporting PCB PDF" \
     "$MP_DIR" \
     "false" \
     $KICAD_CLI pcb export pdf "$PCB" \
-    --layers F.Cu,In1.Cu,In2.Cu,B.Cu \
+    --layers F.Cu,B.Cu \
     --mode-multipage \
     --output "$MP_DIR"
 

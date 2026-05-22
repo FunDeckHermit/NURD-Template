@@ -25,56 +25,28 @@ REM ############################################################################
 
 set KICAD_CLI=
 
-REM Try from PATH first
-where kicad-cli >nul 2>&1
-if errorlevel 0 (
-    set KICAD_CLI=kicad-cli
-)
-
-REM Try common installation paths if not in PATH
-if "!KICAD_CLI!"=="" (
-    echo Searching for KiCad installation...
-    
-    if exist "C:\Program Files\KiCad\10.0\bin\kicad-cli.exe" (
-        set "KICAD_CLI=C:\Program Files\KiCad\10.0\bin\kicad-cli.exe"
-        echo Found KiCad 10.0
-    ) else if exist "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" (
-        set "KICAD_CLI=C:\Program Files\KiCad\9.0\bin\kicad-cli.exe"
-        echo Found KiCad 9.0
-    ) else if exist "C:\Program Files\KiCad\8.0\bin\kicad-cli.exe" (
-        set "KICAD_CLI=C:\Program Files\KiCad\8.0\bin\kicad-cli.exe"
-        echo Found KiCad 8.0
-    ) else if exist "C:\Program Files\KiCad\bin\kicad-cli.exe" (
-        set "KICAD_CLI=C:\Program Files\KiCad\bin\kicad-cli.exe"
-        echo Found KiCad
-    ) else if exist "C:\Program Files (x86)\KiCad\10.0\bin\kicad-cli.exe" (
-        set "KICAD_CLI=C:\Program Files (x86)\KiCad\10.0\bin\kicad-cli.exe"
-        echo Found KiCad 10.0 (x86)
-    ) else if exist "C:\Program Files (x86)\KiCad\9.0\bin\kicad-cli.exe" (
-        set "KICAD_CLI=C:\Program Files (x86)\KiCad\9.0\bin\kicad-cli.exe"
-        echo Found KiCad 9.0 (x86)
-    ) else if exist "C:\Program Files (x86)\KiCad\8.0\bin\kicad-cli.exe" (
-        set "KICAD_CLI=C:\Program Files (x86)\KiCad\8.0\bin\kicad-cli.exe"
-        echo Found KiCad 8.0 (x86)
-    )
+if exist "C:\Program Files\KiCad\10.0\bin\kicad-cli.exe" (
+    set "KICAD_CLI=C:\Program Files\KiCad\10.0\bin\kicad-cli.exe"
+    echo Found KiCad 10.0
+) else if exist "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" (
+    set "KICAD_CLI=C:\Program Files\KiCad\9.0\bin\kicad-cli.exe"
+    echo Found KiCad 9.0
+) else if exist "C:\Program Files\KiCad\8.0\bin\kicad-cli.exe" (
+    set "KICAD_CLI=C:\Program Files\KiCad\8.0\bin\kicad-cli.exe"
+    echo Found KiCad 8.0
+) else if exist "C:\Program Files (x86)\KiCad\10.0\bin\kicad-cli.exe" (
+    set "KICAD_CLI=C:\Program Files (x86)\KiCad\10.0\bin\kicad-cli.exe"
+    echo Found KiCad 10.0 x86
+) else if exist "C:\Program Files (x86)\KiCad\9.0\bin\kicad-cli.exe" (
+    set "KICAD_CLI=C:\Program Files (x86)\KiCad\9.0\bin\kicad-cli.exe"
+    echo Found KiCad 9.0 x86
+) else if exist "C:\Program Files (x86)\KiCad\8.0\bin\kicad-cli.exe" (
+    set "KICAD_CLI=C:\Program Files (x86)\KiCad\8.0\bin\kicad-cli.exe"
+    echo Found KiCad 8.0 x86
 )
 
 if "!KICAD_CLI!"=="" (
     echo ERROR: kicad-cli not found
-    echo.
-    echo Tried:
-    echo   - System PATH
-    echo   - C:\Program Files\KiCad\10.0\bin\kicad-cli.exe
-    echo   - C:\Program Files\KiCad\9.0\bin\kicad-cli.exe
-    echo   - C:\Program Files\KiCad\8.0\bin\kicad-cli.exe
-    echo   - C:\Program Files\KiCad\bin\kicad-cli.exe
-    echo   - C:\Program Files (x86)\KiCad\10.0\bin\kicad-cli.exe
-    echo   - C:\Program Files (x86)\KiCad\9.0\bin\kicad-cli.exe
-    echo   - C:\Program Files (x86)\KiCad\8.0\bin\kicad-cli.exe
-    echo.
-    echo Solution:
-    echo   1. Add KiCad to system PATH, or
-    echo   2. Edit this script and set KICAD_CLI to your KiCad installation path
     exit /b 1
 )
 
@@ -92,7 +64,7 @@ for %%f in (*.kicad_pro) do (
 
 :found_proj
 if "!PROJ_FILE!"=="" (
-    echo ERROR: No *.kicad_pro file found in current directory!
+    echo ERROR: No kicad_pro file found
     exit /b 1
 )
 
@@ -105,12 +77,12 @@ set PCB=%BASE%.kicad_pcb
 set PROJECT_NAME=%BASE%
 
 if not exist "!SCHEMATIC!" (
-    echo ERROR: Missing: !SCHEMATIC!
+    echo ERROR: Missing schematic file
     exit /b 1
 )
 
 if not exist "!PCB!" (
-    echo ERROR: Missing: !PCB!
+    echo ERROR: Missing PCB file
     exit /b 1
 )
 
@@ -123,7 +95,6 @@ REM Prepare temporary folders
 REM ###############################################################################
 
 mkdir "%TEMP_DIR%\gerbers" 2>nul
-
 set REPORT_FILE=%TEMP_DIR%\report.txt
 
 REM ###############################################################################
@@ -153,33 +124,26 @@ echo Exporting Gerbers...
 "!KICAD_CLI!" pcb export gerbers "!PCB!" --output "%TEMP_DIR%\gerbers" --layers "%GERBER_LAYERS%"
 
 if errorlevel 1 (
-    echo ERROR: Exporting Gerbers failed!
+    echo ERROR: Exporting Gerbers failed
     rmdir /s /q "%TEMP_DIR%" >nul 2>&1
     exit /b 1
 )
 
 timeout /t 1 /nobreak >nul
 
-if not exist "%TEMP_DIR%\gerbers\*" (
-    echo ERROR: No gerber files created
-    rmdir /s /q "%TEMP_DIR%" >nul 2>&1
-    exit /b 1
-)
-
 REM ###############################################################################
 REM Drill Files
 REM ###############################################################################
 
-echo Exporting Drill Files (Excellon format)...
+echo Exporting Drill Files
 "!KICAD_CLI!" pcb export drill "!PCB!" --output "%TEMP_DIR%\gerbers" --format excellon --drill-origin absolute --excellon-zeros-format decimal --excellon-units mm --excellon-oval-format route
 
 if errorlevel 1 (
-    echo ERROR: Exporting Drill Files failed!
+    echo ERROR: Exporting Drill Files failed
     rmdir /s /q "%TEMP_DIR%" >nul 2>&1
     exit /b 1
 )
 
-REM Remove Gerber Job file if present
 del /q "%TEMP_DIR%\gerbers\*.gbrjob" >nul 2>&1
 
 REM ###############################################################################
@@ -207,13 +171,12 @@ echo Exporting Placement CSV...
 "!KICAD_CLI!" pcb export pos "!PCB!" --output "%TEMP_DIR%\%PROJECT_NAME%_placement.csv" --side both --format csv --units mm --use-drill-file-origin --exclude-dnp
 
 if errorlevel 1 (
-    echo ERROR: Exporting Placement CSV failed!
+    echo ERROR: Exporting Placement CSV failed
     rmdir /s /q "%TEMP_DIR%" >nul 2>&1
     exit /b 1
 )
 
-REM Fix header for JLCPCB/PCBWay compatibility
-powershell -Command "((Get-Content '%TEMP_DIR%\%PROJECT_NAME%_placement.csv' -Raw) -replace 'Ref,Val,Package,PosX,PosY,Rot,Side', 'Designator,Val,Package,\"Mid X\",\"Mid Y\",Rotation,Layer') | Set-Content '%TEMP_DIR%\%PROJECT_NAME%_placement.csv'" >nul 2>&1
+powershell -Command "((Get-Content '%TEMP_DIR%\%PROJECT_NAME%_placement.csv' -Raw) -replace 'Ref,Val,Package,PosX,PosY,Rot,Side', 'Designator,Val,Package,Mid X,Mid Y,Rotation,Layer') | Set-Content '%TEMP_DIR%\%PROJECT_NAME%_placement.csv'" >nul 2>&1
 
 REM ###############################################################################
 REM BOM CSV
@@ -223,12 +186,11 @@ echo Exporting BOM CSV...
 "!KICAD_CLI!" sch export bom "!SCHEMATIC!" --fields "Reference,Value,MPN,Footprint,^${QUANTITY}" --labels "Designator,Comment,MPN,Footprint,Quantity" --exclude-dnp --group-by "Value" --ref-range-delimiter "" --output "%TEMP_DIR%\%PROJECT_NAME%_bom.csv"
 
 if errorlevel 1 (
-    echo ERROR: Exporting BOM CSV failed!
+    echo ERROR: Exporting BOM CSV failed
     rmdir /s /q "%TEMP_DIR%" >nul 2>&1
     exit /b 1
 )
 
-REM Fix oversized Designator fields for JLCPCB/PCBWay compatibility using PowerShell
 powershell -Command "^
 $csv = Import-Csv '%TEMP_DIR%\%PROJECT_NAME%_bom.csv'; ^
 foreach ($row in $csv) { ^
@@ -267,14 +229,11 @@ echo Project: %PROJECT_NAME%
 echo Run at: %RUN_DATETIME%
 echo.
 echo Files generated:
-echo - %PROJECT_NAME%_gerbers.zip (all layers + drill files)
-echo - %PROJECT_NAME%_bom.csv (Bill of Materials)
-echo - %PROJECT_NAME%_placement.csv (XY Placement)
+echo - %PROJECT_NAME%_gerbers.zip
+echo - %PROJECT_NAME%_bom.csv
+echo - %PROJECT_NAME%_placement.csv
 echo.
 echo Gerber layers: %GERBER_LAYERS%
-echo Drill format: Excellon
-echo Placement units: mm
-echo.
 ) > "%REPORT_FILE%"
 
 REM ###############################################################################
@@ -292,7 +251,7 @@ REM ############################################################################
 rmdir /s /q "%TEMP_DIR%" >nul 2>&1
 
 echo.
-echo ✓ All artifacts generated in: %OUTPUT_DIR%
+echo All artifacts generated in: %OUTPUT_DIR%
 echo.
 dir /b "%OUTPUT_DIR%"
 

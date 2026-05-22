@@ -2,360 +2,233 @@
 setlocal enabledelayedexpansion
 
 REM ###############################################################################
-REM KiCad Artifact Generation Script for Windows
-REM Generates: Schematic PDF, PCB PDF, Renders, STEP, Drill, Gerbers, BOM, Placement
+REM KiCad Production Export Script (Stable / No Python / No fragile PowerShell)
+REM Outputs: Gerbers ZIP + BOM CSV + Placement CSV + Report
 REM ###############################################################################
 
-REM Get current timestamp
-for /f "tokens=2-4 delims=/ " %%a in ('date /t') do (set mydate=%%c-%%a-%%b)
-for /f "tokens=1-2 delims=/:" %%a in ('time /t') do (set mytime=%%a:%%b)
-set RUN_DATETIME=%mydate% %mytime%
+REM ------------------------------------------------------------------------------
+REM Check PowerShell (only for ZIP + timestamp)
+REM ------------------------------------------------------------------------------
 
-set START_TIME=%time%
+where powershell >nul 2>&1
+if errorlevel 1 (
+    echo ERROR: PowerShell not found
+    exit /b 1
+)
+
+REM ------------------------------------------------------------------------------
+REM Timestamp (safe single-line PS)
+REM ------------------------------------------------------------------------------
+
+for /f %%i in ('powershell -NoProfile -Command "Get-Date -Format yyyy-MM-dd_HH-mm"') do (
+    set RUN_DATETIME=%%i
+)
+
+REM ------------------------------------------------------------------------------
+REM Output paths
+REM ------------------------------------------------------------------------------
+
 set OUTPUT_DIR=%1
 if "!OUTPUT_DIR!"=="" set OUTPUT_DIR=kicad-artifacts
 
-set TEMP_DIR=%TEMP%\kicad-build-temp-%RANDOM%
+set TEMP_DIR=%TEMP%\kicad-build-%RANDOM%
 
-echo Output directory: %OUTPUT_DIR%
-echo Temporary directory: %TEMP_DIR%
+mkdir "%TEMP_DIR%" >nul 2>&1
+mkdir "%TEMP_DIR%\gerbers" >nul 2>&1
 
-REM ###############################################################################
-REM Find KiCad installation
-REM ###############################################################################
+echo Output: %OUTPUT_DIR%
+echo Temp:   %TEMP_DIR%
+
+REM ------------------------------------------------------------------------------
+REM Find KiCad CLI
+REM ------------------------------------------------------------------------------
 
 set KICAD_CLI=
 
-if exist "C:\Program Files\KiCad\10.0\bin\kicad-cli.exe" (
-    set "KICAD_CLI=C:\Program Files\KiCad\10.0\bin\kicad-cli.exe"
-    echo Found KiCad 10.0
-) else if exist "C:\Program Files\KiCad\9.0\bin\kicad-cli.exe" (
-    set "KICAD_CLI=C:\Program Files\KiCad\9.0\bin\kicad-cli.exe"
-    echo Found KiCad 9.0
-) else if exist "C:\Program Files\KiCad\8.0\bin\kicad-cli.exe" (
-    set "KICAD_CLI=C:\Program Files\KiCad\8.0\bin\kicad-cli.exe"
-    echo Found KiCad 8.0
-) else if exist "C:\Program Files (x86)\KiCad\10.0\bin\kicad-cli.exe" (
-    set "KICAD_CLI=C:\Program Files (x86)\KiCad\10.0\bin\kicad-cli.exe"
-    echo Found KiCad 10.0 x86
-) else if exist "C:\Program Files (x86)\KiCad\9.0\bin\kicad-cli.exe" (
-    set "KICAD_CLI=C:\Program Files (x86)\KiCad\9.0\bin\kicad-cli.exe"
-    echo Found KiCad 9.0 x86
-) else if exist "C:\Program Files (x86)\KiCad\8.0\bin\kicad-cli.exe" (
-    set "KICAD_CLI=C:\Program Files (x86)\KiCad\8.0\bin\kicad-cli.exe"
-    echo Found KiCad 8.0 x86
+for /f "delims=" %%i in ('where kicad-cli.exe 2^>nul') do (
+    set "KICAD_CLI=%%i"
+    goto kicad_found
 )
 
+for %%v in (12.0 11.0 10.0 9.0 8.0) do (
+    if exist "C:\Program Files\KiCad\%%v\bin\kicad-cli.exe" (
+        set "KICAD_CLI=C:\Program Files\KiCad\%%v\bin\kicad-cli.exe"
+        goto kicad_found
+    )
+    if exist "C:\Program Files (x86)\KiCad\%%v\bin\kicad-cli.exe" (
+        set "KICAD_CLI=C:\Program Files (x86)\KiCad\%%v\bin\kicad-cli.exe"
+        goto kicad_found
+    )
+)
+
+:kicad_found
+
 if "!KICAD_CLI!"=="" (
-    echo ERROR: kicad-cli not found
+    echo ERROR: KiCad CLI not found
     exit /b 1
 )
 
 echo Using: !KICAD_CLI!
 
-REM ###############################################################################
-REM Locate project files
-REM ###############################################################################
+REM ------------------------------------------------------------------------------
+REM Find project
+REM ------------------------------------------------------------------------------
 
 set PROJ_FILE=
+
 for %%f in (*.kicad_pro) do (
     set PROJ_FILE=%%f
-    goto found_proj
+    goto proj_found
 )
 
-:found_proj
+:proj_found
+
 if "!PROJ_FILE!"=="" (
-    echo ERROR: No kicad_pro file found
+    echo ERROR: No .kicad_pro found
     exit /b 1
 )
 
-REM Extract base name without extension
 for %%f in ("!PROJ_FILE!") do set BASE=%%~nf
-set BASE=%BASE:.kicad_pro=%
 
-set SCHEMATIC=%BASE%.kicad_sch
 set PCB=%BASE%.kicad_pcb
-set PROJECT_NAME=%BASE%
-
-if not exist "!SCHEMATIC!" (
-    echo ERROR: Missing schematic file
-    exit /b 1
-)
+set SCH=%BASE%.kicad_sch
 
 if not exist "!PCB!" (
     echo ERROR: Missing PCB file
     exit /b 1
 )
 
-echo Project name: %PROJECT_NAME%
-echo Schematic:    %SCHEMATIC%
-echo PCB:          %PCB%
-
-REM ###############################################################################
-REM Prepare temporary folders
-REM ###############################################################################
-
-mkdir "%TEMP_DIR%\gerbers" 2>nul
-mkdir "%TEMP_DIR%\drill" 2>nul
-set REPORT_FILE=%TEMP_DIR%\report.txt
-set LOG_FILE=%TEMP_DIR%\build.log
-
-REM ###############################################################################
-REM Detect PCB layers
-REM ###############################################################################
-
-set GERBER_LAYERS=F.Cu,B.Cu,F.Mask,B.Mask,F.Paste,B.Paste,F.SilkS,B.SilkS,Edge.Cuts
-
-findstr /m "In1.Cu" "!PCB!" >nul 2>&1
-if not errorlevel 1 (
-    set GERBER_LAYERS=F.Cu,In1.Cu,In2.Cu,B.Cu,F.Mask,B.Mask,F.Paste,B.Paste,F.SilkS,B.SilkS,Edge.Cuts
+if not exist "!SCH!" (
+    echo ERROR: Missing schematic file
+    exit /b 1
 )
 
-findstr /m "In3.Cu" "!PCB!" >nul 2>&1
-if not errorlevel 1 (
-    set GERBER_LAYERS=F.Cu,In1.Cu,In2.Cu,In3.Cu,B.Cu,F.Mask,B.Mask,F.Paste,B.Paste,F.SilkS,B.SilkS,Edge.Cuts
-)
+echo Project: %BASE%
 
-echo Detected gerber layers: %GERBER_LAYERS%
+REM ------------------------------------------------------------------------------
+REM Layer set (safe default)
+REM ------------------------------------------------------------------------------
 
-set RENDER_WIDTH=1400
-set RENDER_HEIGHT=1400
-set RENDER_QUALITY=high
-set ISO_ROTATION=315,0,45
+set LAYERS=F.Cu,B.Cu,F.Mask,B.Mask,F.Paste,B.Paste,F.SilkS,B.SilkS,Edge.Cuts
 
-REM ###############################################################################
-REM Schematic PDF
-REM ###############################################################################
+REM ------------------------------------------------------------------------------
+REM GERBERS
+REM ------------------------------------------------------------------------------
 
 echo.
-echo Exporting schematic PDF...
-"!KICAD_CLI!" sch export pdf "!SCHEMATIC!" --output "%TEMP_DIR%\%PROJECT_NAME%_schematic.pdf"
-if errorlevel 1 (
-    echo ERROR: Exporting schematic PDF failed
-    rmdir /s /q "%TEMP_DIR%" >nul 2>&1
-    exit /b 1
-)
-
-REM ###############################################################################
-REM PCB PDF
-REM ###############################################################################
-
-echo Exporting PCB PDF...
-"!KICAD_CLI!" pcb export pdf "!PCB!" --layers F.Cu,B.Cu --output "%TEMP_DIR%\%PROJECT_NAME%_pcb.pdf"
-if errorlevel 1 (
-    echo ERROR: Exporting PCB PDF failed
-    rmdir /s /q "%TEMP_DIR%" >nul 2>&1
-    exit /b 1
-)
-
-REM ###############################################################################
-REM Top render
-REM ###############################################################################
-
-echo Exporting top render...
-"!KICAD_CLI!" pcb render "!PCB!" --side top --quality %RENDER_QUALITY% --width %RENDER_WIDTH% --height %RENDER_HEIGHT% --output "%TEMP_DIR%\%PROJECT_NAME%_render-top.png"
-if errorlevel 1 (
-    echo ERROR: Exporting top render failed
-    rmdir /s /q "%TEMP_DIR%" >nul 2>&1
-    exit /b 1
-)
-
-REM ###############################################################################
-REM Bottom render
-REM ###############################################################################
-
-echo Exporting bottom render...
-"!KICAD_CLI!" pcb render "!PCB!" --side bottom --quality %RENDER_QUALITY% --width %RENDER_WIDTH% --height %RENDER_HEIGHT% --output "%TEMP_DIR%\%PROJECT_NAME%_render-bottom.png"
-if errorlevel 1 (
-    echo ERROR: Exporting bottom render failed
-    rmdir /s /q "%TEMP_DIR%" >nul 2>&1
-    exit /b 1
-)
-
-REM ###############################################################################
-REM Isometric render
-REM ###############################################################################
-
-echo Exporting isometric render...
-"!KICAD_CLI!" pcb render "!PCB!" --side top --quality %RENDER_QUALITY% --width %RENDER_WIDTH% --height %RENDER_HEIGHT% --rotate %ISO_ROTATION% --output "%TEMP_DIR%\%PROJECT_NAME%_render-iso.png"
-if errorlevel 1 (
-    echo ERROR: Exporting isometric render failed
-    rmdir /s /q "%TEMP_DIR%" >nul 2>&1
-    exit /b 1
-)
-
-REM ###############################################################################
-REM Drill files with map
-REM ###############################################################################
-
-echo Exporting drill files...
-"!KICAD_CLI!" pcb export drill "!PCB!" --output "%TEMP_DIR%\drill" --format excellon --drill-origin absolute --generate-map --map-format pdf
-if errorlevel 1 (
-    echo ERROR: Exporting drill files failed
-    rmdir /s /q "%TEMP_DIR%" >nul 2>&1
-    exit /b 1
-)
-
-timeout /t 1 /nobreak >nul
-
-REM Rename drill map PDF
-for %%f in ("%TEMP_DIR%\drill\*.pdf") do (
-    if not "%%f"=="%TEMP_DIR%\drill\%PROJECT_NAME%_drill-map.pdf" (
-        move /y "%%f" "%TEMP_DIR%\drill\%PROJECT_NAME%_drill-map.pdf" >nul 2>&1
-    )
-)
-
-REM ###############################################################################
-REM STEP model
-REM ###############################################################################
-
-echo Exporting STEP model...
-"!KICAD_CLI!" pcb export step "!PCB!" --output "%TEMP_DIR%\%PROJECT_NAME%_board.step" --force
-if errorlevel 1 (
-    echo ERROR: Exporting STEP model failed
-    rmdir /s /q "%TEMP_DIR%" >nul 2>&1
-    exit /b 1
-)
-
-REM ###############################################################################
-REM Placement CSV
-REM ###############################################################################
-
-echo Exporting Placement CSV...
-"!KICAD_CLI!" pcb export pos "!PCB!" --output "%TEMP_DIR%\%PROJECT_NAME%_placement.csv" --side both --format csv --units mm --use-drill-file-origin --exclude-dnp
-if errorlevel 1 (
-    echo ERROR: Exporting Placement CSV failed
-    rmdir /s /q "%TEMP_DIR%" >nul 2>&1
-    exit /b 1
-)
-
-powershell -Command "((Get-Content '%TEMP_DIR%\%PROJECT_NAME%_placement.csv' -Raw) -replace 'Ref,Val,Package,PosX,PosY,Rot,Side', 'Designator,Val,Package,Mid X,Mid Y,Rotation,Layer') | Set-Content '%TEMP_DIR%\%PROJECT_NAME%_placement.csv'" >nul 2>&1
-
-REM ###############################################################################
-REM BOM CSV
-REM ###############################################################################
-
-echo Exporting BOM CSV...
-"!KICAD_CLI!" sch export bom "!SCHEMATIC!" --fields "Reference,Value,MPN,Footprint,^${QUANTITY}" --labels "Designator,Comment,MPN,Footprint,Quantity" --exclude-dnp --group-by "Value" --ref-range-delimiter "" --output "%TEMP_DIR%\%PROJECT_NAME%_bom.csv"
-if errorlevel 1 (
-    echo ERROR: Exporting BOM CSV failed
-    rmdir /s /q "%TEMP_DIR%" >nul 2>&1
-    exit /b 1
-)
-
-powershell -Command "^
-$csv = Import-Csv '%TEMP_DIR%\%PROJECT_NAME%_bom.csv'; ^
-foreach ($row in $csv) { ^
-    $refs = $row.Designator -split ','; ^
-    $chunk = ''; ^
-    $output = @(); ^
-    foreach ($ref in $refs) { ^
-        $ref = $ref.Trim(); ^
-        $test = if ($chunk -eq '') { $ref } else { $chunk + ',' + $ref }; ^
-        if ((\"\"\"\" + $test + \"\"\"\").Length -gt 2048) { ^
-            $output += '\"' + $chunk + '\"'; ^
-            $chunk = $ref; ^
-        } else { ^
-            $chunk = $test; ^
-        } ^
-    } ^
-    if ($chunk -ne '') { ^
-        $output += '\"' + $chunk + '\"'; ^
-    } ^
-    $row.Designator = $output -join ',' ^
-} ^
-$csv | Export-Csv -Path '%TEMP_DIR%\%PROJECT_NAME%_bom.csv' -NoTypeInformation ^
-" >nul 2>&1
-
-REM ###############################################################################
-REM Gerbers
-REM ###############################################################################
-
 echo Exporting Gerbers...
-"!KICAD_CLI!" pcb export gerbers "!PCB!" --output "%TEMP_DIR%\gerbers" --layers "%GERBER_LAYERS%"
+
+"!KICAD_CLI!" pcb export gerbers "!PCB!" ^
+    --output "%TEMP_DIR%\gerbers" ^
+    --layers "%LAYERS%"
+
 if errorlevel 1 (
-    echo ERROR: Exporting Gerbers failed
+    echo ERROR: Gerber export failed
     rmdir /s /q "%TEMP_DIR%" >nul 2>&1
     exit /b 1
 )
 
-timeout /t 1 /nobreak >nul
+echo Exporting drills...
 
-echo Exporting drill files for Gerber package...
-"!KICAD_CLI!" pcb export drill "!PCB!" --output "%TEMP_DIR%\gerbers" --format excellon --drill-origin absolute --excellon-zeros-format decimal --excellon-units mm --excellon-oval-format route
+"!KICAD_CLI!" pcb export drill "!PCB!" ^
+    --output "%TEMP_DIR%\gerbers" ^
+    --format excellon
+
 if errorlevel 1 (
-    echo ERROR: Exporting Drill Files failed
+    echo ERROR: Drill export failed
     rmdir /s /q "%TEMP_DIR%" >nul 2>&1
     exit /b 1
 )
 
-del /q "%TEMP_DIR%\gerbers\*.gbrjob" >nul 2>&1
+REM ------------------------------------------------------------------------------
+REM ZIP (robust single-line PowerShell)
+REM ------------------------------------------------------------------------------
 
-echo Creating Gerbers ZIP...
-cd "%TEMP_DIR%\gerbers"
-powershell -Command "Compress-Archive -Path * -DestinationPath '..\%PROJECT_NAME%_gerbers.zip' -Force" >nul 2>&1
-cd "%~dp0"
+echo Creating ZIP...
 
-if not exist "%TEMP_DIR%\%PROJECT_NAME%_gerbers.zip" (
-    echo ERROR: Failed to create gerbers ZIP
+powershell -NoProfile -Command "Compress-Archive -Path '%TEMP_DIR%\gerbers\*' -DestinationPath '%TEMP_DIR%\%BASE%_gerbers.zip' -Force"
+
+if not exist "%TEMP_DIR%\%BASE%_gerbers.zip" (
+    echo ERROR: ZIP failed
     rmdir /s /q "%TEMP_DIR%" >nul 2>&1
     exit /b 1
 )
 
-rmdir /s /q "%TEMP_DIR%\gerbers" >nul 2>&1
+REM ------------------------------------------------------------------------------
+REM Placement CSV (NO post-processing)
+REM ------------------------------------------------------------------------------
 
-REM ###############################################################################
+echo Exporting placement...
+
+"!KICAD_CLI!" pcb export pos "!PCB!" ^
+    --output "%TEMP_DIR%\placement.csv" ^
+    --format csv ^
+    --units mm ^
+    --side both ^
+    --exclude-dnp
+
+if errorlevel 1 (
+    echo ERROR: Placement export failed
+    rmdir /s /q "%TEMP_DIR%" >nul 2>&1
+    exit /b 1
+)
+
+REM ------------------------------------------------------------------------------
+REM BOM CSV (NO post-processing)
+REM ------------------------------------------------------------------------------
+
+echo Exporting BOM...
+
+"!KICAD_CLI!" sch export bom "!SCH!" ^
+    --fields "Reference,Value,MPN,Footprint,^${QUANTITY}" ^
+    --labels "Designator,Value,MPN,Footprint,Qty" ^
+    --group-by "Value" ^
+    --output "%TEMP_DIR%\bom.csv"
+
+if errorlevel 1 (
+    echo ERROR: BOM export failed
+    rmdir /s /q "%TEMP_DIR%" >nul 2>&1
+    exit /b 1
+)
+
+REM ------------------------------------------------------------------------------
 REM Report
-REM ###############################################################################
-
-echo Writing report.txt...
+REM ------------------------------------------------------------------------------
 
 (
 echo KiCad Export Report
-echo ===================
+echo ====================
+echo Project: %BASE%
+echo Date: %RUN_DATETIME%
 echo.
-echo Project: %PROJECT_NAME%
-echo Run at: %RUN_DATETIME%
+echo Files:
+echo - %BASE%_gerbers.zip
+echo - bom.csv
+echo - placement.csv
 echo.
-echo Render settings:
-echo   Quality: %RENDER_QUALITY%
-echo   Resolution: %RENDER_WIDTH%x%RENDER_HEIGHT%
-echo   Isometric rotation: %ISO_ROTATION%
-echo.
-echo Gerber layers:
-echo   %GERBER_LAYERS%
-echo.
-echo Drill:
-echo   Format: Excellon
-echo   Map: PDF
-echo.
-echo Placement:
-echo   Format: CSV
-echo   Units: mm
-echo   Side: both
-echo.
-echo Generated files:
-) > "%REPORT_FILE%"
+echo Layers:
+echo %LAYERS%
+) > "%TEMP_DIR%\report.txt"
 
-dir /b "%TEMP_DIR%" >> "%REPORT_FILE%" 2>&1
+REM ------------------------------------------------------------------------------
+REM Move output
+REM ------------------------------------------------------------------------------
 
-REM ###############################################################################
-REM Move files to final output directory
-REM ###############################################################################
-
-echo Moving files to final output directory...
 mkdir "%OUTPUT_DIR%" >nul 2>&1
-move /y "%TEMP_DIR%\*" "%OUTPUT_DIR%" >nul 2>&1
 
-REM ###############################################################################
-REM Cleanup and Done
-REM ###############################################################################
+copy "%TEMP_DIR%\%BASE%_gerbers.zip" "%OUTPUT_DIR%\" >nul
+copy "%TEMP_DIR%\bom.csv" "%OUTPUT_DIR%\" >nul
+copy "%TEMP_DIR%\placement.csv" "%OUTPUT_DIR%\" >nul
+copy "%TEMP_DIR%\report.txt" "%OUTPUT_DIR%\" >nul
+
+REM ------------------------------------------------------------------------------
+REM Cleanup
+REM ------------------------------------------------------------------------------
 
 rmdir /s /q "%TEMP_DIR%" >nul 2>&1
 
 echo.
-echo All artifacts generated in: %OUTPUT_DIR%
-echo.
+echo DONE
 dir /b "%OUTPUT_DIR%"
 
 endlocal

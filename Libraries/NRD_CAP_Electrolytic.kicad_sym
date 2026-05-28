@@ -2565,7 +2565,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "cap capacitor"
+		(property "ki_keywords" "cap capacitor 100uF"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)

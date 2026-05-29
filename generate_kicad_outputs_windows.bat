@@ -206,7 +206,7 @@ timeout /t 2 /nobreak >nul 2>&1
 
 echo Exporting bottom render...
 
-"!KICAD_CLI!" pcb export "!PCB!" ^
+"!KICAD_CLI!" pcb render "!PCB!" ^
     --side bottom ^
     --quality %RENDER_QUALITY% ^
     --width %RENDER_WIDTH% ^

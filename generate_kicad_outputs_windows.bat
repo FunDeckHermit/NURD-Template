@@ -368,15 +368,27 @@ if !errorlevel! neq 0 (
     exit /b 1
 )
 
+timeout /t 2 /nobreak >nul 2>&1
+
 REM Remove job files
 del /q "%TEMP_DIR%\gerbers\*.gbrjob" >nul 2>&1
 
-REM Zip gerbers
+REM Zip gerbers - using pushd to ensure we're in the right directory
 echo Zipping Gerbers and Drill Files...
 
-powershell -NoProfile -Command "Compress-Archive -Path '%TEMP_DIR%\gerbers\*' -DestinationPath '%TEMP_DIR%\!BASE!_gerbers.zip' -Force" >nul 2>&1
+pushd "%TEMP_DIR%\gerbers"
+for /f %%f in ('dir /b *.* 2^>nul ^| find /c /v ""') do set GERBER_COUNT=%%f
+popd
 
-rmdir /s /q "%TEMP_DIR%\gerbers" >nul 2>&1
+if !GERBER_COUNT! gtr 0 (
+    cd /d "%TEMP_DIR%\gerbers"
+    powershell -NoProfile -Command "& {Add-Type -AssemblyName System.IO.Compression.FileSystem; [System.IO.Compression.ZipFile]::CreateFromDirectory('.', '%TEMP_DIR%\!BASE!_gerbers.zip')}" >nul 2>&1
+    cd /d "%TEMP_DIR%"
+    rmdir /s /q "%TEMP_DIR%\gerbers" >nul 2>&1
+) else (
+    echo WARNING: No gerber files created
+    rmdir /s /q "%TEMP_DIR%\gerbers" >nul 2>&1
+)
 
 REM ------------------------------------------------------------------------------
 REM REPORT

@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 REM ###############################################################################
-REM KiCad Production Export Script (STABLE HEADERS / NO DATA LOSS)
+REM KiCad Production Export Script (STABLE HEADERS / NO DATA LOSS / DYNAMIC LAYERS)
 REM ###############################################################################
 
 REM ------------------------------------------------------------------------------
@@ -65,10 +65,73 @@ set SCH=%BASE%.kicad_sch
 echo Project: %BASE%
 
 REM ------------------------------------------------------------------------------
-REM GERBERS
+REM DETECT LAYERS DYNAMICALLY
 REM ------------------------------------------------------------------------------
 
+echo Detecting layer count...
+
+REM Export layer list to temp file
+"!KICAD_CLI!" pcb layers "!PCB!" > "%TEMP_DIR%\layers_raw.txt" 2>&1
+
+REM Build dynamic layer list from the PCB file
+setlocal enabledelayedexpansion
+set LAYERS=
+set LAYER_COUNT=0
+
+REM Parse KiCad PCB file for layer definitions
+for /f "tokens=*" %%L in ('findstr /r "^  \(layer " "!PCB!"') do (
+    set "LINE=%%L"
+    REM Extract layer names (they come in format: (layer ID "LayerName"))
+    if not "!LINE!"=="" (
+        REM Count inner layers (In1.Cu, In2.Cu, etc)
+        echo !LINE! | findstr /i "\.Cu" >nul
+        if !errorlevel! equ 0 (
+            set /a LAYER_COUNT+=1
+        )
+    )
+)
+
+REM Standard approach: query available copper layers
+REM For most boards, use this comprehensive dynamic list that adapts
+REM We'll use KiCad's export command without --layers to get all available layers
+
 set LAYERS=F.Cu,B.Cu,B.Mask,F.Mask,F.Paste,B.Paste,F.SilkS,B.SilkS,Edge.Cuts
+
+REM Check if it's a 4-layer board (In1.Cu, In2.Cu)
+findstr /i "In1\.Cu" "!PCB!" >nul
+if !errorlevel! equ 0 (
+    set LAYERS=F.Cu,In1.Cu,In2.Cu,B.Cu,B.Mask,F.Mask,F.Paste,B.Paste,F.SilkS,B.SilkS,Edge.Cuts
+    echo Detected 4-layer board
+)
+
+REM Check if it's a 6-layer board (In1.Cu, In2.Cu, In3.Cu, In4.Cu)
+findstr /i "In3\.Cu" "!PCB!" >nul
+if !errorlevel! equ 0 (
+    set LAYERS=F.Cu,In1.Cu,In2.Cu,In3.Cu,In4.Cu,B.Cu,B.Mask,F.Mask,F.Paste,B.Paste,F.SilkS,B.SilkS,Edge.Cuts
+    echo Detected 6-layer board
+)
+
+REM Check if it's an 8-layer board (In1-In6.Cu)
+findstr /i "In5\.Cu" "!PCB!" >nul
+if !errorlevel! equ 0 (
+    set LAYERS=F.Cu,In1.Cu,In2.Cu,In3.Cu,In4.Cu,In5.Cu,In6.Cu,B.Cu,B.Mask,F.Mask,F.Paste,B.Paste,F.SilkS,B.SilkS,Edge.Cuts
+    echo Detected 8-layer board
+)
+
+REM Check if it's a 10-layer board (In1-In8.Cu)
+findstr /i "In7\.Cu" "!PCB!" >nul
+if !errorlevel! equ 0 (
+    set LAYERS=F.Cu,In1.Cu,In2.Cu,In3.Cu,In4.Cu,In5.Cu,In6.Cu,In7.Cu,In8.Cu,B.Cu,B.Mask,F.Mask,F.Paste,B.Paste,F.SilkS,B.SilkS,Edge.Cuts
+    echo Detected 10-layer board
+)
+
+echo Using layers: !LAYERS!
+
+endlocal & set LAYERS=%LAYERS%
+
+REM ------------------------------------------------------------------------------
+REM GERBERS
+REM ------------------------------------------------------------------------------
 
 "!KICAD_CLI!" pcb export gerbers "!PCB!" ^
     --output "%TEMP_DIR%\gerbers" ^
@@ -119,6 +182,7 @@ REM ----------------------------------------------------------------------------
 echo KiCad Export Report
 echo Project: %BASE%
 echo Date: %RUN_DATETIME%
+echo Layers: %LAYERS%
 echo.
 echo Files:
 echo - %BASE%_gerbers.zip

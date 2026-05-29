@@ -180,39 +180,7 @@ REM ----------------------------------------------------------------------------
 
 echo Deduplicating BOM by MPN...
 
-powershell -NoProfile -Command ^
-"^
-\$csv = Import-Csv '%TEMP_DIR%\bom_raw.csv'; ^
-\$grouped = @{}; ^
-foreach (\$row in \$csv) { ^
-    \$mpn = \$row.MPN.Trim(); ^
-    if ([string]::IsNullOrWhiteSpace(\$mpn)) { \$mpn = 'NO_MPN' }; ^
-    if (-not \$grouped.ContainsKey(\$mpn)) { ^
-        \$grouped[\$mpn] = [PSCustomObject]@{ ^
-            Designator = @(\$row.Designator); ^
-            Value = \$row.Value; ^
-            MPN = \$mpn; ^
-            Footprint = \$row.Footprint; ^
-            Qty = [int]\$row.Qty ^
-        } ^
-    } else { ^
-        \$grouped[\$mpn].Designator += \$row.Designator; ^
-        \$grouped[\$mpn].Qty += [int]\$row.Qty ^
-    } ^
-} ^
-\$output = @(); ^
-foreach (\$key in (\$grouped.Keys | Sort-Object)) { ^
-    \$designators = \$grouped[\$key].Designator -join ' '; ^
-    \$output += [PSCustomObject]@{ ^
-        Designator = \$designators; ^
-        Value = \$grouped[\$key].Value; ^
-        MPN = \$grouped[\$key].MPN; ^
-        Footprint = \$grouped[\$key].Footprint; ^
-        Qty = \$grouped[\$key].Qty ^
-    } ^
-} ^
-\$output | Export-Csv -Path '%TEMP_DIR%\bom.csv' -NoTypeInformation -Encoding UTF8 ^
-"
+powershell -NoProfile -Command "& {$csv = Import-Csv '%TEMP_DIR%\bom_raw.csv'; $grouped = @{}; foreach ($row in $csv) { $mpn = $row.MPN.Trim(); if ([string]::IsNullOrWhiteSpace($mpn)) { $mpn = 'NO_MPN' }; if (-not $grouped.ContainsKey($mpn)) { $grouped[$mpn] = [PSCustomObject]@{ Designator = @($row.Designator); Value = $row.Value; MPN = $mpn; Footprint = $row.Footprint; Qty = [int]$row.Qty } } else { $grouped[$mpn].Designator += $row.Designator; $grouped[$mpn].Qty += [int]$row.Qty } }; $output = @(); foreach ($key in ($grouped.Keys | Sort-Object)) { $designators = $grouped[$key].Designator -join ' '; $output += [PSCustomObject]@{ Designator = $designators; Value = $grouped[$key].Value; MPN = $grouped[$key].MPN; Footprint = $grouped[$key].Footprint; Qty = $grouped[$key].Qty } }; $output | Export-Csv -Path '%TEMP_DIR%\bom.csv' -NoTypeInformation -Encoding UTF8 }"
 
 REM ------------------------------------------------------------------------------
 REM REPORT

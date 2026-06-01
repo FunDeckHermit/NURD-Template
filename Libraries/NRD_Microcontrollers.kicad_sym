@@ -8429,31 +8429,37 @@
 		(embedded_fonts no)
 	)
 	(symbol "MCU_MCP_PIC16F1939-IML"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "IC"
-			(at 36.83 7.112 0)
+		(property "Reference" "IC7"
+			(at 48.26 5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
+				(justify left)
 			)
 		)
-		(property "Value" "MCU_MCP_PIC16F1939-IML"
-			(at 36.83 4.572 0)
+		(property "Value" "PIC16F1939-IML"
+			(at 30.8611 5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
+				(justify left)
 			)
 		)
 		(property "Footprint" "0_NRD_footprints:QFN-44-1EP_8x8mm_P0.65mm_EP6.6x6.6mm"
@@ -8515,7 +8521,7 @@
 				(justify left top)
 			)
 		)
-		(property "Manufacturer_Part_Number" "PIC16F1939-I/P"
+		(property "Manufacturer_Part_Number" "PIC16F1939-IML"
 			(at 54.61 -594.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8527,7 +8533,7 @@
 				(justify left top)
 			)
 		)
-		(property "Mouser Part Number" "579-PIC16F1939-I/P"
+		(property "Mouser Part Number" "579-PIC16F1939-IML"
 			(at 54.61 -694.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8551,7 +8557,7 @@
 				(justify left top)
 			)
 		)
-		(property "MPN" "PIC16F1939-I/P"
+		(property "MPN" "PIC16F1939-IML"
 			(at 54.61 -894.92 0)
 			(show_name no)
 			(do_not_autoplace no)
